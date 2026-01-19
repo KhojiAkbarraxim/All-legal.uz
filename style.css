@@ -1,0 +1,134 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Stable layout for multi-box sections */
+.info-section {
+    width: 100%;
+}
+
+/* Flex layout keeps boxes aligned and stable across languages */
+.info-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 24px !important; /* consistent spacing between boxes */
+    align-items: flex-start;
+}
+
+/* Fixed width with flexible height to avoid shifting */
+.content-box {
+    width: 320px; /* fixed width for stability */
+    min-height: 160px; /* uniform height for short text */
+    padding: 16px; /* visible inner spacing */
+    border: 1px solid #cccccc; /* visible boundary */
+    box-sizing: border-box; /* include padding/border in width */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.practice-extra {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-8px);
+    transition: max-height 0.6s ease, opacity 0.4s ease, transform 0.4s ease;
+}
+
+.practice-extra.is-open {
+    max-height: 900px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-title,
+.hero-body {
+    text-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.hero-accent {
+    text-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.hero-bg--one {
+    background-image: url("lawimg2.jpg");
+    animation-name: heroFadeOne;
+}
+
+.hero-bg--two {
+    background-image: url("lawimg3.jpg");
+    animation-name: heroFadeTwo;
+}
+
+.hero-bg--three {
+    background-image: url("lawimg4.jpg");
+    animation-name: heroFadeThree;
+}
+
+@keyframes heroFadeOne {
+    0%,
+    30% {
+        opacity: 1;
+    }
+    33%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes heroFadeTwo {
+    0%,
+    33% {
+        opacity: 0;
+    }
+    36%,
+    63% {
+        opacity: 1;
+    }
+    66%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes heroFadeThree {
+    0%,
+    66% {
+        opacity: 0;
+    }
+    69%,
+    96% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-bg {
+        animation: none;
+    }
+
+    .hero-bg--two,
+    .hero-bg--three {
+        opacity: 0;
+    }
+
+    .practice-extra {
+        transition: none;
+    }
+}
