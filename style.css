@@ -6,6 +6,17 @@ html {
     scroll-behavior: smooth;
 }
 
+nav [data-i18n^="nav."] {
+    font-size: 1.35rem;
+    line-height: 1.2;
+}
+
+footer a.text-sm,
+footer a.text-xs,
+footer h4 {
+    font-size: 1.35rem;
+}
+
 /* Stable layout for multi-box sections */
 .info-section {
     width: 100%;

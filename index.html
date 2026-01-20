@@ -1,460 +1,642 @@
 <!DOCTYPE html>
 <html class="light" lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>All-Legal - Leading Legal Solutions in Uzbekistan</title>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script src="tailwind.config.js"></script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>All-Legal - Leading Legal Solutions in Uzbekistan</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind.config.js"></script>
 </head>
+
 <body class="bg-background-light dark:bg-background-dark text-[#111318] dark:text-white overflow-x-hidden">
-<nav class="sticky top-0 z-50 w-full bg-white/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between items-center h-20">
-<div class="flex items-center gap-3" style="margin-top: 34px; margin-bottom: 25px;">
-    <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="logo.new.png"/>
-</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors" data-i18n="nav.about" href="#about">About</a>
-<a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors" data-i18n="nav.practice" href="#practice">Practice Areas</a>
-<a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors" data-i18n="nav.team" href="#team">Team</a>
-<a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors" data-i18n="nav.contact" href="#contact">Contact</a>
-</div>
-<div class="flex items-center gap-4">
-<div class="hidden sm:flex rounded-lg bg-gray-100 dark:bg-gray-800 p-1">
-<button class="px-3 py-1 text-xs font-bold rounded bg-white dark:bg-gray-700 text-primary shadow-sm" data-lang="en">EN</button>
-<button class="px-3 py-1 text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900" data-lang="ru">RU</button>
-<button class="px-3 py-1 text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900" data-lang="uz">UZ</button>
-</div>
-<button class="hidden lg:flex h-10 px-6 items-center justify-center rounded-lg bg-primary hover:bg-primary-dark transition-colors text-navy text-sm font-bold tracking-wide" data-i18n="nav.consult">
+    <nav
+        class="sticky top-0 z-50 w-full bg-white/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20" style="height: 5.7rem;">
+                <div class="flex items-center gap-3" style="margin-top: 34px; margin-bottom: 25px;">
+                    <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="logo.new.png" />
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
+                        data-i18n="nav.about" href="#about">About</a>
+                    <a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
+                        data-i18n="nav.practice" href="#practice">Practice Areas</a>
+                    <a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
+                        data-i18n="nav.team" href="#team">Team</a>
+                    <a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
+                        data-i18n="nav.contact" href="#contact">Contact</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="hidden sm:flex rounded-lg bg-gray-100 dark:bg-gray-800 p-1">
+                        <button
+                            class="px-3 py-1 text-xs font-bold rounded bg-white dark:bg-gray-700 text-primary shadow-sm"
+                            data-lang="en">EN</button>
+                        <button
+                            class="px-3 py-1 text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900"
+                            data-lang="ru">RU</button>
+                        <button
+                            class="px-3 py-1 text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900"
+                            data-lang="uz">UZ</button>
+                    </div>
+                    <button
+                        class="hidden lg:flex h-10 px-6 items-center justify-center rounded-lg bg-primary hover:bg-primary-dark transition-colors text-navy text-sm font-bold tracking-wide"
+                        data-i18n="nav.consult">
                         Consultation
                     </button>
-<button class="md:hidden p-2 text-gray-600">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-</div>
-</nav>
-<div class="relative w-full min-h-screen flex items-center justify-center bg-navy overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30 z-10"></div>
-<div class="hero-bg hero-bg--one" data-alt="Judge gavel on law books with blue background"></div>
-<div class="hero-bg hero-bg--two" data-alt="Legal books and gavel on desk"></div>
-<div class="hero-bg hero-bg--three" data-alt="Courtroom gavel close-up"></div>
-</div>
-<div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-<div class="max-w-2xl flex flex-col gap-6">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 w-fit backdrop-blur-md">
-<span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-<span class="text-xs font-medium text-white tracking-wide uppercase" data-i18n="hero.badge">Trusted Legal Partners</span>
-</div>
-<h1 class="hero-title text-white text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight" data-i18n-html="hero.title">
-                    Leading Legal Solutions <br/>in <span class="hero-accent text-accent">Uzbekistan</span>
-</h1>
-<p class="hero-body text-gray-100 text-lg sm:text-xl leading-relaxed max-w-xl font-light" data-i18n="hero.body">
-                    Expert counsel for complex corporate, IP, and litigation matters. We navigate the legal landscape so you can focus on growth.
+                    <button class="md:hidden p-2 text-gray-600">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="relative w-full min-h-screen flex items-center justify-center bg-navy overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30 z-10"></div>
+            <div class="hero-bg hero-bg--one" data-alt="Judge gavel on law books with blue background"></div>
+            <div class="hero-bg hero-bg--two" data-alt="Legal books and gavel on desk"></div>
+            <div class="hero-bg hero-bg--three" data-alt="Courtroom gavel close-up"></div>
+        </div>
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-2xl flex flex-col gap-6">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 w-fit backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                    <span class="text-xs font-medium text-white tracking-wide uppercase" data-i18n="hero.badge">Trusted
+                        Legal Partners</span>
+                </div>
+                <h1 class="hero-title text-white text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight"
+                    data-i18n-html="hero.title">
+                    Leading Legal Solutions <br />in <span class="hero-accent text-accent">Uzbekistan</span>
+                </h1>
+                <p class="hero-body text-gray-100 text-lg sm:text-xl leading-relaxed max-w-xl font-light"
+                    data-i18n="hero.body">
+                    Expert counsel for complex corporate, IP, and litigation matters. We navigate the legal landscape so
+                    you can focus on growth.
                 </p>
-<div class="flex flex-col sm:flex-row gap-4 mt-4">
-<button class="h-12 px-8 rounded-lg bg-primary hover:bg-primary-dark text-navy font-bold text-base transition-all shadow-lg shadow-primary/30 flex items-center justify-center gap-2">
-<span data-i18n="hero.cta.primary">Request Consultation</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-<button class="h-12 px-8 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm text-white font-bold text-base transition-all flex items-center justify-center" data-i18n="hero.cta.secondary">
+                <div class="flex flex-col sm:flex-row gap-4 mt-4">
+                    <button
+                        class="h-12 px-8 rounded-lg bg-primary hover:bg-primary-dark text-navy font-bold text-base transition-all shadow-lg shadow-primary/30 flex items-center justify-center gap-2">
+                        <span data-i18n="hero.cta.primary">Request Consultation</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                    <button
+                        class="h-12 px-8 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm text-white font-bold text-base transition-all flex items-center justify-center"
+                        data-i18n="hero.cta.secondary">
                         Our Practice Areas
                     </button>
-</div>
-</div>
-</div>
-</div>
-<section class="py-20 bg-white dark:bg-background-dark">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-16">
-<h2 class="text-3xl font-bold text-navy dark:text-white mb-4 tracking-tight" data-i18n="why.title">Why Choose All-Legal</h2>
-<p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto" data-i18n="why.body">We combine local expertise with international standards to deliver exceptional results for our clients.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-<div class="group p-8 rounded-xl bg-background-light dark:bg-gray-800 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-all duration-300 hover:shadow-xl">
-<div class="w-14 h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined text-3xl">verified</span>
-</div>
-<h3 class="text-xl font-bold text-navy dark:text-white mb-3" data-i18n="why.cards.one.title">Deep Experience</h3>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed" data-i18n="why.cards.one.body">Over 20 years of combined legal expertise navigating both local regulations and international law frameworks.</p>
-</div>
-<div class="group p-8 rounded-xl bg-background-light dark:bg-gray-800 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-all duration-300 hover:shadow-xl">
-<div class="w-14 h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined text-3xl">handshake</span>
-</div>
-<h3 class="text-xl font-bold text-navy dark:text-white mb-3" data-i18n="why.cards.two.title">Unwavering Reliability</h3>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed" data-i18n="why.cards.two.body">Trusted by top Fortune 500 companies operating in Central Asia for our consistency and ethical standards.</p>
-</div>
-<div class="group p-8 rounded-xl bg-background-light dark:bg-gray-800 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-all duration-300 hover:shadow-xl">
-<div class="w-14 h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined text-3xl">person_play</span>
-</div>
-<h3 class="text-xl font-bold text-navy dark:text-white mb-3" data-i18n="why.cards.three.title">Individual Approach</h3>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed" data-i18n="why.cards.three.body">We don't believe in templates. Every strategy is tailored specifically to meet your unique business goals.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-background-light dark:bg-[#0d1117] relative overflow-hidden" id="about">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-<div class="relative order-2 lg:order-1">
-<div class="absolute -top-4 -left-4 w-24 h-24 bg-accent/20 rounded-full blur-2xl"></div>
-<div class="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
-<div class="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
-<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
-<img alt="All-Legal modern office interior" class="object-cover w-full h-full transform transition-transform hover:scale-105 duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQCQaN15f16yN1aUuyotmL0bdhLis74w2-OCwWC1D694mzaVFKjPArWsIaFzS_qMm32JJTRi_O9lKsISdjG9PmPidM42_y1Ktlj_5TIKsHvLeabfBTHXAo0TXBtiv6JtVBvfE7CTzmvOT-G-P7hthXfjXO2aJsK2MbyEejFeWwnCVpSnPbl7gkYpdhcKVpPSn3KMBys7ewOQQ7nqs52oGCNRirkymGS9KX8m4WkACdFEo4D8DNW4m-_YD9FjS9kxVb5Y-pk7dEOUg"/>
-<div class="absolute bottom-8 left-8 z-20">
-<div class="bg-white/95 backdrop-blur-sm px-6 py-4 rounded-lg shadow-lg max-w-xs">
-<p class="text-navy font-bold text-lg mb-1" data-i18n="about.established">Established 2022</p>
-<p class="text-gray-600 text-xs" data-i18n="about.tagline">Delivering excellence in Uzbek law</p>
-</div>
-</div>
-</div>
-</div>
-<div class="order-1 lg:order-2">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary mb-6 border border-primary/20">
-<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-<span class="text-xs font-bold uppercase tracking-wider" data-i18n="about.eyebrow">About the Firm</span>
-</div>
-<h2 class="text-3xl md:text-4xl font-black text-navy dark:text-white mb-6 leading-tight tracking-tight" data-i18n="about.title">Protecting Your Rights &amp; Interests in Uzbekistan</h2>
-<div class="space-y-6 text-gray-600 dark:text-gray-300 text-lg leading-relaxed font-light">
-<p data-i18n="about.p1">
-                            Founded in 2022, All-Legal specializes in safeguarding the legal rights of both corporate entities and individuals within the Republic of Uzbekistan. We are dedicated to providing clear, actionable counsel in a rapidly evolving legal landscape.
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="py-20 bg-white dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-navy dark:text-white mb-4 tracking-tight" data-i18n="why.title">Why
+                    Choose All-Legal</h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto" data-i18n="why.body">We combine local
+                    expertise with international standards to deliver exceptional results for our clients.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                <div
+                    class="group p-8 rounded-xl bg-background-light dark:bg-gray-800 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-all duration-300 hover:shadow-xl">
+                    <div
+                        class="w-14 h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">verified</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy dark:text-white mb-3" data-i18n="why.cards.one.title">Deep
+                        Experience</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed" data-i18n="why.cards.one.body">Over 20
+                        years of combined legal expertise navigating both local regulations and international law
+                        frameworks.</p>
+                </div>
+                <div
+                    class="group p-8 rounded-xl bg-background-light dark:bg-gray-800 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-all duration-300 hover:shadow-xl">
+                    <div
+                        class="w-14 h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">handshake</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy dark:text-white mb-3" data-i18n="why.cards.two.title">
+                        Unwavering Reliability</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed" data-i18n="why.cards.two.body">Trusted
+                        by top Fortune 500 companies operating in Central Asia for our consistency and ethical
+                        standards.</p>
+                </div>
+                <div
+                    class="group p-8 rounded-xl bg-background-light dark:bg-gray-800 border border-transparent hover:border-gray-200 dark:hover:border-gray-700 transition-all duration-300 hover:shadow-xl">
+                    <div
+                        class="w-14 h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-3xl">person_play</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy dark:text-white mb-3" data-i18n="why.cards.three.title">
+                        Individual Approach</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed" data-i18n="why.cards.three.body">We
+                        don't believe in templates. Every strategy is tailored specifically to meet your unique business
+                        goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-background-light dark:bg-[#0d1117] relative overflow-hidden" id="about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="relative order-2 lg:order-1">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-accent/20 rounded-full blur-2xl"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
+                        <img alt="All-Legal modern office interior"
+                            class="object-cover w-full h-full transform transition-transform hover:scale-105 duration-700"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQCQaN15f16yN1aUuyotmL0bdhLis74w2-OCwWC1D694mzaVFKjPArWsIaFzS_qMm32JJTRi_O9lKsISdjG9PmPidM42_y1Ktlj_5TIKsHvLeabfBTHXAo0TXBtiv6JtVBvfE7CTzmvOT-G-P7hthXfjXO2aJsK2MbyEejFeWwnCVpSnPbl7gkYpdhcKVpPSn3KMBys7ewOQQ7nqs52oGCNRirkymGS9KX8m4WkACdFEo4D8DNW4m-_YD9FjS9kxVb5Y-pk7dEOUg" />
+                        <div class="absolute bottom-8 left-8 z-20">
+                            <div class="bg-white/95 backdrop-blur-sm px-6 py-4 rounded-lg shadow-lg max-w-xs">
+                                <p class="text-navy font-bold text-lg mb-1" data-i18n="about.established">Established
+                                    2022</p>
+                                <p class="text-gray-600 text-xs" data-i18n="about.tagline">Delivering excellence in
+                                    Uzbek law</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary mb-6 border border-primary/20">
+                        <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                        <span class="text-xs font-bold uppercase tracking-wider" data-i18n="about.eyebrow">About the
+                            Firm</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-navy dark:text-white mb-6 leading-tight tracking-tight"
+                        data-i18n="about.title">Protecting Your Rights &amp; Interests in Uzbekistan</h2>
+                    <div class="space-y-6 text-gray-600 dark:text-gray-300 text-lg leading-relaxed font-light">
+                        <p data-i18n="about.p1">
+                            Founded in 2022, All-Legal specializes in safeguarding the legal rights of both corporate
+                            entities and individuals within the Republic of Uzbekistan. We are dedicated to providing
+                            clear, actionable counsel in a rapidly evolving legal landscape.
                         </p>
-<p data-i18n-html="about.p2">
-                            Our firm serves as a vital bridge for foreign investment, offering comprehensive support in <span class="text-navy dark:text-white font-semibold">corporate law, tax planning, contract negotiation, and migration issues</span>. We expertly manage the complexities of license acquisition, visas, and work permits, ensuring smooth operations for international clients.
+                        <p data-i18n-html="about.p2">
+                            Our firm serves as a vital bridge for foreign investment, offering comprehensive support in
+                            <span class="text-navy dark:text-white font-semibold">corporate law, tax planning, contract
+                                negotiation, and migration issues</span>. We expertly manage the complexities of license
+                            acquisition, visas, and work permits, ensuring smooth operations for international clients.
                         </p>
-<p data-i18n-html="about.p3">
-                            Our team of <span class="text-navy dark:text-white font-semibold">7 qualified lawyers</span> brings deep expertise to every case. We are proud of our successful history assisting over <span class="text-navy dark:text-white font-semibold">70 legal entities</span> across key sectors including construction, tourism, trade, IT, and finance.
+                        <p data-i18n-html="about.p3">
+                            Our team of <span class="text-navy dark:text-white font-semibold">7 qualified lawyers</span>
+                            brings deep expertise to every case. We are proud of our successful history assisting over
+                            <span class="text-navy dark:text-white font-semibold">70 legal entities</span> across key
+                            sectors including construction, tourism, trade, IT, and finance.
                         </p>
-</div>
-<div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 flex flex-wrap gap-x-12 gap-y-6">
-<div>
-<div class="text-4xl font-black text-primary mb-1">70+</div>
-<div class="text-xs font-bold text-gray-500 uppercase tracking-widest" data-i18n="about.stats.entities">Legal Entities Served</div>
-</div>
-<div>
-<div class="text-4xl font-black text-primary mb-1">5+</div>
-<div class="text-xs font-bold text-gray-500 uppercase tracking-widest" data-i18n="about.stats.sectors">Key Sectors</div>
-</div>
-<div>
-<div class="text-4xl font-black text-primary mb-1">7</div>
-<div class="text-xs font-bold text-gray-500 uppercase tracking-widest" data-i18n="about.stats.lawyers">Qualified Lawyers</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 bg-background-light dark:bg-[#0d1117]" id="practice">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-<div>
-<span class="text-primary font-bold tracking-wider uppercase text-sm" data-i18n="practice.eyebrow">Expertise</span>
-<h2 class="text-3xl md:text-4xl font-black text-navy dark:text-white mt-2 tracking-tight" data-i18n="practice.title">Practice Areas</h2>
-</div>
-<a class="hidden md:flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors" href="#">
-<span data-i18n="practice.viewAll">View all practices</span> <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
-<div class="absolute top-8 right-8 text-gray-200 dark:text-gray-700 group-hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-4xl">corporate_fare</span>
-</div>
-<h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-2" data-i18n="practice.cards.corporate.title">Corporate Law</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed" data-i18n="practice.cards.corporate.body">Comprehensive legal support for business formation, governance, and daily operations management.</p>
-<span class="text-primary font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
-<span data-i18n="practice.learnMore">Learn more</span> <span class="material-symbols-outlined text-xs">arrow_forward</span>
-</span>
-</div>
-<div class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
-<div class="absolute top-8 right-8 text-gray-200 dark:text-gray-700 group-hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-4xl">copyright</span>
-</div>
-<h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-2" data-i18n="practice.cards.ip.title">Intellectual Property</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed" data-i18n="practice.cards.ip.body">Protection of trademarks, patents, and copyrights. Enforcement against infringement.</p>
-<span class="text-primary font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
-<span data-i18n="practice.learnMore">Learn more</span> <span class="material-symbols-outlined text-xs">arrow_forward</span>
-</span>
-</div>
-<div class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
-<div class="absolute top-8 right-8 text-gray-200 dark:text-gray-700 group-hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-4xl">gavel</span>
-</div>
-<h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-2" data-i18n="practice.cards.litigation.title">Litigation</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed" data-i18n="practice.cards.litigation.body">Representation in commercial disputes, arbitration, and mediation proceedings.</p>
-<span class="text-primary font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
-<span data-i18n="practice.learnMore">Learn more</span> <span class="material-symbols-outlined text-xs">arrow_forward</span>
-</span>
-</div>
-<div class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
-<div class="absolute top-8 right-8 text-gray-200 dark:text-gray-700 group-hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-4xl">receipt_long</span>
-</div>
-<h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-2" data-i18n="practice.cards.tax.title">Tax Law</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed" data-i18n="practice.cards.tax.body">Strategic tax planning, compliance audits, and dispute resolution with tax authorities.</p>
-<span class="text-primary font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
-<span data-i18n="practice.learnMore">Learn more</span> <span class="material-symbols-outlined text-xs">arrow_forward</span>
-</span>
-</div>
-<div class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
-<div class="absolute top-8 right-8 text-gray-200 dark:text-gray-700 group-hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-4xl">apartment</span>
-</div>
-<h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-2" data-i18n="practice.cards.realestate.title">Real Estate</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed" data-i18n="practice.cards.realestate.body">Transactions, zoning issues, construction contracts, and property development legalities.</p>
-<span class="text-primary font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
-<span data-i18n="practice.learnMore">Learn more</span> <span class="material-symbols-outlined text-xs">arrow_forward</span>
-</span>
-</div>
-<div class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
-<div class="absolute top-8 right-8 text-gray-200 dark:text-gray-700 group-hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-4xl">hub</span>
-</div>
-<h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-2" data-i18n="practice.cards.ma.title">Mergers &amp; Acquisitions</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed" data-i18n="practice.cards.ma.body">Full-cycle support for M&amp;A deals, due diligence, and restructuring processes.</p>
-<span class="text-primary font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
-<span data-i18n="practice.learnMore">Learn more</span> <span class="material-symbols-outlined text-xs">arrow_forward</span>
-</span>
-</div>
-</div>
-<div class="mt-8 text-center md:hidden">
-<a class="inline-flex items-center gap-2 text-primary font-bold" href="#">
-<span data-i18n="practice.viewAll">View all practices</span> <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-<section class="py-16 border-y border-gray-100 dark:border-gray-800 bg-white dark:bg-background-dark">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<p class="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-10" data-i18n="trusted.title">Recognized by leading international directories</p>
-<div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-<div class="h-12 w-auto flex items-center justify-center font-serif text-2xl font-bold text-gray-800 dark:text-gray-300">CHAMBERS <span class="text-primary">&amp;</span> PARTNERS</div>
-<div class="h-10 w-px bg-gray-300"></div>
-<div class="h-12 w-auto flex items-center justify-center font-sans text-2xl font-bold text-gray-800 dark:text-gray-300 tracking-tight">The Legal 500</div>
-<div class="h-10 w-px bg-gray-300 hidden sm:block"></div>
-<div class="h-12 w-auto flex items-center justify-center font-serif italic text-2xl font-bold text-gray-800 dark:text-gray-300">IFLR1000</div>
-</div>
-</div>
-</section>
-<section class="py-20 bg-background-light dark:bg-[#0d1117]" id="team">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between items-center mb-12">
-<h2 class="text-3xl font-bold text-navy dark:text-white tracking-tight" data-i18n="team.title">Our Team</h2>
-<div class="flex gap-2">
-<button class="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-600 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-gray-500">
-<span class="material-symbols-outlined">arrow_back</span>
-</button>
-<button class="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-600 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-gray-500">
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="group">
-<div class="relative overflow-hidden rounded-lg mb-4 h-80 bg-gray-200">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Portrait of a professional man in a suit standing confidently" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSs48sXvRPglHu-cmtfUj71Vm8yCBzUqlvXfNfD8HMrd5ft7v1LgzpJzCDtzCnbyoakCHitZteGg3WMvAb-yD4F3JnLhXtMcACOavf-1drCajP9RPtSCkVdk3CrWE2olsvlpKjPqCAOBn_KjqsZYfYzGguOyMBzQ7at_OwGt0Nh1qsL2xwiMf8CECLegilaYH5A1QwArtA-H95Av172n5eEQIA4wp8DYWKqiV6CjPwnD3uPYGVqAiuGpFKsbr7Gs3tKy5LBvDFwl8');"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-<a class="text-white text-sm font-bold flex items-center gap-1 hover:text-accent" href="#">
-<span data-i18n="team.viewProfile">View Profile</span> <span class="material-symbols-outlined text-xs">arrow_forward</span>
-</a>
-</div>
-</div>
-<h3 class="text-lg font-bold text-navy dark:text-white">Aziz Rakhimov</h3>
-<p class="text-primary text-sm font-medium" data-i18n="team.roles.one">Managing Partner</p>
-</div>
-<div class="group">
-<div class="relative overflow-hidden rounded-lg mb-4 h-80 bg-gray-200">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Portrait of a professional woman lawyer smiling in an office setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4pBKDREF2rYDxywnnQI8Vb-scScnuJYEge-9Ohbj7ZcPyLVXrt_NdnivGcKDwp5IQo0W7t6xiAYw6L1Nx9lzKbjrrsIktu4fEhw-NRh7bK4TzkfPKg9dnbRy7_syKJdU4f83KW4hPk1dE6Nz16AgklWyti0Tve_KaZtvGSLUrqZqpBgvIm_b4dt5Tx6jApW93nrXjtGnZueo1J5glgfX7aT3vXUNqMcJLNNQcjY0AaXKZLioFXosFYBhW3w7Ec_XEL8YyrTYdm_w');"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-<a class="text-white text-sm font-bold flex items-center gap-1 hover:text-accent" href="#">
-<span data-i18n="team.viewProfile">View Profile</span> <span class="material-symbols-outlined text-xs">arrow_forward</span>
-</a>
-</div>
-</div>
-<h3 class="text-lg font-bold text-navy dark:text-white">Malika Karimova</h3>
-<p class="text-primary text-sm font-medium" data-i18n="team.roles.two">Partner, Corporate Law</p>
-</div>
-<div class="group">
-<div class="relative overflow-hidden rounded-lg mb-4 h-80 bg-gray-200">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Portrait of a senior male partner looking experienced and trustworthy" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPQeL2kReLgpXudUGq-MGHUZeiTl3ukaj254ZcWMtjRzYKReRzUaTdBZhn8VUqmxRElZhlQDQ53fe4ezjHORrG1lG22mtXRIpQHau288_j_S6VSRZ-DLS0r1O2PSQFMv8UdrwUxwpvANNiTSpeVFaC2srA32V5zm5buDcrys2kjwnDQwz7TaQZM-i63Sc8szB_a7yPfCgEssnzR-3iwb9oK5Ylw229SobLnKYNdkDotJ_xPh1K-O1ra7i77zBy2Vogj7nA4xPUdzU');"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-<a class="text-white text-sm font-bold flex items-center gap-1 hover:text-accent" href="#">
-<span data-i18n="team.viewProfile">View Profile</span> <span class="material-symbols-outlined text-xs">arrow_forward</span>
-</a>
-</div>
-</div>
-<h3 class="text-lg font-bold text-navy dark:text-white">Rustam Tursunov</h3>
-<p class="text-primary text-sm font-medium" data-i18n="team.roles.three">Partner, Litigation</p>
-</div>
-<div class="group">
-<div class="relative overflow-hidden rounded-lg mb-4 h-80 bg-gray-200">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Portrait of a female legal expert in formal attire" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFAvi9C2l1Z0qBpYuS7EHoH7MOxU3pqBOGPJuDBcNrSfhwl34C1owLO2PZg8ks4tie20r7dthmKA8WWzs_8AAhR6Rn9qSxctUBXvupmt44G38OR6f_8P0ohbLtZBPqZwu33VC6jg_SUXrt75v-Ewks5zpkZHibvIvCVHEebl3wFYpOuakMEVWD1jK1oa6vUJ6XDGhF7cxfN84zSO9bmNrjFE6AEOP-szEa2d2aSi-er-dALlH60Zi18Rl5B9Zz3HXRDe9W2PMEm6o');"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-<a class="text-white text-sm font-bold flex items-center gap-1 hover:text-accent" href="#">
-<span data-i18n="team.viewProfile">View Profile</span> <span class="material-symbols-outlined text-xs">arrow_forward</span>
-</a>
-</div>
-</div>
-<h3 class="text-lg font-bold text-navy dark:text-white">Elena Sidorova</h3>
-<p class="text-primary text-sm font-medium" data-i18n="team.roles.four">Head of Tax Practice</p>
-</div>
-</div>
-</div>
-</section>
-<section class="bg-navy py-20 relative overflow-hidden" id="contact">
-<div class="absolute top-0 right-0 w-1/3 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div class="text-white">
-<div class="inline-block px-3 py-1 rounded bg-accent/20 text-accent text-sm font-bold mb-6" data-i18n="cta.eyebrow">Let's Discuss Your Case</div>
-<h2 class="text-4xl lg:text-5xl font-black mb-6 leading-tight" data-i18n="cta.title">Ready to Protect Your Interests?</h2>
-<p class="text-gray-300 text-lg mb-8 max-w-md font-light" data-i18n="cta.body">Schedule a confidential consultation with our experts. We will respond within 24 hours.</p>
-<div class="flex flex-col gap-6">
-<div class="flex items-start gap-4">
-<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-accent">location_on</span>
-</div>
-<div>
-<h4 class="text-lg font-bold" data-i18n="cta.contact.office">Office</h4>
-<a class="text-gray-400 hover:text-white transition-colors" data-i18n="cta.contact.address" href="https://maps.apple.com/place?map=explore&amp;address=Small+Ring+Road%2C+Tashkent%2C+Uzbekistan&amp;coordinate=41.33318474149422%2C69.28348749477965&amp;name=Small+Ring+Road" rel="noopener noreferrer" target="_blank">
-                        Toshkent shahri, Yunusobod tumani Minor MFY.Markaz-6 mavzesi, 111-uy, 25-xona
-                    </a>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-accent">schedule</span>
-</div>
-<div>
-<h4 class="text-lg font-bold" data-i18n="cta.contact.hours">Hours</h4>
-<p class="text-gray-400" data-i18n="cta.contact.hours.mon">Mon: 9:00–18:00</p>
-<p class="text-gray-400" data-i18n="cta.contact.hours.tue">Tue: 9:00–18:00</p>
-<p class="text-gray-400" data-i18n="cta.contact.hours.wed">Wed: 9:00–18:00</p>
-<p class="text-gray-400" data-i18n="cta.contact.hours.thu">Thu: 9:00–18:00</p>
-<p class="text-gray-400" data-i18n="cta.contact.hours.fri">Fri: 9:00–18:00</p>
-<p class="text-gray-400" data-i18n="cta.contact.hours.sat">Sat: Closed</p>
-<p class="text-gray-400" data-i18n="cta.contact.hours.sun">Sun: Closed</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-accent">call</span>
-</div>
-<div>
-<h4 class="text-lg font-bold" data-i18n="cta.contact.phone">Phone</h4>
-<a class="text-gray-400 hover:text-white transition-colors block" data-i18n="cta.contact.phoneValue" href="tel:+998884880203">+998 88 488 0203</a>
-<a class="text-gray-400 hover:text-white transition-colors block" data-i18n="cta.contact.phoneValue2" href="tel:+998907192223">+998 90 719 22 23</a>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-accent">mail</span>
-</div>
-<div>
-<h4 class="text-lg font-bold" data-i18n="cta.contact.email">Email</h4>
-<p class="text-gray-400" data-i18n="cta.contact.emailValue">info@All-Legal.uz</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-accent">send</span>
-</div>
-<div>
-<h4 class="text-lg font-bold" data-i18n="cta.contact.telegram">Telegram</h4>
-<a class="text-gray-400 hover:text-white transition-colors" data-i18n="cta.contact.telegramValue" href="https://t.me/umarjon_jumaniyazov" rel="noopener noreferrer" target="_blank">@umarjon_jumaniyazov</a>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-accent">photo_camera</span>
-</div>
-<div>
-<h4 class="text-lg font-bold" data-i18n="cta.contact.instagram">Instagram</h4>
-<a class="text-gray-400 hover:text-white transition-colors" data-i18n="cta.contact.instagramValue" href="https://www.instagram.com/all_legal.uz/" rel="noopener noreferrer" target="_blank">instagram.com/all_legal.uz</a>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl">
-<form action="#" class="flex flex-col gap-5">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-<div class="flex flex-col gap-1">
-<label class="text-sm font-medium text-gray-700 dark:text-gray-300" data-i18n="form.name" for="name">Name</label>
-<input class="w-full h-12 rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-white focus:ring-primary focus:border-primary" data-i18n="form.name.placeholder" data-i18n-attr="placeholder" id="name" placeholder="Full Name" type="text"/>
-</div>
-<div class="flex flex-col gap-1">
-<label class="text-sm font-medium text-gray-700 dark:text-gray-300" data-i18n="form.phone" for="phone">Phone</label>
-<input class="w-full h-12 rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-white focus:ring-primary focus:border-primary" data-i18n="form.phone.placeholder" data-i18n-attr="placeholder" id="phone" placeholder="+998" type="tel"/>
-</div>
-</div>
-<div class="flex flex-col gap-1">
-<label class="text-sm font-medium text-gray-700 dark:text-gray-300" data-i18n="form.email" for="email">Email</label>
-<input class="w-full h-12 rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-white focus:ring-primary focus:border-primary" data-i18n="form.email.placeholder" data-i18n-attr="placeholder" id="email" placeholder="example@company.com" type="email"/>
-</div>
-<div class="flex flex-col gap-1">
-<label class="text-sm font-medium text-gray-700 dark:text-gray-300" data-i18n="form.message" for="message">Message</label>
-<textarea class="w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-white focus:ring-primary focus:border-primary resize-none" data-i18n="form.message.placeholder" data-i18n-attr="placeholder" id="message" placeholder="Briefly describe your legal matter..." rows="4"></textarea>
-</div>
-<button class="mt-2 w-full h-12 bg-primary hover:bg-primary-dark text-navy font-bold rounded-lg transition-colors flex items-center justify-center gap-2" type="button">
-<span data-i18n="form.submit">Submit Request</span> <span class="material-symbols-outlined text-sm">send</span>
-</button>
-</form>
-</div>
-</div>
-</div>
-</section>
-<footer class="bg-gray-50 dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
-<div class="flex flex-col gap-4 max-w-xs">
-<div class="flex items-center gap-2">
-    <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="logo.new.png"/>
-</div>
-<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed" data-i18n="footer.blurb">
-                        All-Legal provides top-tier legal services tailored to the complex needs of modern businesses in Uzbekistan and Central Asia.
+                    </div>
+                    <div
+                        class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 flex flex-wrap gap-x-12 gap-y-6">
+                        <div>
+                            <div class="text-4xl font-black text-primary mb-1">70+</div>
+                            <div class="text-xs font-bold text-gray-500 uppercase tracking-widest"
+                                data-i18n="about.stats.entities">Legal Entities Served</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-black text-primary mb-1">5+</div>
+                            <div class="text-xs font-bold text-gray-500 uppercase tracking-widest"
+                                data-i18n="about.stats.sectors">Key Sectors</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-black text-primary mb-1">7</div>
+                            <div class="text-xs font-bold text-gray-500 uppercase tracking-widest"
+                                data-i18n="about.stats.lawyers">Qualified Lawyers</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-background-light dark:bg-[#0d1117]" id="practice">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <span class="text-primary font-bold tracking-wider uppercase text-sm"
+                        data-i18n="practice.eyebrow">Expertise</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-navy dark:text-white mt-2 tracking-tight"
+                        data-i18n="practice.title">Practice Areas</h2>
+                </div>
+                <a class="hidden md:flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors"
+                    href="#">
+                    <span data-i18n="practice.viewAll">View all practices</span> <span
+                        class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
+                    <div
+                        class="absolute top-8 right-8 text-gray-200 dark:text-gray-700 group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-4xl">corporate_fare</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-2"
+                        data-i18n="practice.cards.corporate.title">Corporate Law</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed"
+                        data-i18n="practice.cards.corporate.body">Comprehensive legal support for business formation,
+                        governance, and daily operations management.</p>
+                    <span
+                        class="text-primary font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
+                        <span data-i18n="practice.learnMore">Learn more</span> <span
+                            class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </span>
+                </div>
+                <div
+                    class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
+                    <div
+                        class="absolute top-8 right-8 text-gray-200 dark:text-gray-700 group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-4xl">copyright</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-2"
+                        data-i18n="practice.cards.ip.title">Intellectual Property</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed"
+                        data-i18n="practice.cards.ip.body">Protection of trademarks, patents, and copyrights.
+                        Enforcement against infringement.</p>
+                    <span
+                        class="text-primary font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
+                        <span data-i18n="practice.learnMore">Learn more</span> <span
+                            class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </span>
+                </div>
+                <div
+                    class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
+                    <div
+                        class="absolute top-8 right-8 text-gray-200 dark:text-gray-700 group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-4xl">gavel</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-2"
+                        data-i18n="practice.cards.litigation.title">Litigation</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed"
+                        data-i18n="practice.cards.litigation.body">Representation in commercial disputes, arbitration,
+                        and mediation proceedings.</p>
+                    <span
+                        class="text-primary font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
+                        <span data-i18n="practice.learnMore">Learn more</span> <span
+                            class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </span>
+                </div>
+                <div
+                    class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
+                    <div
+                        class="absolute top-8 right-8 text-gray-200 dark:text-gray-700 group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-4xl">receipt_long</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-2"
+                        data-i18n="practice.cards.tax.title">Tax Law</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed"
+                        data-i18n="practice.cards.tax.body">Strategic tax planning, compliance audits, and dispute
+                        resolution with tax authorities.</p>
+                    <span
+                        class="text-primary font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
+                        <span data-i18n="practice.learnMore">Learn more</span> <span
+                            class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </span>
+                </div>
+                <div
+                    class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
+                    <div
+                        class="absolute top-8 right-8 text-gray-200 dark:text-gray-700 group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-4xl">apartment</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-2"
+                        data-i18n="practice.cards.realestate.title">Real Estate</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed"
+                        data-i18n="practice.cards.realestate.body">Transactions, zoning issues, construction contracts,
+                        and property development legalities.</p>
+                    <span
+                        class="text-primary font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
+                        <span data-i18n="practice.learnMore">Learn more</span> <span
+                            class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </span>
+                </div>
+                <div
+                    class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
+                    <div
+                        class="absolute top-8 right-8 text-gray-200 dark:text-gray-700 group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-4xl">hub</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy dark:text-white mb-4 mt-2"
+                        data-i18n="practice.cards.ma.title">Mergers &amp; Acquisitions</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed"
+                        data-i18n="practice.cards.ma.body">Full-cycle support for M&amp;A deals, due diligence, and
+                        restructuring processes.</p>
+                    <span
+                        class="text-primary font-bold text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
+                        <span data-i18n="practice.learnMore">Learn more</span> <span
+                            class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </span>
+                </div>
+            </div>
+            <div class="mt-8 text-center md:hidden">
+                <a class="inline-flex items-center gap-2 text-primary font-bold" href="#">
+                    <span data-i18n="practice.viewAll">View all practices</span> <span
+                        class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 border-y border-gray-100 dark:border-gray-800 bg-white dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-10" data-i18n="trusted.title">
+                Recognized by leading international directories</p>
+            <div
+                class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <div
+                    class="h-12 w-auto flex items-center justify-center font-serif text-2xl font-bold text-gray-800 dark:text-gray-300">
+                    CHAMBERS <span class="text-primary">&amp;</span> PARTNERS</div>
+                <div class="h-10 w-px bg-gray-300"></div>
+                <div
+                    class="h-12 w-auto flex items-center justify-center font-sans text-2xl font-bold text-gray-800 dark:text-gray-300 tracking-tight">
+                    The Legal 500</div>
+                <div class="h-10 w-px bg-gray-300 hidden sm:block"></div>
+                <div
+                    class="h-12 w-auto flex items-center justify-center font-serif italic text-2xl font-bold text-gray-800 dark:text-gray-300">
+                    IFLR1000</div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-background-light dark:bg-[#0d1117]" id="team">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold text-navy dark:text-white tracking-tight" data-i18n="team.title">Our Team
+                </h2>
+                <div class="flex gap-2">
+                    <button
+                        class="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-600 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-gray-500">
+                        <span class="material-symbols-outlined">arrow_back</span>
+                    </button>
+                    <button
+                        class="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-600 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-gray-500">
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg mb-4 h-80 bg-gray-200">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                            data-alt="Portrait of a professional man in a suit standing confidently"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSs48sXvRPglHu-cmtfUj71Vm8yCBzUqlvXfNfD8HMrd5ft7v1LgzpJzCDtzCnbyoakCHitZteGg3WMvAb-yD4F3JnLhXtMcACOavf-1drCajP9RPtSCkVdk3CrWE2olsvlpKjPqCAOBn_KjqsZYfYzGguOyMBzQ7at_OwGt0Nh1qsL2xwiMf8CECLegilaYH5A1QwArtA-H95Av172n5eEQIA4wp8DYWKqiV6CjPwnD3uPYGVqAiuGpFKsbr7Gs3tKy5LBvDFwl8');">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <a class="text-white text-sm font-bold flex items-center gap-1 hover:text-accent" href="#">
+                                <span data-i18n="team.viewProfile">View Profile</span> <span
+                                    class="material-symbols-outlined text-xs">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy dark:text-white">Aziz Rakhimov</h3>
+                    <p class="text-primary text-sm font-medium" data-i18n="team.roles.one">Managing Partner</p>
+                </div>
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg mb-4 h-80 bg-gray-200">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                            data-alt="Portrait of a professional woman lawyer smiling in an office setting"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4pBKDREF2rYDxywnnQI8Vb-scScnuJYEge-9Ohbj7ZcPyLVXrt_NdnivGcKDwp5IQo0W7t6xiAYw6L1Nx9lzKbjrrsIktu4fEhw-NRh7bK4TzkfPKg9dnbRy7_syKJdU4f83KW4hPk1dE6Nz16AgklWyti0Tve_KaZtvGSLUrqZqpBgvIm_b4dt5Tx6jApW93nrXjtGnZueo1J5glgfX7aT3vXUNqMcJLNNQcjY0AaXKZLioFXosFYBhW3w7Ec_XEL8YyrTYdm_w');">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <a class="text-white text-sm font-bold flex items-center gap-1 hover:text-accent" href="#">
+                                <span data-i18n="team.viewProfile">View Profile</span> <span
+                                    class="material-symbols-outlined text-xs">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy dark:text-white">Malika Karimova</h3>
+                    <p class="text-primary text-sm font-medium" data-i18n="team.roles.two">Partner, Corporate Law</p>
+                </div>
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg mb-4 h-80 bg-gray-200">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                            data-alt="Portrait of a senior male partner looking experienced and trustworthy"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPQeL2kReLgpXudUGq-MGHUZeiTl3ukaj254ZcWMtjRzYKReRzUaTdBZhn8VUqmxRElZhlQDQ53fe4ezjHORrG1lG22mtXRIpQHau288_j_S6VSRZ-DLS0r1O2PSQFMv8UdrwUxwpvANNiTSpeVFaC2srA32V5zm5buDcrys2kjwnDQwz7TaQZM-i63Sc8szB_a7yPfCgEssnzR-3iwb9oK5Ylw229SobLnKYNdkDotJ_xPh1K-O1ra7i77zBy2Vogj7nA4xPUdzU');">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <a class="text-white text-sm font-bold flex items-center gap-1 hover:text-accent" href="#">
+                                <span data-i18n="team.viewProfile">View Profile</span> <span
+                                    class="material-symbols-outlined text-xs">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy dark:text-white">Rustam Tursunov</h3>
+                    <p class="text-primary text-sm font-medium" data-i18n="team.roles.three">Partner, Litigation</p>
+                </div>
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg mb-4 h-80 bg-gray-200">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                            data-alt="Portrait of a female legal expert in formal attire"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFAvi9C2l1Z0qBpYuS7EHoH7MOxU3pqBOGPJuDBcNrSfhwl34C1owLO2PZg8ks4tie20r7dthmKA8WWzs_8AAhR6Rn9qSxctUBXvupmt44G38OR6f_8P0ohbLtZBPqZwu33VC6jg_SUXrt75v-Ewks5zpkZHibvIvCVHEebl3wFYpOuakMEVWD1jK1oa6vUJ6XDGhF7cxfN84zSO9bmNrjFE6AEOP-szEa2d2aSi-er-dALlH60Zi18Rl5B9Zz3HXRDe9W2PMEm6o');">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <a class="text-white text-sm font-bold flex items-center gap-1 hover:text-accent" href="#">
+                                <span data-i18n="team.viewProfile">View Profile</span> <span
+                                    class="material-symbols-outlined text-xs">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy dark:text-white">Elena Sidorova</h3>
+                    <p class="text-primary text-sm font-medium" data-i18n="team.roles.four">Head of Tax Practice</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-navy py-20 relative overflow-hidden" id="contact">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="text-white">
+                    <div class="inline-block px-3 py-1 rounded bg-accent/20 text-accent text-sm font-bold mb-6"
+                        data-i18n="cta.eyebrow">Let's Discuss Your Case</div>
+                    <h2 class="text-4xl lg:text-5xl font-black mb-6 leading-tight" data-i18n="cta.title">Ready to
+                        Protect Your Interests?</h2>
+                    <p class="text-gray-300 text-lg mb-8 max-w-md font-light" data-i18n="cta.body">Schedule a
+                        confidential consultation with our experts. We will respond within 24 hours.</p>
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-accent">location_on</span>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold" data-i18n="cta.contact.office">Office</h4>
+                                <a class="text-gray-400 hover:text-white transition-colors"
+                                    data-i18n="cta.contact.address"
+                                    href="https://maps.apple.com/place?map=explore&amp;address=Small+Ring+Road%2C+Tashkent%2C+Uzbekistan&amp;coordinate=41.33318474149422%2C69.28348749477965&amp;name=Small+Ring+Road"
+                                    rel="noopener noreferrer" target="_blank">
+                                    Toshkent shahri, Yunusobod tumani Minor MFY.Markaz-6 mavzesi, 111-uy, 25-xona
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-accent">schedule</span>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold" data-i18n="cta.contact.hours">Hours</h4>
+                                <p class="text-gray-400" data-i18n="cta.contact.hours.mon">Mon: 9:00–18:00</p>
+                                <p class="text-gray-400" data-i18n="cta.contact.hours.tue">Tue: 9:00–18:00</p>
+                                <p class="text-gray-400" data-i18n="cta.contact.hours.wed">Wed: 9:00–18:00</p>
+                                <p class="text-gray-400" data-i18n="cta.contact.hours.thu">Thu: 9:00–18:00</p>
+                                <p class="text-gray-400" data-i18n="cta.contact.hours.fri">Fri: 9:00–18:00</p>
+                                <p class="text-gray-400" data-i18n="cta.contact.hours.sat">Sat: Closed</p>
+                                <p class="text-gray-400" data-i18n="cta.contact.hours.sun">Sun: Closed</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-accent">call</span>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold" data-i18n="cta.contact.phone">Phone</h4>
+                                <a class="text-gray-400 hover:text-white transition-colors block"
+                                    data-i18n="cta.contact.phoneValue" href="tel:+998884880203">+998 88 488 0203</a>
+                                <a class="text-gray-400 hover:text-white transition-colors block"
+                                    data-i18n="cta.contact.phoneValue2" href="tel:+998907192223">+998 90 719 22 23</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-accent">mail</span>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold" data-i18n="cta.contact.email">Email</h4>
+                                <p class="text-gray-400" data-i18n="cta.contact.emailValue">info@All-Legal.uz</p>
+                            </div>
+                        </div>
+                        <!-- <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-accent">send</span>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold" data-i18n="cta.contact.telegram">Telegram</h4>
+                                <a class="text-gray-400 hover:text-white transition-colors"
+                                    data-i18n="cta.contact.telegramValue" href="https://t.me/umarjon_jumaniyazov"
+                                    rel="noopener noreferrer" target="_blank">@umarjon_jumaniyazov</a>
+                            </div>
+                        </div> -->
+                        <!-- <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-accent">photo_camera</span>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold" data-i18n="cta.contact.instagram">Instagram</h4>
+                                <a class="text-gray-400 hover:text-white transition-colors"
+                                    data-i18n="cta.contact.instagramValue"
+                                    href="https://www.instagram.com/all_legal.uz/" rel="noopener noreferrer"
+                                    target="_blank">instagram.com/all_legal.uz</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl">
+                    <form action="#" class="flex flex-col gap-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div class="flex flex-col gap-1">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                                    data-i18n="form.name" for="name">Name</label>
+                                <input
+                                    class="w-full h-12 rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-white focus:ring-primary focus:border-primary"
+                                    data-i18n="form.name.placeholder" data-i18n-attr="placeholder" id="name"
+                                    placeholder="Full Name" type="text" />
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                                    data-i18n="form.phone" for="phone">Phone</label>
+                                <input
+                                    class="w-full h-12 rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-white focus:ring-primary focus:border-primary"
+                                    data-i18n="form.phone.placeholder" data-i18n-attr="placeholder" id="phone"
+                                    placeholder="+998" type="tel" />
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="text-sm font-medium text-gray-700 dark:text-gray-300" data-i18n="form.email"
+                                for="email">Email</label>
+                            <input
+                                class="w-full h-12 rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-white focus:ring-primary focus:border-primary"
+                                data-i18n="form.email.placeholder" data-i18n-attr="placeholder" id="email"
+                                placeholder="example@company.com" type="email" />
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="text-sm font-medium text-gray-700 dark:text-gray-300" data-i18n="form.message"
+                                for="message">Message</label>
+                            <textarea
+                                class="w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 dark:text-white focus:ring-primary focus:border-primary resize-none"
+                                data-i18n="form.message.placeholder" data-i18n-attr="placeholder" id="message"
+                                placeholder="Briefly describe your legal matter..." rows="4"></textarea>
+                        </div>
+                        <button
+                            class="mt-2 w-full h-12 bg-primary hover:bg-primary-dark text-navy font-bold rounded-lg transition-colors flex items-center justify-center gap-2"
+                            type="button">
+                            <span data-i18n="form.submit">Submit Request</span> <span
+                                class="material-symbols-outlined text-sm">send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-50 dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+                <div class="flex flex-col gap-4 max-w-xs">
+                    <div class="flex items-center gap-2">
+                        <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="logo.new.png" />
+                    </div>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed" data-i18n="footer.blurb">
+                        All-Legal provides top-tier legal services tailored to the complex needs of modern businesses in
+                        Uzbekistan and Central Asia.
                     </p>
-</div>
-<div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
-<div class="flex flex-col gap-4">
-<h4 class="font-bold text-navy dark:text-white" data-i18n="footer.firm.title">Firm</h4>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.about" href="#">About Us</a>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.team" href="#">Our Team</a>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.careers" href="#">Careers</a>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.contact" href="#">Contact</a>
-</div>
-<div class="flex flex-col gap-4">
-<h4 class="font-bold text-navy dark:text-white" data-i18n="footer.services.title">Services</h4>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.services.corporate" href="#">Corporate</a>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.services.litigation" href="#">Litigation</a>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.services.realestate" href="#">Real Estate</a>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.services.tax" href="#">Tax Law</a>
-</div>
-<div class="flex flex-col gap-4">
-<h4 class="font-bold text-navy dark:text-white" data-i18n="footer.connect.title">Connect</h4>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">LinkedIn</a>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">Twitter</a>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">Facebook</a>
-</div>
-</div>
-</div>
-<div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-xs text-gray-400" data-i18n="footer.copyright">© 2024 All-Legal Law Firm. All rights reserved.</p>
-<div class="flex gap-6">
-<a class="text-xs text-gray-400 hover:text-primary" data-i18n="footer.legal.privacy" href="#">Privacy Policy</a>
-<a class="text-xs text-gray-400 hover:text-primary" data-i18n="footer.legal.terms" href="#">Terms of Use</a>
-</div>
-</div>
-</div>
-</footer>
-<script src="script.js"></script>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+                    <div class="flex flex-col gap-4">
+                        <h4 class="font-bold text-navy dark:text-white" data-i18n="footer.firm.title">Firm</h4>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                            data-i18n="footer.firm.about" href="#about">About Us</a>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                            data-i18n="footer.firm.team" href="#team">Our Team</a>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                            data-i18n="footer.firm.contact" href="#contact">Contact</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="font-bold text-navy dark:text-white" data-i18n="footer.services.title">Services</h4>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                         href="#practice">Practice Areas</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="font-bold text-navy dark:text-white" data-i18n="footer.connect.title">Connect</h4>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">Email</a>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="tel:+998907192223">Phone</a>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="https://www.instagram.com/all_legal.uz/" rel="noopener noreferrer"
+                                    target="_blank">Instagram</a>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="https://t.me/umarjon_jumaniyazov"
+                                    rel="noopener noreferrer" target="_blank">Telegram</a>
+
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-400" data-i18n="footer.copyright">© 2024 All-Legal Law Firm. All rights
+                    reserved.</p>
+                <div class="flex gap-6">
+                    <a class="text-xs text-gray-400 hover:text-primary" data-i18n="footer.legal.privacy"
+                        href="#">Privacy Policy</a>
+                    <a class="text-xs text-gray-400 hover:text-primary" data-i18n="footer.legal.terms" href="#">Terms of
+                        Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
