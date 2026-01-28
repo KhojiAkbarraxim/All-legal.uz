@@ -55,7 +55,7 @@ const translations = {
         "team.roles.two": "Partner, Corporate Law",
         "team.roles.three": "Partner, Litigation",
         "team.roles.four": "Head of Tax Practice",
-        "cta.eyebrow": "Let's Discuss Your Case",
+        "cta.eyebrow": "Consultation",
         "cta.title": "Ready to Protect Your Interests?",
         "cta.body": "Schedule a confidential consultation with our experts. We will respond within 24 hours.",
         "cta.contact.office": "Office",
@@ -163,7 +163,7 @@ const translations = {
         "team.roles.two": "Партнер, корпоративное право",
         "team.roles.three": "Партнер, судебные споры",
         "team.roles.four": "Руководитель налоговой практики",
-        "cta.eyebrow": "Обсудим ваше дело",
+        "cta.eyebrow": "Консультация",
         "cta.title": "Готовы защитить ваши интересы?",
         "cta.body": "Запишитесь на конфиденциальную консультацию с нашими экспертами. Мы ответим в течение 24 часов.",
         "cta.contact.office": "Офис",
@@ -271,7 +271,7 @@ const translations = {
         "team.roles.two": "Hamkor, korporativ huquq",
         "team.roles.three": "Hamkor, sud ishlari",
         "team.roles.four": "Soliq amaliyoti rahbari",
-        "cta.eyebrow": "Ishingizni muhokama qilaylik",
+        "cta.eyebrow": "Konsultatsiya",
         "cta.title": "Manfaatlaringizni himoya qilishga tayyormisiz?",
         "cta.body": "Mutaxassislarimiz bilan maxfiy maslahatga yoziling. 24 soat ichida javob beramiz.",
         "cta.contact.office": "Ofis",
@@ -379,7 +379,7 @@ const translations = {
         "team.roles.two": "パートナー（企業法務）",
         "team.roles.three": "パートナー（訴訟）",
         "team.roles.four": "税務部門責任者",
-        "cta.eyebrow": "案件のご相談",
+        "cta.eyebrow": "相談",
         "cta.title": "利益を守る準備はできていますか？",
         "cta.body": "機密性の高い相談を予約してください。24時間以内にご連絡します。",
         "cta.contact.office": "オフィス",
@@ -450,9 +450,15 @@ const applyTranslations = (lang) => {
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
         const key = el.getAttribute("data-i18n");
-        if (dict[key]) {
-            el.textContent = dict[key];
+        if (!dict[key]) {
+            return;
         }
+        const attr = el.getAttribute("data-i18n-attr");
+        const tag = el.tagName;
+        if (attr === "placeholder" && (tag === "INPUT" || tag === "TEXTAREA")) {
+            return;
+        }
+        el.textContent = dict[key];
     });
 
     document.querySelectorAll("[data-i18n-html]").forEach((el) => {
@@ -482,6 +488,131 @@ document.querySelectorAll("[data-lang]").forEach((button) => {
         }
     });
 });
+
+const menuToggle = document.querySelector('[data-action="menu-toggle"]');
+const mobileMenu = document.querySelector('[data-menu="mobile"]');
+const setMenuOpen = (open) => {
+    if (!menuToggle || !mobileMenu) {
+        return;
+    }
+    mobileMenu.classList.toggle("is-open", open);
+    mobileMenu.setAttribute("data-state", open ? "open" : "closed");
+    mobileMenu.setAttribute("aria-hidden", open ? "false" : "true");
+    menuToggle.classList.toggle("is-active", open);
+    menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    const icon = menuToggle.querySelector(".material-symbols-outlined");
+    if (icon) {
+        icon.textContent = open ? "close" : "menu";
+    }
+};
+
+if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener("click", () => {
+        const open = mobileMenu.classList.contains("is-open");
+        setMenuOpen(!open);
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => setMenuOpen(false));
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            setMenuOpen(false);
+        }
+    });
+
+    document.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!target || !(target instanceof Node)) {
+            return;
+        }
+        if (!mobileMenu.contains(target) && !menuToggle.contains(target)) {
+            setMenuOpen(false);
+        }
+    });
+}
+
+const navLinks = Array.from(document.querySelectorAll("[data-nav-link]"));
+const setActiveSection = (hash) => {
+    navLinks.forEach((link) => {
+        const isActive = link.getAttribute("href") === hash;
+        link.classList.toggle("is-active", isActive);
+        if (isActive) {
+            link.setAttribute("aria-current", "true");
+        } else {
+            link.removeAttribute("aria-current");
+        }
+    });
+};
+const clearActiveSection = () => {
+    navLinks.forEach((link) => {
+        link.classList.remove("is-active");
+        link.removeAttribute("aria-current");
+    });
+};
+
+const sectionMap = new Map();
+navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href || !href.startsWith("#")) {
+        return;
+    }
+    if (!sectionMap.has(href)) {
+        sectionMap.set(href, []);
+    }
+    sectionMap.get(href).push(link);
+    link.addEventListener("click", () => setActiveSection(href));
+});
+
+const sections = Array.from(sectionMap.keys())
+    .map((hash) => document.querySelector(hash))
+    .filter((section) => section && section.id);
+
+if (sections.length) {
+    const sectionVisibility = new Map();
+    const updateActiveFromVisibility = () => {
+        let bestId = null;
+        let bestRatio = 0;
+        sectionVisibility.forEach((ratio, id) => {
+            if (ratio > bestRatio) {
+                bestRatio = ratio;
+                bestId = id;
+            }
+        });
+        if (!bestId || bestRatio === 0) {
+            clearActiveSection();
+            return;
+        }
+        setActiveSection(`#${bestId}`);
+    };
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                sectionVisibility.set(
+                    entry.target.id,
+                    entry.isIntersecting ? entry.intersectionRatio : 0
+                );
+            });
+            updateActiveFromVisibility();
+        },
+        {
+            rootMargin: "-35% 0px -55% 0px",
+            threshold: [0, 0.25, 0.5, 0.75, 1],
+        }
+    );
+
+    sections.forEach((section) => {
+        sectionVisibility.set(section.id, 0);
+        observer.observe(section);
+    });
+}
+
+const initialHash = window.location.hash;
+if (initialHash && sectionMap.has(initialHash)) {
+    setActiveSection(initialHash);
+}
 
 const practicePanel = document.querySelector(".practice-extra");
 const practiceToggles = document.querySelectorAll('[data-action="practice-toggle"]');

@@ -11,6 +11,70 @@ nav [data-i18n^="nav."] {
     line-height: 1.2;
 }
 
+.nav-link {
+    position: relative;
+    color: #fce14f;
+    padding-bottom: 0.2rem;
+    transition: color 0.2s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.25rem;
+    height: 2px;
+    background: #fce14f;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.is-active {
+    color: #fce14f;
+}
+
+.nav-link.is-active::after {
+    transform: scaleX(1);
+}
+
+.menu-toggle {
+    border-radius: 0.75rem;
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.menu-toggle .material-symbols-outlined {
+    transition: transform 0.2s ease;
+}
+
+.menu-toggle.is-active {
+    background: rgba(252, 225, 79, 0.16);
+    box-shadow: 0 0 0 2px rgba(252, 225, 79, 0.35);
+}
+
+.menu-toggle.is-active .material-symbols-outlined {
+    transform: rotate(90deg);
+}
+
+.mobile-menu {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition: max-height 0.35s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+.mobile-menu.is-open {
+    max-height: 360px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
 footer a.text-sm,
 footer a.text-xs,
 footer h4 {

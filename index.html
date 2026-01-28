@@ -23,16 +23,30 @@
                     <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="logo.new.png" />
                 </div>
                 <div class="hidden md:flex items-center gap-8">
-                    <a class="text-sm font-medium text-[#fce14f] hover:text-primary transition-colors"
-                        data-i18n="nav.about" href="#about">About</a>
-                    <a class="text-sm font-medium text-[#fce14f] hover:text-primary transition-colors"
-                        data-i18n="nav.practice" href="#practice">Practice Areas</a>
-                    <a class="text-sm font-medium text-[#fce14f] hover:text-primary transition-colors"
-                        data-i18n="nav.team" href="#team">Team</a>
-                    <a class="text-sm font-medium text-[#fce14f] hover:text-primary transition-colors"
-                        data-i18n="nav.contact" href="#contact">Contact</a>
+                    <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.about"
+                        href="#about">About</a>
+                    <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.practice"
+                        href="#practice">Practice Areas</a>
+                    <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.team"
+                        href="#team">Team</a>
+                    <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.contact"
+                        href="#contact">Contact</a>
                 </div>
                 <div class="flex items-center gap-4">
+                    <div class="flex sm:hidden rounded-lg bg-gray-100 dark:bg-gray-800 p-1">
+                        <button
+                            class="px-2 py-1 text-[10px] font-bold rounded bg-white dark:bg-gray-700 text-primary shadow-sm"
+                            data-lang="en">EN</button>
+                        <button
+                            class="px-2 py-1 text-[10px] font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900"
+                            data-lang="ru">RU</button>
+                        <button
+                            class="px-2 py-1 text-[10px] font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900"
+                            data-lang="uz">UZ</button>
+                        <button
+                            class="px-2 py-1 text-[10px] font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900"
+                            data-lang="ja">JA</button>
+                    </div>
                     <div class="hidden sm:flex rounded-lg bg-gray-100 dark:bg-gray-800 p-1">
                         <button
                             class="px-3 py-1 text-xs font-bold rounded bg-white dark:bg-gray-700 text-primary shadow-sm"
@@ -52,13 +66,34 @@
                         data-i18n="nav.consult">
                         Consultation
                     </button>
-                    <button class="md:hidden p-2 text-gray-600">
+                    <button class="menu-toggle md:hidden p-2 text-[#fce14f]" type="button" aria-expanded="false"
+                        aria-controls="mobile-menu" data-action="menu-toggle">
                         <span class="material-symbols-outlined">menu</span>
                     </button>
                 </div>
             </div>
         </div>
     </nav>
+    <div class="mobile-menu md:hidden bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800"
+        id="mobile-menu" data-menu="mobile" aria-hidden="true">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6 pt-2">
+            <div class="flex flex-col gap-4">
+                <a class="nav-link text-base font-medium transition-colors" data-nav-link data-i18n="nav.about"
+                    href="#about">About</a>
+                <a class="nav-link text-base font-medium transition-colors" data-nav-link data-i18n="nav.practice"
+                    href="#practice">Practice Areas</a>
+                <a class="nav-link text-base font-medium transition-colors" data-nav-link data-i18n="nav.team"
+                    href="#team">Team</a>
+                <a class="nav-link text-base font-medium transition-colors" data-nav-link data-i18n="nav.contact"
+                    href="#contact">Contact</a>
+                <button
+                    class="h-10 px-6 items-center justify-center rounded-lg bg-primary hover:bg-primary-dark transition-colors text-navy text-sm font-bold tracking-wide w-fit"
+                    data-i18n="nav.consult">
+                    Consultation
+                </button>
+            </div>
+        </div>
+    </div>
     <div class="relative w-full min-h-screen flex items-center justify-center bg-navy overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30 z-10"></div>
@@ -229,7 +264,7 @@
                         data-i18n="practice.title">Practice Areas</h2>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div
                     class="group relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-t-4 border-transparent hover:border-primary cursor-pointer">
                     <div
@@ -397,16 +432,6 @@
             <div class="flex justify-between items-center mb-12">
                 <h2 class="text-3xl font-bold text-navy dark:text-white tracking-tight" data-i18n="team.title">Our Team
                 </h2>
-                <div class="flex gap-2">
-                    <button
-                        class="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-600 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-gray-500">
-                        <span class="material-symbols-outlined">arrow_back</span>
-                    </button>
-                    <button
-                        class="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-600 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all text-gray-500">
-                        <span class="material-symbols-outlined">arrow_forward</span>
-                    </button>
-                </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="group">
@@ -486,7 +511,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div class="text-white">
                     <div class="inline-block px-3 py-1 rounded bg-accent/20 text-accent text-sm font-bold mb-6"
-                        data-i18n="cta.eyebrow">Let's Discuss Your Case</div>
+                        data-i18n="cta.eyebrow">Consultation</div>
                     <h2 class="text-4xl lg:text-5xl font-black mb-6 leading-tight" data-i18n="cta.title">Ready to
                         Protect Your Interests?</h2>
                     <p class="text-gray-300 text-lg mb-8 max-w-md font-light" data-i18n="cta.body">Schedule a
@@ -542,29 +567,6 @@
                                 <p class="text-gray-400" data-i18n="cta.contact.emailValue">info@All-Legal.uz</p>
                             </div>
                         </div>
-                        <!-- <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-accent">send</span>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-bold" data-i18n="cta.contact.telegram">Telegram</h4>
-                                <a class="text-gray-400 hover:text-white transition-colors"
-                                    data-i18n="cta.contact.telegramValue" href="https://t.me/umarjon_jumaniyazov"
-                                    rel="noopener noreferrer" target="_blank">@umarjon_jumaniyazov</a>
-                            </div>
-                        </div> -->
-                        <!-- <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-accent">photo_camera</span>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-bold" data-i18n="cta.contact.instagram">Instagram</h4>
-                                <a class="text-gray-400 hover:text-white transition-colors"
-                                    data-i18n="cta.contact.instagramValue"
-                                    href="https://www.instagram.com/all_legal.uz/" rel="noopener noreferrer"
-                                    target="_blank">instagram.com/all_legal.uz</a>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl">
