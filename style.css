@@ -17,6 +17,10 @@ footer h4 {
     font-size: 1.35rem;
 }
 
+footer a.footer-legal {
+    font-size: 0.75rem;
+}
+
 /* Stable layout for multi-box sections */
 .info-section {
     width: 100%;
