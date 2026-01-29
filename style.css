@@ -157,6 +157,146 @@ footer a.footer-legal {
     animation-name: heroFadeThree;
 }
 
+.tabs-container {
+    background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.06), transparent 40%),
+        radial-gradient(circle at 80% 10%, rgba(252, 225, 79, 0.08), transparent 35%),
+        #0f1728;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    padding: 1.5rem;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.tab-nav {
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 1px solid #27334a;
+    padding-bottom: 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.tab-nav::-webkit-scrollbar {
+    height: 6px;
+}
+
+.tab-nav::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+}
+
+.search-container {
+    margin-bottom: 0.75rem;
+}
+
+.search-input {
+    width: 100%;
+    background: #ffffff;
+    color: #0f1728;
+    border: 1px solid #30394a;
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-input::placeholder {
+    color: #7c8599;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.search-results {
+    display: none;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.search-results.is-visible {
+    display: block;
+}
+
+.tab-nav.hidden,
+.tab-content.hidden {
+    display: none !important;
+}
+
+.tab-button {
+    position: relative;
+    background: transparent;
+    color: #d9e2ff;
+    border: none;
+    padding: 0.9rem 1.4rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    border-radius: 12px 12px 0 0;
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.tab-button:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.tab-button.is-active {
+    color: #fce14f;
+    font-weight: 700;
+    background: linear-gradient(180deg, rgba(252, 225, 79, 0.12), rgba(15, 23, 40, 0));
+    border-bottom: 2px solid #d4af37;
+}
+
+.tab-content {
+    margin-top: 1.25rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    min-height: 260px;
+}
+
+.tab-panel {
+    display: none;
+    color: #e7ecf7;
+}
+
+.tab-panel.is-active {
+    display: block;
+}
+
+.tab-panel ul,
+.search-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab-panel li,
+.search-results li {
+    padding: 12px 0;
+    border-bottom: 1px solid #27334a;
+    font-weight: 500;
+}
+
+.tab-panel li:last-child,
+.search-results li:last-child {
+    border-bottom: none;
+}
+
+.search-empty {
+    color: #9ca3af;
+    padding: 12px 0;
+    font-weight: 500;
+}
+
 @keyframes heroFadeOne {
     0%,
     30% {

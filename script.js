@@ -1,12 +1,13 @@
 const translations = {
     en: {
         "nav.practice": "Practice Areas",
+        "nav.sample": "Sample",
         "nav.team": "Team",
         "nav.about": "About",
         "nav.contact": "Contact",
         "nav.consult": "Consultation",
         "hero.badge": "Trusted Legal Partners",
-        "hero.title": "Leading Legal Solutions <br/>in <span class=\"hero-accent text-accent\">Uzbekistan</span>",
+        "hero.title": "Protecting Your Rights & Interests in Uzbekistan",
         "hero.body": "Expert counsel for complex corporate, IP, and litigation matters. We navigate the legal landscape so you can focus on growth.",
         "hero.cta.primary": "Request Consultation",
         "hero.cta.secondary": "Our Practice Areas",
@@ -78,6 +79,31 @@ const translations = {
       "cta.contact.hours.fri": "Fri: 9:00–18:00",
       "cta.contact.hours.sat": "Sat: Closed",
       "cta.contact.hours.sun": "Sun: Closed",
+        "tabs.eyebrow": "Document Samples",
+        "tabs.title": "Explore Sample Documents",
+        "tabs.body": "A curated set of real-world templates across key legal practices, organized for quick reference.",
+        "tabs.search.placeholder": "Search documents...",
+        "tabs.search.noResults": "No documents found.",
+        "tabs.tab.corporate": "Corporate Law",
+        "tabs.tab.contracts": "Contracts",
+        "tabs.tab.litigation": "Litigation",
+        "tabs.tab.notarial": "Notarial",
+        "tabs.items.sharePurchase": "Share Purchase Agreement",
+        "tabs.items.directorsService": "Director's Service Agreement",
+        "tabs.items.memorandum": "Memorandum of Association",
+        "tabs.items.companyResolution": "Company Resolution",
+        "tabs.items.nda": "Non-Disclosure Agreement (NDA)",
+        "tabs.items.lease": "Lease Agreement",
+        "tabs.items.sla": "Service Level Agreement (SLA)",
+        "tabs.items.employment": "Employment Contract",
+        "tabs.items.ceaseDesist": "Cease and Desist Letter",
+        "tabs.items.statementClaim": "Statement of Claim",
+        "tabs.items.affidavit": "Affidavit of Documents",
+        "tabs.items.settlement": "Settlement Agreement",
+        "tabs.items.powerAttorney": "Power of Attorney",
+        "tabs.items.statutoryDeclaration": "Statutory Declaration",
+        "tabs.items.will": "Will and Testament",
+        "tabs.items.certifiedCopy": "Certified True Copy Request",
         "form.name": "Name",
         "form.name.placeholder": "Full Name",
         "form.phone": "Phone",
@@ -109,12 +135,13 @@ const translations = {
     },
     ru: {
         "nav.practice": "Практики",
+        "nav.sample": "Пример",
         "nav.team": "Команда",
         "nav.about": "О нас",
         "nav.contact": "Контакты",
         "nav.consult": "Консультация",
         "hero.badge": "Надежные юридические партнеры",
-        "hero.title": "Ведущие юридические решения <br/>в <span class=\"hero-accent text-accent\">Узбекистане</span>",
+        "hero.title": "Защищаем ваши права и интересы в Узбекистане",
         "hero.body": "Экспертное сопровождение сложных корпоративных, IP и судебных вопросов. Мы ведем ваш юридический процесс, чтобы вы могли сосредоточиться на росте.",
         "hero.cta.primary": "Запросить консультацию",
         "hero.cta.secondary": "Наши практики",
@@ -186,6 +213,31 @@ const translations = {
       "cta.contact.hours.fri": "Пт: 9:00–18:00",
       "cta.contact.hours.sat": "Сб: выходной",
       "cta.contact.hours.sun": "Вс: выходной",
+        "tabs.eyebrow": "Образцы документов",
+        "tabs.title": "Изучите образцы документов",
+        "tabs.body": "Подборка реальных шаблонов по ключевым практикам для быстрого доступа.",
+        "tabs.search.placeholder": "Поиск документов...",
+        "tabs.search.noResults": "Документы не найдены.",
+        "tabs.tab.corporate": "Корпоративное право",
+        "tabs.tab.contracts": "Договоры",
+        "tabs.tab.litigation": "Судебные споры",
+        "tabs.tab.notarial": "Нотариат",
+        "tabs.items.sharePurchase": "Договор купли-продажи долей",
+        "tabs.items.directorsService": "Договор с директором",
+        "tabs.items.memorandum": "Устав (Memorandum of Association)",
+        "tabs.items.companyResolution": "Решение / протокол компании",
+        "tabs.items.nda": "Договор о неразглашении (NDA)",
+        "tabs.items.lease": "Договор аренды",
+        "tabs.items.sla": "Соглашение об уровне услуг (SLA)",
+        "tabs.items.employment": "Трудовой договор",
+        "tabs.items.ceaseDesist": "Претензионное письмо (cease & desist)",
+        "tabs.items.statementClaim": "Исковое заявление",
+        "tabs.items.affidavit": "Опись/аффидевит документов",
+        "tabs.items.settlement": "Мировое соглашение",
+        "tabs.items.powerAttorney": "Доверенность",
+        "tabs.items.statutoryDeclaration": "Нотариальное заявление",
+        "tabs.items.will": "Завещание",
+        "tabs.items.certifiedCopy": "Запрос на заверенную копию",
         "form.name": "Имя",
         "form.name.placeholder": "Полное имя",
         "form.phone": "Телефон",
@@ -217,12 +269,13 @@ const translations = {
     },
     uz: {
         "nav.practice": "Yo'nalishlar",
+        "nav.sample": "Namuna",
         "nav.team": "Jamoa",
         "nav.about": "Biz haqimizda",
         "nav.contact": "Aloqa",
         "nav.consult": "Maslahat",
         "hero.badge": "Ishonchli yuridik hamkorlar",
-        "hero.title": "O'zbekistonda <br/><span class=\"hero-accent text-accent\">yetakchi yuridik yechimlar</span>",
+        "hero.title": "O'zbekistonda huquq va manfaatlaringizni himoya qilamiz",
         "hero.body": "Murakkab korporativ, intellektual mulk va sud masalalarida ekspert yordami. Biz yuridik jarayonlarni boshqaramiz, siz esa o'sishga e'tibor qaratasiz.",
         "hero.cta.primary": "Maslahat so'rash",
         "hero.cta.secondary": "Yo'nalishlarimiz",
@@ -294,6 +347,31 @@ const translations = {
       "cta.contact.hours.fri": "Juma: 9:00–18:00",
       "cta.contact.hours.sat": "Shanba: yopiq",
       "cta.contact.hours.sun": "Yakshanba: yopiq",
+        "tabs.eyebrow": "Hujjat namunalari",
+        "tabs.title": "Namuna hujjatlarni ko‘ring",
+        "tabs.body": "Asosiy amaliyotlar bo‘yicha tez topish uchun tuzilgan real namunalardan iborat to‘plam.",
+        "tabs.search.placeholder": "Hujjatlarni qidiring...",
+        "tabs.search.noResults": "Hujjatlar topilmadi.",
+        "tabs.tab.corporate": "Korporativ huquq",
+        "tabs.tab.contracts": "Shartnomalar",
+        "tabs.tab.litigation": "Sud jarayonlari",
+        "tabs.tab.notarial": "Notarial",
+        "tabs.items.sharePurchase": "Ulush sotib olish shartnomasi",
+        "tabs.items.directorsService": "Direktor xizmat ko‘rsatish shartnomasi",
+        "tabs.items.memorandum": "Ustav (ta’sis hujjati)",
+        "tabs.items.companyResolution": "Kompaniya qarori",
+        "tabs.items.nda": "Maxfiylik to‘g‘risida bitim (NDA)",
+        "tabs.items.lease": "Ijara shartnomasi",
+        "tabs.items.sla": "Xizmat ko‘rsatish darajasi shartnomasi (SLA)",
+        "tabs.items.employment": "Mehnat shartnomasi",
+        "tabs.items.ceaseDesist": "To‘xtatish va ogohlantirish xati",
+        "tabs.items.statementClaim": "Da’vo arizasi",
+        "tabs.items.affidavit": "Hujjatlar bayonnomasi",
+        "tabs.items.settlement": "Bitim (kelishuv)",
+        "tabs.items.powerAttorney": "Ishonchnoma",
+        "tabs.items.statutoryDeclaration": "Qasamyodli deklaratsiya",
+        "tabs.items.will": "Vasiyatnoma",
+        "tabs.items.certifiedCopy": "Tasdiqlangan nusxa so‘rovi",
         "form.name": "Ism",
         "form.name.placeholder": "To'liq ism",
         "form.phone": "Telefon",
@@ -325,12 +403,13 @@ const translations = {
     },
     ja: {
         "nav.practice": "業務分野",
+        "nav.sample": "サンプル",
         "nav.team": "チーム",
         "nav.about": "当事務所について",
         "nav.contact": "お問い合わせ",
         "nav.consult": "相談",
         "hero.badge": "信頼できる法律パートナー",
-        "hero.title": "ウズベキスタンの<br/><span class=\"hero-accent text-accent\">リーディング・リーガルソリューション</span>",
+        "hero.title": "ウズベキスタンであなたの権利と利益を守ります",
         "hero.body": "複雑な企業法務、知的財産、訴訟案件に精通した専門的アドバイス。法務を私たちが担い、あなたは成長に集中できます。",
         "hero.cta.primary": "相談を依頼する",
         "hero.cta.secondary": "業務分野を見る",
@@ -401,6 +480,31 @@ const translations = {
       "cta.contact.hours.fri": "金: 9:00–18:00",
       "cta.contact.hours.sat": "土: 休業",
       "cta.contact.hours.sun": "日: 休業",
+        "tabs.eyebrow": "書類サンプル",
+        "tabs.title": "サンプル文書を確認",
+        "tabs.body": "主要な実務分野の実例テンプレートを素早く参照できます。",
+        "tabs.search.placeholder": "文書を検索...",
+        "tabs.search.noResults": "該当する文書がありません。",
+        "tabs.tab.corporate": "コーポレート",
+        "tabs.tab.contracts": "契約",
+        "tabs.tab.litigation": "訴訟",
+        "tabs.tab.notarial": "公証",
+        "tabs.items.sharePurchase": "株式譲渡契約",
+        "tabs.items.directorsService": "取締役サービス契約",
+        "tabs.items.memorandum": "定款 (Memorandum of Association)",
+        "tabs.items.companyResolution": "会社決議",
+        "tabs.items.nda": "秘密保持契約 (NDA)",
+        "tabs.items.lease": "賃貸借契約",
+        "tabs.items.sla": "サービス水準合意 (SLA)",
+        "tabs.items.employment": "雇用契約",
+        "tabs.items.ceaseDesist": "警告・中止要求書",
+        "tabs.items.statementClaim": "訴状",
+        "tabs.items.affidavit": "証拠開示宣誓供述書",
+        "tabs.items.settlement": "和解契約",
+        "tabs.items.powerAttorney": "委任状",
+        "tabs.items.statutoryDeclaration": "宣誓供述書",
+        "tabs.items.will": "遺言書",
+        "tabs.items.certifiedCopy": "謄本交付請求",
         "form.name": "氏名",
         "form.name.placeholder": "氏名（フルネーム）",
         "form.phone": "電話番号",
@@ -632,6 +736,95 @@ practiceToggles.forEach((btn) => {
     });
 });
 
+const initTabs = () => {
+    const tabGroups = document.querySelectorAll("[data-tabs]");
+    tabGroups.forEach((group) => {
+        const buttons = Array.from(group.querySelectorAll(".tab-button"));
+        const panels = Array.from(group.querySelectorAll(".tab-panel"));
+        if (!buttons.length || !panels.length) return;
+
+        const activate = (targetId) => {
+            buttons.forEach((btn) => {
+                const isActive = btn.getAttribute("data-tab") === targetId;
+                btn.classList.toggle("is-active", isActive);
+                btn.setAttribute("aria-selected", isActive ? "true" : "false");
+                btn.tabIndex = isActive ? 0 : -1;
+            });
+
+            panels.forEach((panel) => {
+                const match = panel.id === targetId;
+                panel.classList.toggle("is-active", match);
+                panel.hidden = !match;
+            });
+        };
+
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                const target = btn.getAttribute("data-tab");
+                if (target) activate(target);
+            });
+        });
+
+        const firstId = buttons[0].getAttribute("data-tab");
+        if (firstId) activate(firstId);
+    });
+};
+
+const initSearch = () => {
+    const containers = document.querySelectorAll("[data-tabs]");
+    containers.forEach((container) => {
+        const searchInput = container.querySelector("#doc-search");
+        const tabNav = container.querySelector(".tab-nav");
+        const tabContent = container.querySelector(".tab-content");
+        const results = container.querySelector(".search-results");
+        const items = Array.from(container.querySelectorAll(".tab-panel li"));
+        if (!searchInput || !tabNav || !tabContent || !results || !items.length) return;
+
+        const renderResults = (matches) => {
+            results.innerHTML = "";
+            if (!matches.length) {
+                const empty = document.createElement("div");
+                const lang = document.documentElement.lang || "en";
+                const dict = translations[lang] || translations.en;
+                empty.className = "search-empty";
+                empty.textContent = dict["tabs.search.noResults"] || "No documents found.";
+                results.appendChild(empty);
+                return;
+            }
+            const ul = document.createElement("ul");
+            matches.forEach((item) => {
+                ul.appendChild(item.cloneNode(true));
+            });
+            results.appendChild(ul);
+        };
+
+        const handleSearch = () => {
+            const q = searchInput.value.trim().toLowerCase();
+            if (q) {
+                tabNav.classList.add("hidden");
+                tabContent.classList.add("hidden");
+                results.classList.remove("hidden");
+                results.classList.add("is-visible");
+                const matches = items.filter((li) =>
+                    li.textContent.toLowerCase().includes(q)
+                );
+                renderResults(matches);
+            } else {
+                results.classList.add("hidden");
+                results.classList.remove("is-visible");
+                results.innerHTML = "";
+                tabNav.classList.remove("hidden");
+                tabContent.classList.remove("hidden");
+            }
+        };
+
+        searchInput.addEventListener("input", handleSearch);
+    });
+};
+
 const savedLang = localStorage.getItem("lang");
 const initialLang = supportedLangs.includes(savedLang) ? savedLang : "en";
 applyTranslations(initialLang);
+initTabs();
+initSearch();
