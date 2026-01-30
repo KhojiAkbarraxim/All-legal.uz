@@ -35,33 +35,42 @@
                         href="#contact">Contact</a>
                 </div>
                 <div class="flex items-center gap-4">
-                    <div class="flex sm:hidden rounded-lg bg-gray-100 dark:bg-gray-800 p-1">
-                        <button
-                            class="px-2 py-1 text-[10px] font-bold rounded bg-white dark:bg-gray-700 text-primary shadow-sm"
-                            data-lang="en">EN</button>
-                        <button
-                            class="px-2 py-1 text-[10px] font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900"
-                            data-lang="ru">RU</button>
-                        <button
-                            class="px-2 py-1 text-[10px] font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900"
-                            data-lang="uz">UZ</button>
-                        <button
-                            class="px-2 py-1 text-[10px] font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900"
-                            data-lang="ja">JA</button>
-                    </div>
-                    <div class="hidden sm:flex rounded-lg bg-gray-100 dark:bg-gray-800 p-1">
-                        <button
-                            class="px-3 py-1 text-xs font-bold rounded bg-white dark:bg-gray-700 text-primary shadow-sm"
-                            data-lang="en">EN</button>
-                        <button
-                            class="px-3 py-1 text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900"
-                            data-lang="ru">RU</button>
-                        <button
-                            class="px-3 py-1 text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900"
-                            data-lang="uz">UZ</button>
-                        <button
-                            class="px-3 py-1 text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900"
-                            data-lang="ja">JA</button>
+                    <div class="language-switcher" data-lang-dropdown>
+                        <button type="button" class="lang-toggle" data-lang-toggle aria-expanded="false"
+                            aria-haspopup="listbox">
+                            <span class="lang-flag" data-lang-flag aria-hidden="true">🇺🇿</span>
+                            <div class="lang-label-group">
+                                <span class="lang-label" data-lang-label>O'zbekcha</span>
+                            </div>
+                            <span class="material-symbols-outlined lang-chevron" aria-hidden="true">expand_more</span>
+                        </button>
+                        <div class="lang-menu" data-lang-menu role="listbox" hidden
+                            aria-label="Select language">
+                            <button class="lang-option" type="button" data-lang-option data-lang="uz"
+                                data-flag="🇺🇿" data-label="O'zbekcha" role="option"
+                                aria-selected="false">
+                                <span class="lang-option-flag" aria-hidden="true">🇺🇿</span>
+                                <span class="lang-option-label">O'zbekcha</span>
+                            </button>
+                            <button class="lang-option" type="button" data-lang-option data-lang="ru"
+                                data-flag="🇷🇺" data-label="Русский" role="option"
+                                aria-selected="false">
+                                <span class="lang-option-flag" aria-hidden="true">🇷🇺</span>
+                                <span class="lang-option-label">Русский</span>
+                            </button>
+                            <button class="lang-option" type="button" data-lang-option data-lang="en"
+                                data-flag="🇬🇧" data-label="English" role="option"
+                                aria-selected="false">
+                                <span class="lang-option-flag" aria-hidden="true">🇬🇧</span>
+                                <span class="lang-option-label">English</span>
+                            </button>
+                            <button class="lang-option" type="button" data-lang-option data-lang="ja"
+                                data-flag="🇯🇵" data-label="日本語" role="option"
+                                aria-selected="false">
+                                <span class="lang-option-flag" aria-hidden="true">🇯🇵</span>
+                                <span class="lang-option-label">日本語</span>
+                            </button>
+                        </div>
                     </div>
                     <button
                         class="hidden lg:flex h-10 px-6 items-center justify-center rounded-lg bg-primary hover:bg-primary-dark transition-colors text-navy text-sm font-bold tracking-wide"
