@@ -218,26 +218,23 @@ footer a.footer-legal {
     font-size: 0.75rem;
 }
 
-/* Stable layout for multi-box sections */
 .info-section {
     width: 100%;
 }
 
-/* Flex layout keeps boxes aligned and stable across languages */
 .info-container {
     display: flex !important;
     flex-wrap: wrap !important;
-    gap: 24px !important; /* consistent spacing between boxes */
+    gap: 24px !important;
     align-items: flex-start;
 }
 
-/* Fixed width with flexible height to avoid shifting */
 .content-box {
-    width: 320px; /* fixed width for stability */
-    min-height: 160px; /* uniform height for short text */
-    padding: 16px; /* visible inner spacing */
-    border: 1px solid #cccccc; /* visible boundary */
-    box-sizing: border-box; /* include padding/border in width */
+    width: 320px;
+    min-height: 160px;
+    padding: 16px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }

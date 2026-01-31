@@ -907,3 +907,24 @@ const initialLang = supportedLangs.includes(savedLang) ? savedLang : "en";
 applyTranslations(initialLang);
 initTabs();
 initSearch();
+
+const removeAdobeAssistant = () => {
+    const candidates = Array.from(
+        document.querySelectorAll("div,section,aside,iframe,button,a")
+    );
+    candidates.forEach((el) => {
+        const text = (el.textContent || "").trim();
+        if (
+            text.includes("AI Assistant") &&
+            text.toLowerCase().includes("adobe acrobat")
+        ) {
+            el.remove();
+        }
+    });
+};
+removeAdobeAssistant();
+const adobeObserver = new MutationObserver(() => removeAdobeAssistant());
+adobeObserver.observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+});

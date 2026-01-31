@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>All-Legal - Document Samples</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind.config.js"></script>
+</head>
+
+<body class="bg-navy text-white overflow-x-hidden">
+    <nav class="sticky top-0 z-50 w-full bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20" style="height: 5.7rem;">
+                <div class="flex items-center gap-3" style="margin-top: 34px; margin-bottom: 25px;">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="logo.new.png" />
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a class="nav-link text-sm font-medium transition-colors" data-i18n="nav.about"
+                        href="index.html#about">About</a>
+                    <a class="nav-link text-sm font-medium transition-colors" data-i18n="nav.practice"
+                        href="index.html#practice">Practice Areas</a>
+                    <a class="nav-link text-sm font-medium transition-colors is-active" data-i18n="nav.sample"
+                        href="#sample" aria-current="true">Sample</a>
+                    <a class="nav-link text-sm font-medium transition-colors" data-i18n="nav.team"
+                        href="index.html#team">Team</a>
+                    <a class="nav-link text-sm font-medium transition-colors" data-i18n="nav.contact"
+                        href="index.html#contact">Contact</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="language-switcher" data-lang-dropdown>
+                        <button type="button" class="lang-toggle" data-lang-toggle aria-expanded="false"
+                            aria-haspopup="listbox">
+                            <span class="lang-flag" data-lang-flag aria-hidden="true">🇺🇿</span>
+                            <div class="lang-label-group">
+                                <span class="lang-label" data-lang-label>O'zbekcha</span>
+                            </div>
+                            <span class="material-symbols-outlined lang-chevron" aria-hidden="true">expand_more</span>
+                        </button>
+                        <div class="lang-menu" data-lang-menu role="listbox" hidden
+                            aria-label="Select language">
+                            <button class="lang-option" type="button" data-lang-option data-lang="uz"
+                                data-flag="🇺🇿" data-label="O'zbekcha" role="option"
+                                aria-selected="false">
+                                <span class="lang-option-flag" aria-hidden="true">🇺🇿</span>
+                                <span class="lang-option-label">O'zbekcha</span>
+                            </button>
+                            <button class="lang-option" type="button" data-lang-option data-lang="ru"
+                                data-flag="🇷🇺" data-label="Русский" role="option"
+                                aria-selected="false">
+                                <span class="lang-option-flag" aria-hidden="true">🇷🇺</span>
+                                <span class="lang-option-label">Русский</span>
+                            </button>
+                            <button class="lang-option" type="button" data-lang-option data-lang="en"
+                                data-flag="🇬🇧" data-label="English" role="option"
+                                aria-selected="false">
+                                <span class="lang-option-flag" aria-hidden="true">🇬🇧</span>
+                                <span class="lang-option-label">English</span>
+                            </button>
+                            <button class="lang-option" type="button" data-lang-option data-lang="ja"
+                                data-flag="🇯🇵" data-label="日本語" role="option"
+                                aria-selected="false">
+                                <span class="lang-option-flag" aria-hidden="true">🇯🇵</span>
+                                <span class="lang-option-label">日本語</span>
+                            </button>
+                        </div>
+                    </div>
+                    <a
+                        class="hidden lg:flex h-10 px-6 items-center justify-center rounded-lg bg-primary hover:bg-primary-dark transition-colors text-navy text-sm font-bold tracking-wide"
+                        data-i18n="nav.consult" href="index.html#contact">
+                        Consultation
+                    </a>
+                    <button class="menu-toggle md:hidden p-2 text-[#fce14f]" type="button" aria-expanded="false"
+                        aria-controls="mobile-menu" data-action="menu-toggle">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu md:hidden bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800"
+        id="mobile-menu" data-menu="mobile" aria-hidden="true">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6 pt-2">
+            <div class="flex flex-col gap-4">
+                <a class="nav-link text-base font-medium transition-colors" data-i18n="nav.about"
+                    href="index.html#about">About</a>
+                <a class="nav-link text-base font-medium transition-colors" data-i18n="nav.practice"
+                    href="index.html#practice">Practice Areas</a>
+                <a class="nav-link text-base font-medium transition-colors is-active" data-i18n="nav.sample"
+                    href="#sample" aria-current="true">Sample</a>
+                <a class="nav-link text-base font-medium transition-colors" data-i18n="nav.team"
+                    href="index.html#team">Team</a>
+                <a class="nav-link text-base font-medium transition-colors" data-i18n="nav.contact"
+                    href="index.html#contact">Contact</a>
+                <a
+                    class="h-10 px-6 items-center justify-center rounded-lg bg-primary hover:bg-primary-dark transition-colors text-navy text-sm font-bold tracking-wide w-fit flex"
+                    data-i18n="nav.consult" href="index.html#contact">
+                    Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="py-16 bg-navy text-white" id="sample">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <p class="text-sm font-semibold text-primary uppercase tracking-widest mb-3" data-i18n="tabs.eyebrow">
+                        Document Samples</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight" data-i18n="tabs.title">Explore Sample Documents
+                    </h2>
+                    <p class="text-gray-300 max-w-2xl mx-auto mt-4" data-i18n="tabs.body">
+                        A curated set of real-world templates across key legal practices, organized for quick reference.
+                    </p>
+                </div>
+                <div class="tabs-container" data-tabs>
+                    <div class="search-container">
+                        <input id="doc-search" class="search-input" type="search" data-i18n="tabs.search.placeholder"
+                            data-i18n-attr="placeholder" placeholder="Search documents..." aria-label="Search documents" />
+                    </div>
+                    <div class="search-results hidden" role="status"></div>
+                    <div class="tab-nav" role="tablist" aria-label="Document sample categories">
+                        <button class="tab-button is-active" type="button" id="tab-corporate" data-tab="corporate"
+                            role="tab" aria-selected="true" aria-controls="corporate" data-i18n="tabs.tab.corporate">
+                            Corporate Law
+                        </button>
+                        <button class="tab-button" type="button" id="tab-contracts" data-tab="contracts" role="tab"
+                            aria-selected="false" aria-controls="contracts" data-i18n="tabs.tab.contracts">
+                            Contracts
+                        </button>
+                        <button class="tab-button" type="button" id="tab-litigation" data-tab="litigation" role="tab"
+                            aria-selected="false" aria-controls="litigation" data-i18n="tabs.tab.litigation">
+                            Litigation
+                        </button>
+                        <button class="tab-button" type="button" id="tab-notarial" data-tab="notarial" role="tab"
+                            aria-selected="false" aria-controls="notarial" data-i18n="tabs.tab.notarial">
+                            Notarial
+                        </button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-panel is-active" id="corporate" role="tabpanel" aria-labelledby="tab-corporate">
+                            <ul>
+                                <li data-i18n="tabs.items.sharePurchase">Share Purchase Agreement</li>
+                                <li data-i18n="tabs.items.directorsService">Director's Service Agreement</li>
+                                <li data-i18n="tabs.items.memorandum">Memorandum of Association</li>
+                                <li data-i18n="tabs.items.companyResolution">Company Resolution</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel" id="contracts" role="tabpanel" aria-labelledby="tab-contracts" hidden>
+                            <ul>
+                                <li data-i18n="tabs.items.nda">Non-Disclosure Agreement (NDA)</li>
+                                <li data-i18n="tabs.items.lease">Lease Agreement</li>
+                                <li data-i18n="tabs.items.sla">Service Level Agreement (SLA)</li>
+                                <li data-i18n="tabs.items.employment">Employment Contract</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel" id="litigation" role="tabpanel" aria-labelledby="tab-litigation" hidden>
+                            <ul>
+                                <li data-i18n="tabs.items.ceaseDesist">Cease and Desist Letter</li>
+                                <li data-i18n="tabs.items.statementClaim">Statement of Claim</li>
+                                <li data-i18n="tabs.items.affidavit">Affidavit of Documents</li>
+                                <li data-i18n="tabs.items.settlement">Settlement Agreement</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel" id="notarial" role="tabpanel" aria-labelledby="tab-notarial" hidden>
+                            <ul>
+                                <li data-i18n="tabs.items.powerAttorney">Power of Attorney</li>
+                                <li data-i18n="tabs.items.statutoryDeclaration">Statutory Declaration</li>
+                                <li data-i18n="tabs.items.will">Will and Testament</li>
+                                <li data-i18n="tabs.items.certifiedCopy">Certified True Copy Request</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#262d42] border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+                <div class="flex flex-col gap-4 max-w-xs">
+                    <div class="flex items-center gap-2">
+                        <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="logo.new.png" />
+                    </div>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed" data-i18n="footer.blurb">
+                        All-Legal provides top-tier legal services tailored to the complex needs of modern businesses in
+                        Uzbekistan and Central Asia.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+                    <div class="flex flex-col gap-4">
+                        <h4 class="font-bold text-[#fce14f]" data-i18n="footer.firm.title">Firm</h4>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                            data-i18n="footer.firm.about" href="index.html#about">About Us</a>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                            data-i18n="footer.firm.team" href="index.html#team">Our Team</a>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                            data-i18n="footer.firm.contact" href="index.html#contact">Contact</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="font-bold text-[#fce14f]" data-i18n="footer.services.title">Services</h4>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                            data-i18n="footer.firm.practice" href="index.html#practice">Practice Areas</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="font-bold text-[#fce14f]" data-i18n="footer.connect.title">Connect</h4>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                            data-i18n="footer.firm.email" href="mailto:info@allegal.uz">Email</a>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                            data-i18n="footer.firm.phone" href="tel:+998907192223">Phone</a>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                            data-i18n="footer.firm.instagram" href="https://www.instagram.com/all_legal.uz/"
+                            rel="noopener noreferrer" target="_blank">Instagram</a>
+                        <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                            data-i18n="footer.firm.telegram" href="https://t.me/umarjon_jumaniyazov"
+                            rel="noopener noreferrer" target="_blank">Telegram</a>
+
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-400" data-i18n="footer.copyright">© 2026 All-Legal Law Firm. All rights
+                    reserved.</p>
+                <div class="flex gap-6">
+                    <a class="text-xs text-gray-400 hover:text-primary footer-legal" data-i18n="footer.legal.privacy"
+                        href="#">Privacy Policy</a>
+                    <a class="text-xs text-gray-400 hover:text-primary footer-legal" data-i18n="footer.legal.terms"
+                        href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
