@@ -1,7 +1,38 @@
 const translations = {
     en: {
+        "sample.eyebrow": "Document Samples",
+        "sample.title": "Explore Sample Documents",
+        "sample.subtitle": "A curated set of real-world templates across key legal practices, organized for quick reference.",
+        "sample.search.placeholder": "Search documents...",
+        "sample.chip.recent": "Recently updated",
+        "sample.chip.popular": "Most downloaded",
+        "sample.chip.short": "Short (< 5 pages)",
+        "sample.chip.uz": "Uzbekistan",
+        "sample.filter.categories": "Categories",
+        "sample.filter.all": "All",
+        "sample.filter.corporate": "Corporate Law",
+        "sample.filter.contracts": "Contracts",
+        "sample.filter.litigation": "Litigation",
+        "sample.filter.notarial": "Notarial",
+        "sample.filter.jurisdiction": "Jurisdiction",
+        "sample.filter.uz": "Uzbekistan",
+        "sample.filter.uk": "United Kingdom",
+        "sample.filter.jp": "Japan",
+        "sample.filter.eu": "EU",
+        "sample.filter.format": "Format",
+        "sample.filter.updated": "Updated",
+        "sample.filter.updated.any": "Any time",
+        "sample.filter.updated.six": "Last 6 months",
+        "sample.filter.updated.twelve": "Last 12 months",
+        "sample.sort.relevance": "Relevance",
+        "sample.sort.recent": "Recently updated",
+        "sample.sort.popular": "Most downloaded",
+        "sample.sort.shortest": "Shortest length",
+        "sample.density.comfortable": "Density: Comfortable",
+        "sample.density.compact": "Density: Compact",
+        "sample.results": "results",
         "nav.practice": "Practice Areas",
-        "nav.sample": "Sample",
+        "nav.sample": "Samples",
         "nav.team": "Team",
         "nav.about": "About",
         "nav.contact": "Contact",
@@ -134,8 +165,39 @@ const translations = {
         "footer.legal.terms": "Terms of Use"
     },
     ru: {
+        "sample.eyebrow": "Образцы документов",
+        "sample.title": "Изучите образцы документов",
+        "sample.subtitle": "Подборка реальных шаблонов по ключевым юридическим практикам, организованных для быстрого поиска.",
+        "sample.search.placeholder": "Искать документы...",
+        "sample.chip.recent": "Недавно обновлены",
+        "sample.chip.popular": "Самые загружаемые",
+        "sample.chip.short": "Короткие (< 5 стр.)",
+        "sample.chip.uz": "Узбекистан",
+        "sample.filter.categories": "Категории",
+        "sample.filter.all": "Все",
+        "sample.filter.corporate": "Корпоративное право",
+        "sample.filter.contracts": "Договоры",
+        "sample.filter.litigation": "Судебные споры",
+        "sample.filter.notarial": "Нотариальные",
+        "sample.filter.jurisdiction": "Юрисдикция",
+        "sample.filter.uz": "Узбекистан",
+        "sample.filter.uk": "Великобритания",
+        "sample.filter.jp": "Япония",
+        "sample.filter.eu": "ЕС",
+        "sample.filter.format": "Формат",
+        "sample.filter.updated": "Обновлено",
+        "sample.filter.updated.any": "Любое время",
+        "sample.filter.updated.six": "Последние 6 месяцев",
+        "sample.filter.updated.twelve": "Последние 12 месяцев",
+        "sample.sort.relevance": "Релевантность",
+        "sample.sort.recent": "Недавно обновлены",
+        "sample.sort.popular": "Самые загружаемые",
+        "sample.sort.shortest": "Самые короткие",
+        "sample.density.comfortable": "Плотность: комфортная",
+        "sample.density.compact": "Плотность: компактная",
+        "sample.results": "результатов",
         "nav.practice": "Практики",
-        "nav.sample": "Пример",
+        "nav.sample": "Примеры",
         "nav.team": "Команда",
         "nav.about": "О нас",
         "nav.contact": "Контакты",
@@ -268,8 +330,39 @@ const translations = {
         "footer.legal.terms": "Условия использования"
     },
     uz: {
+        "sample.eyebrow": "Hujjat namunalari",
+        "sample.title": "Hujjat namunalari bilan tanishing",
+        "sample.subtitle": "Asosiy yuridik yo‘nalishlar bo‘yicha haqiqiy shablonlar to‘plami, tezkor izlash uchun tartiblangan.",
+        "sample.search.placeholder": "Hujjatlarni qidiring...",
+        "sample.chip.recent": "Yaqinda yangilangan",
+        "sample.chip.popular": "Eng ko‘p yuklangan",
+        "sample.chip.short": "Qisqa (< 5 bet)",
+        "sample.chip.uz": "O‘zbekiston",
+        "sample.filter.categories": "Kategoriyalar",
+        "sample.filter.all": "Barchasi",
+        "sample.filter.corporate": "Korporativ huquq",
+        "sample.filter.contracts": "Shartnomalar",
+        "sample.filter.litigation": "Sud jarayonlari",
+        "sample.filter.notarial": "Notarial",
+        "sample.filter.jurisdiction": "Yurisdiksiya",
+        "sample.filter.uz": "O‘zbekiston",
+        "sample.filter.uk": "Buyuk Britaniya",
+        "sample.filter.jp": "Yaponiya",
+        "sample.filter.eu": "YEI",
+        "sample.filter.format": "Format",
+        "sample.filter.updated": "Yangilanish",
+        "sample.filter.updated.any": "Istalgan vaqt",
+        "sample.filter.updated.six": "So‘nggi 6 oy",
+        "sample.filter.updated.twelve": "So‘nggi 12 oy",
+        "sample.sort.relevance": "Dolzarblik",
+        "sample.sort.recent": "Yaqinda yangilangan",
+        "sample.sort.popular": "Eng ko‘p yuklangan",
+        "sample.sort.shortest": "Eng qisqa",
+        "sample.density.comfortable": "Zichlik: qulay",
+        "sample.density.compact": "Zichlik: ixcham",
+        "sample.results": "natija",
         "nav.practice": "Yo'nalishlar",
-        "nav.sample": "Namuna",
+        "nav.sample": "Namunalar",
         "nav.team": "Jamoa",
         "nav.about": "Biz haqimizda",
         "nav.contact": "Aloqa",
@@ -402,6 +495,37 @@ const translations = {
         "footer.legal.terms": "Foydalanish shartlari"
     },
     ja: {
+        "sample.eyebrow": "書類サンプル",
+        "sample.title": "サンプル文書を探す",
+        "sample.subtitle": "主要な法律分野の実例テンプレートを素早く見つけられるよう整理しました。",
+        "sample.search.placeholder": "文書を検索...",
+        "sample.chip.recent": "最近更新",
+        "sample.chip.popular": "人気のダウンロード",
+        "sample.chip.short": "短い (< 5頁)",
+        "sample.chip.uz": "ウズベキスタン",
+        "sample.filter.categories": "カテゴリ",
+        "sample.filter.all": "すべて",
+        "sample.filter.corporate": "コーポレート",
+        "sample.filter.contracts": "契約",
+        "sample.filter.litigation": "訴訟",
+        "sample.filter.notarial": "公証",
+        "sample.filter.jurisdiction": "法域",
+        "sample.filter.uz": "ウズベキスタン",
+        "sample.filter.uk": "イギリス",
+        "sample.filter.jp": "日本",
+        "sample.filter.eu": "EU",
+        "sample.filter.format": "形式",
+        "sample.filter.updated": "更新",
+        "sample.filter.updated.any": "いつでも",
+        "sample.filter.updated.six": "直近6か月",
+        "sample.filter.updated.twelve": "直近12か月",
+        "sample.sort.relevance": "関連順",
+        "sample.sort.recent": "最新更新",
+        "sample.sort.popular": "人気ダウンロード",
+        "sample.sort.shortest": "短い順",
+        "sample.density.comfortable": "密度: 標準",
+        "sample.density.compact": "密度: コンパクト",
+        "sample.results": "件",
         "nav.practice": "業務分野",
         "nav.sample": "サンプル",
         "nav.team": "チーム",
@@ -537,6 +661,7 @@ const translations = {
 };
 
 const supportedLangs = ["en", "ru", "uz", "ja"];
+const getDict = () => translations[document.documentElement.lang] || translations.en;
 
 const langDropdown = document.querySelector("[data-lang-dropdown]");
 const langToggle = langDropdown?.querySelector("[data-lang-toggle]");
@@ -648,6 +773,9 @@ const applyTranslations = (lang) => {
 
     setActiveLangUI(lang);
     localStorage.setItem("lang", lang);
+    if (typeof window !== "undefined" && typeof window.applySampleFilters === "function") {
+        window.applySampleFilters();
+    }
 };
 
 if (langToggle && langMenu) {
@@ -928,3 +1056,369 @@ adobeObserver.observe(document.documentElement, {
     childList: true,
     subtree: true,
 });
+
+ const documents = [
+            {
+                title: "Share Purchase Agreement",
+                summary: "Sets terms for transferring company shares between parties.",
+                category: "corporate",
+                jurisdiction: "uk",
+                format: "pdf",
+                pages: 12,
+                updated: "2025-11-02",
+                downloads: 182
+            },
+            {
+                title: "Director's Service Agreement",
+                summary: "Defines duties, compensation, and termination for company directors.",
+                category: "corporate",
+                jurisdiction: "uk",
+                format: "docx",
+                pages: 9,
+                updated: "2025-08-14",
+                downloads: 141
+            },
+            {
+                title: "Memorandum of Association",
+                summary: "Foundational corporate document outlining company purpose and structure.",
+                category: "corporate",
+                jurisdiction: "uz",
+                format: "pdf",
+                pages: 7,
+                updated: "2025-12-10",
+                downloads: 220
+            },
+            {
+                title: "Company Resolution",
+                summary: "Formal decisions adopted by the board or shareholders.",
+                category: "corporate",
+                jurisdiction: "uz",
+                format: "pdf",
+                pages: 3,
+                updated: "2025-09-28",
+                downloads: 95
+            },
+            {
+                title: "Non-Disclosure Agreement (NDA)",
+                summary: "Protects confidential information shared between parties.",
+                category: "contracts",
+                jurisdiction: "eu",
+                format: "pdf",
+                pages: 4,
+                updated: "2025-10-05",
+                downloads: 320
+            },
+            {
+                title: "Lease Agreement",
+                summary: "Sets terms for leasing commercial property.",
+                category: "contracts",
+                jurisdiction: "uk",
+                format: "docx",
+                pages: 15,
+                updated: "2025-05-20",
+                downloads: 140
+            },
+            {
+                title: "Service Level Agreement (SLA)",
+                summary: "Defines service standards, uptime, and remedies.",
+                category: "contracts",
+                jurisdiction: "eu",
+                format: "pdf",
+                pages: 8,
+                updated: "2025-07-02",
+                downloads: 175
+            },
+            {
+                title: "Employment Contract",
+                summary: "Outlines employment terms, benefits, and termination.",
+                category: "contracts",
+                jurisdiction: "uz",
+                format: "docx",
+                pages: 6,
+                updated: "2025-06-11",
+                downloads: 260
+            },
+            {
+                title: "Cease and Desist Letter",
+                summary: "Demands cessation of infringing or harmful activities.",
+                category: "litigation",
+                jurisdiction: "uk",
+                format: "pdf",
+                pages: 2,
+                updated: "2025-12-20",
+                downloads: 210
+            },
+            {
+                title: "Statement of Claim",
+                summary: "Initiates legal proceedings outlining plaintiff’s case.",
+                category: "litigation",
+                jurisdiction: "uz",
+                format: "pdf",
+                pages: 10,
+                updated: "2025-04-15",
+                downloads: 130
+            },
+            {
+                title: "Affidavit of Documents",
+                summary: "Lists documents relevant to litigation disclosure.",
+                category: "litigation",
+                jurisdiction: "uk",
+                format: "docx",
+                pages: 5,
+                updated: "2025-01-22",
+                downloads: 80
+            },
+            {
+                title: "Settlement Agreement",
+                summary: "Resolves disputes with agreed terms and releases.",
+                category: "litigation",
+                jurisdiction: "eu",
+                format: "pdf",
+                pages: 6,
+                updated: "2025-03-08",
+                downloads: 160
+            },
+            {
+                title: "Power of Attorney",
+                summary: "Authorizes an agent to act on behalf of the principal.",
+                category: "notarial",
+                jurisdiction: "jp",
+                format: "pdf",
+                pages: 4,
+                updated: "2025-09-01",
+                downloads: 145
+            },
+            {
+                title: "Statutory Declaration",
+                summary: "A formal statement affirming truth of facts.",
+                category: "notarial",
+                jurisdiction: "uk",
+                format: "pdf",
+                pages: 3,
+                updated: "2025-08-18",
+                downloads: 110
+            },
+            {
+                title: "Will and Testament",
+                summary: "Distributes estate and appoints executors.",
+                category: "notarial",
+                jurisdiction: "uz",
+                format: "docx",
+                pages: 14,
+                updated: "2025-02-10",
+                downloads: 190
+            },
+            {
+                title: "Certified True Copy Request",
+                summary: "Requests notarized copies of original documents.",
+                category: "notarial",
+                jurisdiction: "uk",
+                format: "pdf",
+                pages: 2,
+                updated: "2025-11-30",
+                downloads: 90
+            }
+        ];
+
+        const resultsEl = document.getElementById("results");
+        const searchInput = document.getElementById("searchInput");
+        const sortSelect = document.getElementById("sortSelect");
+        const densityToggle = document.getElementById("densityToggle");
+        const resultCount = document.getElementById("resultCount");
+        let activeTab = "all";
+        let dense = false;
+
+        const formatDate = (iso) => {
+            const d = new Date(iso);
+            return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+        };
+
+        const filters = {
+            category: "all",
+            jurisdictions: new Set(),
+            formats: new Set(),
+            updated: "any",
+        };
+
+    const applyFilters = () => {
+        const q = searchInput.value.trim().toLowerCase();
+        const now = new Date();
+        const dict = getDict();
+        const filtered = documents.filter((doc) => {
+            if (activeTab !== "all" && doc.category !== activeTab) return false;
+            if (filters.category !== "all" && doc.category !== filters.category) return false;
+            if (filters.jurisdictions.size && !filters.jurisdictions.has(doc.jurisdiction)) return false;
+            if (filters.formats.size && !filters.formats.has(doc.format)) return false;
+                if (filters.updated !== "any") {
+                    const months = parseInt(filters.updated, 10);
+                    const diff = (now - new Date(doc.updated)) / (1000 * 60 * 60 * 24 * 30);
+                    if (diff > months) return false;
+                }
+                if (q) {
+                    const hay = (doc.title + " " + doc.summary).toLowerCase();
+                    if (!hay.includes(q)) return false;
+                }
+                return true;
+            });
+            const sorted = filtered.sort((a, b) => {
+                switch (sortSelect.value) {
+                    case "recent":
+                        return new Date(b.updated) - new Date(a.updated);
+                    case "popular":
+                        return b.downloads - a.downloads;
+                    case "shortest":
+                        return a.pages - b.pages;
+                    default:
+                        return 0;
+                }
+            });
+        renderResults(sorted);
+    };
+    window.applySampleFilters = applyFilters;
+
+        const renderResults = (items) => {
+            resultsEl.innerHTML = "";
+        const dict = getDict();
+        const label = dict["sample.results"] || "results";
+        resultCount.textContent = `${items.length} ${label}`;
+            resultsEl.style.gridTemplateColumns = dense ? "repeat(auto-fill, minmax(260px, 1fr))" : "repeat(auto-fill, minmax(300px, 1fr))";
+
+            if (!items.length) {
+                const empty = document.createElement("div");
+                empty.textContent = "No documents found. Try clearing filters or adjusting your search.";
+                empty.style.color = "var(--muted)";
+                resultsEl.appendChild(empty);
+                return;
+            }
+
+            items.forEach((doc) => {
+                const card = document.createElement("article");
+                card.className = "card";
+                card.setAttribute("tabindex", "0");
+
+                const title = document.createElement("h3");
+                title.className = "card-title";
+                title.textContent = doc.title;
+
+                const desc = document.createElement("p");
+                desc.className = "card-desc";
+                desc.textContent = doc.summary;
+
+                const badges = document.createElement("div");
+                badges.className = "badge-row";
+                badges.innerHTML = `
+                    <span class="badge">${labelCategory(doc.category)}</span>
+                    <span class="badge">${labelJurisdiction(doc.jurisdiction)}</span>
+                    <span class="badge">${doc.format.toUpperCase()}</span>
+                `;
+
+                const meta = document.createElement("div");
+                meta.className = "meta-row";
+                meta.innerHTML = `
+                    <span>${doc.pages} pp</span>
+                    <span>Updated ${formatDate(doc.updated)}</span>
+                    <span>${doc.downloads} downloads</span>
+                `;
+
+                const actions = document.createElement("div");
+                actions.className = "actions";
+                actions.innerHTML = `
+                    <button class="btn-primary">Preview</button>
+                    <button class="btn-secondary">Download</button>
+                `;
+
+                card.append(title, desc, badges, meta, actions);
+                resultsEl.appendChild(card);
+            });
+        };
+
+        const labelCategory = (key) => ({
+            corporate: "Corporate Law",
+            contracts: "Contracts",
+            litigation: "Litigation",
+            notarial: "Notarial",
+        }[key] || "General");
+
+        const labelJurisdiction = (key) => ({
+            uz: "Uzbekistan",
+            uk: "United Kingdom",
+            eu: "European Union",
+            jp: "Japan",
+        }[key] || "Global");
+
+        // Tabs
+        document.querySelectorAll('[role="tab"]').forEach((tab) => {
+            tab.addEventListener("click", () => {
+                activeTab = tab.dataset.tab;
+                document.querySelectorAll('[role="tab"]').forEach((t) => {
+                    const selected = t === tab;
+                    t.classList.toggle("active", selected);
+                    t.setAttribute("aria-selected", String(selected));
+                });
+                applyFilters();
+            });
+        });
+
+        // Category filters
+        document.querySelectorAll('input[name="category"]').forEach((radio) => {
+            radio.addEventListener("change", () => {
+                filters.category = radio.value;
+                applyFilters();
+            });
+        });
+
+        // Checkboxes
+        document.querySelectorAll('input[data-filter="jurisdiction"]').forEach((cb) => {
+            cb.addEventListener("change", () => {
+                if (cb.checked) filters.jurisdictions.add(cb.value);
+                else filters.jurisdictions.delete(cb.value);
+                applyFilters();
+            });
+        });
+
+        document.querySelectorAll('input[data-filter="format"]').forEach((cb) => {
+            cb.addEventListener("change", () => {
+                if (cb.checked) filters.formats.add(cb.value);
+                else filters.formats.delete(cb.value);
+                applyFilters();
+            });
+        });
+
+        document.querySelectorAll('input[name="updated"]').forEach((radio) => {
+            radio.addEventListener("change", () => {
+                filters.updated = radio.value;
+                applyFilters();
+            });
+        });
+
+        searchInput.addEventListener("input", applyFilters);
+        sortSelect.addEventListener("change", applyFilters);
+
+        densityToggle.addEventListener("click", () => {
+            dense = !dense;
+            densityToggle.setAttribute("aria-pressed", String(dense));
+            const dict = getDict();
+            densityToggle.textContent = dense
+                ? dict["sample.density.compact"] || "Density: Compact"
+                : dict["sample.density.comfortable"] || "Density: Comfortable";
+            applyFilters();
+        });
+
+        document.querySelectorAll(".chip[data-chip]").forEach((chip) => {
+            chip.addEventListener("click", () => {
+                document.querySelectorAll(".chip[data-chip]").forEach((c) => c.classList.remove("active"));
+                chip.classList.add("active");
+                const key = chip.dataset.chip;
+                if (key === "recent") sortSelect.value = "recent";
+                if (key === "popular") sortSelect.value = "popular";
+                if (key === "short") sortSelect.value = "shortest";
+                if (key === "uz") {
+                    filters.jurisdictions = new Set(["uz"]);
+                    document.querySelectorAll('input[data-filter="jurisdiction"]').forEach((cb) => cb.checked = cb.value === "uz");
+                }
+                applyFilters();
+            });
+        });
+
+        // initial render
+        applyFilters(); 

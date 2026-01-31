@@ -1,0 +1,85 @@
+<nav class="sticky top-0 z-50 w-full bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20" style="height: 5.7rem;">
+      <div class="flex items-center gap-3" style="margin-top: 34px; margin-bottom: 25px;">
+        <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="logo.new.png" />
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.about"
+          href="index.html#about">About</a>
+        <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.practice"
+          href="index.html#practice">Practice Areas</a>
+        <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.sample"
+          href="sample.html">Sample</a>
+        <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.team"
+          href="index.html#team">Team</a>
+        <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.contact"
+          href="index.html#contact">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="language-switcher" data-lang-dropdown>
+          <button type="button" class="lang-toggle" data-lang-toggle aria-expanded="false" aria-haspopup="listbox">
+            <span class="lang-flag" data-lang-flag aria-hidden="true">🇺🇿</span>
+            <div class="lang-label-group">
+              <span class="lang-label" data-lang-label>O'zbekcha</span>
+            </div>
+            <span class="material-symbols-outlined lang-chevron" aria-hidden="true">expand_more</span>
+          </button>
+          <div class="lang-menu" data-lang-menu role="listbox" hidden aria-label="Select language">
+            <button class="lang-option" type="button" data-lang-option data-lang="uz" data-flag="🇺🇿"
+              data-label="O'zbekcha" role="option" aria-selected="false">
+              <span class="lang-option-flag" aria-hidden="true">🇺🇿</span>
+              <span class="lang-option-label">O'zbekcha</span>
+            </button>
+            <button class="lang-option" type="button" data-lang-option data-lang="ru" data-flag="🇷🇺"
+              data-label="Русский" role="option" aria-selected="false">
+              <span class="lang-option-flag" aria-hidden="true">🇷🇺</span>
+              <span class="lang-option-label">Русский</span>
+            </button>
+            <button class="lang-option" type="button" data-lang-option data-lang="en" data-flag="🇬🇧"
+              data-label="English" role="option" aria-selected="false">
+              <span class="lang-option-flag" aria-hidden="true">🇬🇧</span>
+              <span class="lang-option-label">English</span>
+            </button>
+            <button class="lang-option" type="button" data-lang-option data-lang="ja" data-flag="🇯🇵"
+              data-label="日本語" role="option" aria-selected="false">
+              <span class="lang-option-flag" aria-hidden="true">🇯🇵</span>
+              <span class="lang-option-label">日本語</span>
+            </button>
+          </div>
+        </div>
+        <button
+          class="hidden lg:flex h-10 px-6 items-center justify-center rounded-lg bg-primary hover:bg-primary-dark transition-colors text-navy text-sm font-bold tracking-wide"
+          data-i18n="nav.consult">
+          Consultation
+        </button>
+        <button class="menu-toggle md:hidden p-2 text-[#fce14f]" type="button" aria-expanded="false"
+          aria-controls="mobile-menu" data-action="menu-toggle">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu md:hidden bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800"
+  id="mobile-menu" data-menu="mobile" aria-hidden="true">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6 pt-2">
+    <div class="flex flex-col gap-4">
+      <a class="nav-link text-base font-medium transition-colors" data-nav-link data-i18n="nav.about"
+        href="index.html#about">About</a>
+      <a class="nav-link text-base font-medium transition-colors" data-nav-link data-i18n="nav.practice"
+        href="index.html#practice">Practice Areas</a>
+      <a class="nav-link text-base font-medium transition-colors is-active" data-nav-link data-i18n="nav.sample"
+        href="sample.html" aria-current="true">Sample</a>
+      <a class="nav-link text-base font-medium transition-colors" data-nav-link data-i18n="nav.team"
+        href="index.html#team">Team</a>
+      <a class="nav-link text-base font-medium transition-colors" data-nav-link data-i18n="nav.contact"
+        href="index.html#contact">Contact</a>
+      <button
+        class="h-10 px-6 items-center justify-center rounded-lg bg-primary hover:bg-primary-dark transition-colors text-navy text-sm font-bold tracking-wide w-fit"
+        data-i18n="nav.consult">
+        Consultation
+      </button>
+    </div>
+  </div>
+</div>

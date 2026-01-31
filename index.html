@@ -16,7 +16,8 @@
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-[#111318] dark:text-white overflow-x-hidden">
-    <nav class="sticky top-0 z-50 w-full bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div id="header-include"></div>
+    <nav class="sticky top-0 z-50 w-full bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 legacy-header nav-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20" style="height: 5.7rem;">
                 <div class="flex items-center gap-3" style="margin-top: 34px; margin-bottom: 25px;">
@@ -85,7 +86,7 @@
             </div>
         </div>
     </nav>
-    <div class="mobile-menu md:hidden bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800"
+    <div class="mobile-menu md:hidden bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 legacy-header nav-hidden"
         id="mobile-menu" data-menu="mobile" aria-hidden="true">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6 pt-2">
             <div class="flex flex-col gap-4">
@@ -609,7 +610,8 @@
             </div>
         </div>
     </section>
-    <footer class="bg-[#262d42] border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+    <div id="footer-include"></div>
+    <footer class="bg-[#262d42] border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 footer-hidden legacy-footer">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
                 <div class="flex flex-col gap-4 max-w-xs">
@@ -665,7 +667,26 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script>
+        (function () {
+            const load = (id, url) =>
+                fetch(url)
+                    .then((r) => r.text())
+                    .then((html) => {
+                        const el = document.getElementById(id);
+                        if (el) el.innerHTML = html;
+                    });
+            Promise.all([
+                load("header-include", "header.html"),
+                load("footer-include", "footer.html"),
+            ]).then(() => {
+                document.querySelectorAll(".legacy-header, .legacy-footer").forEach((el) => el.remove());
+                const s = document.createElement("script");
+                s.src = "script.js";
+                document.body.appendChild(s);
+            });
+        })();
+    </script>
 </body>
 
 </html>
