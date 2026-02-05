@@ -1,4 +1,4 @@
-// Team modal interactivity
+// Master-detail team view interactivity
 
 document.addEventListener("DOMContentLoaded", () => {
   const teamData = {
@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
       bio: [
         "Malika Karimova korporativ tuzilmalarni optimallashtirish va startaplar uchun investitsiya shartnomalarini ishlab chiqishda 10 yillik tajribaga ega.",
         "U aktsionerlar kelishuvi, konvertatsiya qilinadigan qarz va xodimlar opsion dasturlari bo'yicha klientlarga amaliy yechimlar beradi.",
-        "Malika ayol tadbirkorlar uchun mentorlik dasturlarida faol qatnashadi."],
+        "Malika ayol tadbirkorlar uchun mentorlik dasturlarida faol qatnashadi."
+      ],
       details: [
         { label: "Mutaxassislik", value: "Korporativ tuzilma, investitsiya bitimlari" },
         { label: "Tajriba", value: "10 yil" },
@@ -54,7 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
       bio: [
         "Rustam Tursunov 18 yildan beri tijorat nizolari va arbitraj ishlarini yuritadi, murakkab sud jarayonlarida kompaniyalarni himoya qiladi.",
         "U texnologiya, qurilish va energetika sektorlaridagi mijozlar uchun strategik sud strategiyalarini ishlab chiqadi.",
-        "Rustam hakamlik qarorlarini ijro etish va mediatsiya orqali kelishuvga erishishda katta tajribaga ega."],
+        "Rustam hakamlik qarorlarini ijro etish va mediatsiya orqali kelishuvga erishishda katta tajribaga ega."
+      ],
       details: [
         { label: "Mutaxassislik", value: "Tijorat nizolari, arbitraj" },
         { label: "Tajriba", value: "18 yil" },
@@ -62,9 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { label: "Tillar", value: "O'zbek, Rus" },
         { label: "Joylashuv", value: "Toshkent" }
       ],
-      socials: [
-        { label: "LinkedIn", text: "in", url: "#" }
-      ]
+      socials: [{ label: "LinkedIn", text: "in", url: "#" }]
     },
     "4": {
       name: "Elena Sidorova",
@@ -74,7 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
       bio: [
         "Elena Sidorova xalqaro soliqqa tortish, transfer narxlari va tekshiruvlarga tayyorgarlik bo'yicha yetakchi ekspert.",
         "U ko'p millatli kompaniyalar uchun soliq riskini baholash va tuzilmani optimallashtirish bo'yicha keng tajribaga ega.",
-        "Elena IFRS va mahalliy soliq qonunchiligini uyg'unlashtirishda mijozlarga amaliy ko'rsatmalar beradi."],
+        "Elena IFRS va mahalliy soliq qonunchiligini uyg'unlashtirishda mijozlarga amaliy ko'rsatmalar beradi."
+      ],
       details: [
         { label: "Mutaxassislik", value: "Xalqaro soliq, transfer narxlari" },
         { label: "Tajriba", value: "12 yil" },
@@ -89,86 +90,77 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  const modal = document.getElementById("profile-modal");
-  const modalImg = document.getElementById("modal-img");
-  const modalName = document.getElementById("modal-name");
-  const modalTitle = document.getElementById("modal-title");
-  const modalBio = document.getElementById("modal-bio");
-  const modalDetails = document.getElementById("modal-details");
-  const modalSocial = document.getElementById("modal-social");
-  const closeBtn = document.querySelector(".close-button");
-  const grid = document.querySelector(".team-grid");
+  const list = document.querySelector(".team-list");
+  const items = Array.from(document.querySelectorAll(".team-list-item"));
+  const detailImg = document.getElementById("detail-img");
+  const detailName = document.getElementById("detail-name");
+  const detailTitle = document.getElementById("detail-title");
+  const detailBio = document.getElementById("detail-bio");
+  const detailExpertise = document.getElementById("detail-expertise");
+  const detailSocial = document.getElementById("detail-social");
 
-  if (!modal || !grid) return;
+  if (!list || !items.length || !detailImg || !detailName || !detailTitle) return;
 
-  const renderList = (container, items, renderer) => {
-    container.innerHTML = "";
-    items.forEach((item) => container.appendChild(renderer(item)));
+  const getExpertiseItems = (details) => {
+    const specialization = details?.find((d) =>
+      d.label.toLowerCase().includes("mutaxassislik")
+    );
+    if (!specialization) return [];
+    return specialization.value
+      .split(",")
+      .map((item) => item.trim())
+      .filter(Boolean);
   };
 
-  const showModal = (id) => {
-    const data = teamData[id];
+  const updateDetails = (memberId) => {
+    const data = teamData[memberId];
     if (!data) return;
 
-    modalImg.src = data.image;
-    modalImg.alt = data.name;
-    modalName.textContent = data.name;
-    modalTitle.textContent = data.title;
+    detailImg.src = data.image;
+    detailImg.alt = data.name;
+    detailName.textContent = data.name;
+    detailTitle.textContent = data.title;
 
-    modalBio.innerHTML = "";
+    detailBio.innerHTML = "";
     data.bio.forEach((paragraph) => {
       const p = document.createElement("p");
       p.textContent = paragraph;
-      modalBio.appendChild(p);
+      detailBio.appendChild(p);
     });
 
-    renderList(modalDetails, data.details, ({ label, value }) => {
+    detailExpertise.innerHTML = "";
+    getExpertiseItems(data.details).forEach((skill) => {
       const li = document.createElement("li");
-      const strong = document.createElement("strong");
-      strong.textContent = `${label}:`;
-      li.appendChild(strong);
-      li.appendChild(document.createTextNode(` ${value}`));
-      return li;
+      li.textContent = skill;
+      detailExpertise.appendChild(li);
     });
 
-    renderList(modalSocial, data.socials, ({ label, url, text }) => {
+    detailSocial.innerHTML = "";
+    data.socials.forEach(({ label, url, text }) => {
       const li = document.createElement("li");
       const a = document.createElement("a");
       a.href = url;
       a.textContent = text;
       a.setAttribute("aria-label", label);
+      a.target = "_blank";
+      a.rel = "noreferrer";
       li.appendChild(a);
-      return li;
+      detailSocial.appendChild(li);
     });
 
-    modal.classList.add("visible");
-    modal.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
+    items.forEach((item) => item.classList.remove("active"));
+    const activeItem = items.find((item) => item.getAttribute("data-member-id") === memberId);
+    if (activeItem) activeItem.classList.add("active");
   };
 
-  const hideModal = () => {
-    modal.classList.remove("visible");
-    modal.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-  };
-
-  grid.addEventListener("click", (event) => {
-    const card = event.target.closest(".team-card");
-    if (!card || !grid.contains(card)) return;
-    event.preventDefault();
-    const id = card.getAttribute("data-member-id");
-    showModal(id);
+  list.addEventListener("click", (event) => {
+    const item = event.target.closest(".team-list-item");
+    if (!item || !list.contains(item)) return;
+    const memberId = item.getAttribute("data-member-id");
+    updateDetails(memberId);
   });
 
-  closeBtn?.addEventListener("click", hideModal);
-
-  modal.addEventListener("click", (event) => {
-    if (event.target === modal) hideModal();
-  });
-
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && modal.classList.contains("visible")) {
-      hideModal();
-    }
-  });
+  // Initial render
+  const firstId = items[0]?.getAttribute("data-member-id") || Object.keys(teamData)[0];
+  if (firstId) updateDetails(firstId);
 });
