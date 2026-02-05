@@ -27,28 +27,28 @@
                     A curated set of real-world templates across key legal practices, organized for quick reference.
                 </p>
                 <div class="search-bar" role="search">
-                    <span class="search-icon">🔍</span>
+                    <span class="material-symbols-outlined search-icon" aria-hidden="true">search</span>
                     <input id="searchInput" class="search-input" type="search" placeholder="Search documents…" aria-label="Search documents"
                         data-i18n="sample.search.placeholder" data-i18n-attr="placeholder" />
                 </div>
-                <div class="chips" aria-label="Suggested scopes">
+                <!-- <div class="chips" aria-label="Suggested scopes">
                     <button class="chip" data-chip="recent" data-i18n="sample.chip.recent">Recently updated</button>
                     <button class="chip" data-chip="popular" data-i18n="sample.chip.popular">Most downloaded</button>
                     <button class="chip" data-chip="short" data-i18n="sample.chip.short">Short (&lt; 5 pages)</button>
                     <button class="chip" data-chip="uz" data-i18n="sample.chip.uz">Uzbekistan</button>
-                </div>
+                </div> -->
             </header>
 
             <div class="layout samples" aria-label="Document library layout">
                 <aside class="filters" aria-label="Filters">
-                    <div class="filter-group">
-                        <div class="filter-title" data-i18n="sample.filter.categories">Categories</div>
-                        <label class="filter-option"><input type="radio" name="category" value="all" checked /> <span data-i18n="sample.filter.all">All</span></label>
-                        <label class="filter-option"><input type="radio" name="category" value="corporate" /> <span data-i18n="sample.filter.corporate">Corporate Law</span></label>
-                        <label class="filter-option"><input type="radio" name="category" value="contracts" /> <span data-i18n="sample.filter.contracts">Contracts</span></label>
-                        <label class="filter-option"><input type="radio" name="category" value="litigation" /> <span data-i18n="sample.filter.litigation">Litigation</span></label>
-                        <label class="filter-option"><input type="radio" name="category" value="notarial" /> <span data-i18n="sample.filter.notarial">Notarial</span></label>
-                    </div>
+                        <div class="filter-group">
+                            <div class="filter-title" data-i18n="sample.filter.categories">Categories</div>
+                            <label class="filter-option"><input type="radio" name="category" value="all" checked /> <span data-i18n="sample.filter.all">All</span></label>
+                            <label class="filter-option"><input type="radio" name="category" value="corporate" /> <span data-i18n="sample.filter.corporate">Corporate Law</span></label>
+                            <label class="filter-option"><input type="radio" name="category" value="contracts" /> <span data-i18n="sample.filter.contracts">Contracts</span></label>
+                            <label class="filter-option"><input type="radio" name="category" value="litigation" /> <span data-i18n="sample.filter.litigation">Litigation</span></label>
+                            <label class="filter-option"><input type="radio" name="category" value="notarial" /> <span data-i18n="sample.filter.notarial">Notarial</span></label>
+                        </div>
                     <div class="filter-group">
                         <div class="filter-title" data-i18n="sample.filter.jurisdiction">Jurisdiction</div>
                         <label class="filter-option"><input type="checkbox" value="uz" data-filter="jurisdiction" /> <span data-i18n="sample.filter.uz">Uzbekistan</span></label>
@@ -81,13 +81,13 @@
                         <button id="densityToggle" class="density" aria-pressed="false" data-i18n="sample.density.comfortable">Density: Comfortable</button>
                     </div>
 
-                    <div class="tablist" role="tablist" aria-label="Document categories">
+                    <!-- <div class="tablist" role="tablist" aria-label="Document categories">
                         <button class="chip active" role="tab" id="tab-all" aria-controls="panel-all" aria-selected="true" data-tab="all" data-i18n="sample.filter.all">All</button>
                         <button class="chip" role="tab" id="tab-corporate" aria-controls="panel-corporate" aria-selected="false" data-tab="corporate" data-i18n="sample.filter.corporate">Corporate Law</button>
                         <button class="chip" role="tab" id="tab-contracts" aria-controls="panel-contracts" aria-selected="false" data-tab="contracts" data-i18n="sample.filter.contracts">Contracts</button>
                         <button class="chip" role="tab" id="tab-litigation" aria-controls="panel-litigation" aria-selected="false" data-tab="litigation" data-i18n="sample.filter.litigation">Litigation</button>
                         <button class="chip" role="tab" id="tab-notarial" aria-controls="panel-notarial" aria-selected="false" data-tab="notarial" data-i18n="sample.filter.notarial">Notarial</button>
-                    </div>
+                    </div> -->
 
                     <div id="results" class="cards" role="tabpanel" aria-labelledby="tab-all"></div>
                 </section>

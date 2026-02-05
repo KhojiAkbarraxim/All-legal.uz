@@ -1030,12 +1030,6 @@ const initSearch = () => {
 
 setLangMenuOpen(false);
 
-const savedLang = localStorage.getItem("lang");
-const initialLang = supportedLangs.includes(savedLang) ? savedLang : "en";
-applyTranslations(initialLang);
-initTabs();
-initSearch();
-
 const removeAdobeAssistant = () => {
     const candidates = Array.from(
         document.querySelectorAll("div,section,aside,iframe,button,a")
@@ -1050,14 +1044,23 @@ const removeAdobeAssistant = () => {
         }
     });
 };
-removeAdobeAssistant();
-const adobeObserver = new MutationObserver(() => removeAdobeAssistant());
-adobeObserver.observe(document.documentElement, {
-    childList: true,
-    subtree: true,
-});
 
- const documents = [
+const boot = () => {
+    setLangMenuOpen(false);
+    const savedLang = localStorage.getItem("lang");
+    const initialLang = supportedLangs.includes(savedLang) ? savedLang : "en";
+    applyTranslations(initialLang);
+    initTabs();
+    initSearch();
+    removeAdobeAssistant();
+    const adobeObserver = new MutationObserver(() => removeAdobeAssistant());
+    adobeObserver.observe(document.documentElement, {
+        childList: true,
+        subtree: true,
+    });
+
+    (() => {
+        const documents = [
             {
                 title: "Share Purchase Agreement",
                 summary: "Sets terms for transferring company shares between parties.",
@@ -1220,11 +1223,16 @@ adobeObserver.observe(document.documentElement, {
             }
         ];
 
+        // Sample documents page only
         const resultsEl = document.getElementById("results");
         const searchInput = document.getElementById("searchInput");
         const sortSelect = document.getElementById("sortSelect");
         const densityToggle = document.getElementById("densityToggle");
         const resultCount = document.getElementById("resultCount");
+        if (!resultsEl || !searchInput || !sortSelect || !densityToggle || !resultCount) {
+            return; // not on the samples page
+        }
+
         let activeTab = "all";
         let dense = false;
 
@@ -1422,3 +1430,11 @@ adobeObserver.observe(document.documentElement, {
 
         // initial render
         applyFilters(); 
+        })();
+};
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot, { once: true });
+} else {
+    boot();
+}
