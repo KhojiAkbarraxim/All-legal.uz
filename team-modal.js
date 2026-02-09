@@ -3,12 +3,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const teamData = {
     "1": {
-      name: "Aziz Rakhimov",
-      title: "Bosh hamkor",
+      name: "Said Raximov",
+      title: "Bosh direktor",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuBSs48sXvRPglHu-cmtfUj71Vm8yCBzUqlvXfNfD8HMrd5ft7v1LgzpJzCDtzCnbyoakCHitZteGg3WMvAb-yD4F3JnLhXtMcACOavf-1drCajP9RPtSCkVdk3CrWE2olsvlpKjPqCAOBn_KjqsZYfYzGguOyMBzQ7at_OwGt0Nh1qsL2xwiMf8CECLegilaYH5A1QwArtA-H95Av172n5eEQIA4wp8DYWKqiV6CjPwnD3uPYGVqAiuGpFKsbr7Gs3tKy5LBvDFwl8",
       bio: [
-        "Aziz Rakhimov 15 yildan ortiq tajribaga ega bo'lib, korporativ huquq, M&A va yuqori darajadagi shartnoma muzokaralarida kompaniyalarni himoya qiladi.",
+        "Said Rakhimov 15 yildan ortiq tajribaga ega bo'lib, korporativ huquq, M&A va yuqori darajadagi shartnoma muzokaralarida kompaniyalarni himoya qiladi.",
         "U xalqaro hamkorlikda yirik bitimlarni yopish, regulyativ muvofiqlikni ta'minlash va biznes xavfini kamaytirishga ixtisoslashgan.",
         "U ingliz, rus va o'zbek tillarida erkin so'zlashadi va transchegaraviy loyihalarda ko'p tarmoqli jamoalarni boshqaradi."
       ],
@@ -26,66 +26,176 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     },
     "2": {
-      name: "Malika Karimova",
-      title: "Hamkor, korporativ huquq",
+      name: "Abduxalil Tursunov",
+      title: "Hamkor, korporativ huquq va huquqiy siyosat",
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuB4pBKDREF2rYDxywnnQI8Vb-scScnuJYEge-9Ohbj7ZcPyLVXrt_NdnivGcKDwp5IQo0W7t6xiAYw6L1Nx9lzKbjrrsIktu4fEhw-NRh7bK4TzkfPKg9dnbRy7_syKJdU4f83KW4hPk1dE6Nz16AgklWyti0Tve_KaZtvGSLUrqZqpBgvIm_b4dt5Tx6jApW93nrXjtGnZueo1J5glgfX7aT3vXUNqMcJLNNQcjY0AaXKZLioFXosFYBhW3w7Ec_XEL8YyrTYdm_w",
+        "Tursunov_A.png",
       bio: [
-        "Malika Karimova korporativ tuzilmalarni optimallashtirish va startaplar uchun investitsiya shartnomalarini ishlab chiqishda 10 yillik tajribaga ega.",
-        "U aktsionerlar kelishuvi, konvertatsiya qilinadigan qarz va xodimlar opsion dasturlari bo'yicha klientlarga amaliy yechimlar beradi.",
-        "Malika ayol tadbirkorlar uchun mentorlik dasturlarida faol qatnashadi."
+        "Abduxalil Tursunov korporativ huquq, huquqiy siyosat va xalqaro huquqiy hamkorlik bo'yicha 10+ yillik tajribaga ega amaliyotchi advokat.",
+        "U korporativ tuzilma, startap va investitsiya bitimlari uchun shartnomalar, aktsionerlar kelishuvlari, konvertatsiya qilinadigan qarz va xodimlar opsion dasturlarini ishlab chiqadi hamda sud va ma'muriy jarayonlarda tashkilotlarni himoya qiladi.",
+        "TSULda lektor sifatida korporativ boshqaruv va xalqaro huquq mavzularida dars beradi; Nagoya Universitetida (Yaponiya) LL.M. darajasini olgan.",
+        "O'zbek, ingliz va rus tillarida erkin, yapon tilida ishchi darajada so'zlashadi."
       ],
       details: [
-        { label: "Mutaxassislik", value: "Korporativ tuzilma, investitsiya bitimlari" },
-        { label: "Tajriba", value: "10 yil" },
-        { label: "Ta'lim", value: "MBA, INHA University; LL.B., UWED" },
-        { label: "Tillar", value: "O'zbek, Ingliz" },
+        { label: "Mutaxassislik", value: "Korporativ huquq, huquqiy siyosat, xalqaro huquqiy hamkorlik" },
+        { label: "Tajriba", value: "10+ yil" },
+        { label: "Ta'lim", value: "LL.M., Nagoya University (Yaponiya); Lektor, Tashkent State University of Law" },
+        { label: "Tillar", value: "O'zbek, Ingliz, Rus; Yapon tili (ishchi daraja)" },
         { label: "Joylashuv", value: "Toshkent" }
       ],
       socials: [
-        { label: "LinkedIn", text: "in", url: "#" },
-        { label: "Twitter", text: "X", url: "#" }
+        { label: "LinkedIn", text: "in", url: "https://www.linkedin.com" },
+        { label: "Telegram", text: "tg", url: "https://t.me/Advokat_1987" },
+        { label: "Email", text: "@", url: "mailto:intlaw100@gmail.com" },
+        { label: "Telefon: +998 95 187 05 11", text: "☎", url: "tel:+998951870511" }
       ]
     },
     "3": {
-      name: "Rustam Tursunov",
-      title: "Hamkor, sud ishlari",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBPQeL2kReLgpXudUGq-MGHUZeiTl3ukaj254ZcWMtjRzYKReRzUaTdBZhn8VUqmxRElZhlQDQ53fe4ezjHORrG1lG22mtXRIpQHau288_j_S6VSRZ-DLS0r1O2PSQFMv8UdrwUxwpvANNiTSpeVFaC2srA32V5zm5buDcrys2kjwnDQwz7TaQZM-i63Sc8szB_a7yPfCgEssnzR-3iwb9oK5Ylw229SobLnKYNdkDotJ_xPh1K-O1ra7i77zBy2Vogj7nA4xPUdzU",
+      name: "Sherzod Zakirov",
+      title: "Legal & Compliance Assistant Manager, xalqaro biznes",
+      image: "Zakirov_Sh.png",
       bio: [
-        "Rustam Tursunov 18 yildan beri tijorat nizolari va arbitraj ishlarini yuritadi, murakkab sud jarayonlarida kompaniyalarni himoya qiladi.",
-        "U texnologiya, qurilish va energetika sektorlaridagi mijozlar uchun strategik sud strategiyalarini ishlab chiqadi.",
-        "Rustam hakamlik qarorlarini ijro etish va mediatsiya orqali kelishuvga erishishda katta tajribaga ega."
+        "Sherzod Zakirov korporativ huquq, komplaens va ishlab chiqarish boshqaruvi bo'yicha xalqaro tajribaga ega yuridik va biznes mutaxassisi.",
+        "Fast Retailing kompaniyasida 6+ yil davomida global ishlab chiqarish va ta'minot zanjiri jarayonlarida ishlagan, hozirda Nagoya Railroad (Yaponiya) da Legal & Compliance bo'limida Assistant Manager.",
+        "TSUL va Nagoya Universitetidagi yuridik ta'limini amaliy korporativ boshqaruv, shartnomalar va komplaens tizimlari bilan uyg'unlashtiradi.",
+        "O'zbek oziq-ovqat mahsulotlari va konsalting biznesining asoschisi sifatida xalqaro shartnomalar, eksport va kross-madaniy muzokaralarda tajribaga ega.",
+        "Besh tilni biladi, kross-madaniy biznes aloqalari va xalqaro loyiha koordinatsiyasida kuchli."
       ],
       details: [
-        { label: "Mutaxassislik", value: "Tijorat nizolari, arbitraj" },
-        { label: "Tajriba", value: "18 yil" },
-        { label: "Ta'lim", value: "JD, UWED" },
-        { label: "Tillar", value: "O'zbek, Rus" },
-        { label: "Joylashuv", value: "Toshkent" }
+        { label: "Mutaxassislik", value: "Korporativ huquq, komplaens, xalqaro shartnomalar, ishlab chiqarish boshqaruvi" },
+        { label: "Tajriba", value: "6+ yil korporativ (Fast Retailing) + joriy rol Nagoya Railroad" },
+        { label: "Ta'lim", value: "LL.M., Nagoya University; LL.B., Tashkent State University of Law" },
+        { label: "Tillar", value: "O'zbek, Ingliz, Rus, Yapon, Koreys" },
+        { label: "Joylashuv", value: "Nagoya, Aichi, Yaponiya" }
       ],
-      socials: [{ label: "LinkedIn", text: "in", url: "#" }]
+      socials: [
+        { label: "Telefon: +81 90-3580-5391", text: "☎", url: "tel:+819035805391" },
+        { label: "Email: sherzod.hikmat@gmail.com", text: "@", url: "mailto:sherzod.hikmat@gmail.com" },
+        { label: "LinkedIn", text: "in", url: "#" }
+      ]
     },
     "4": {
-      name: "Elena Sidorova",
-      title: "Soliq amaliyoti rahbari",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAFAvi9C2l1Z0qBpYuS7EHoH7MOxU3pqBOGPJuDBcNrSfhwl34C1owLO2PZg8ks4tie20r7dthmKA8WWzs_8AAhR6Rn9qSxctUBXvupmt44G38OR6f_8P0ohbLtZBPqZwu33VC6jg_SUXrt75v-Ewks5zpkZHibvIvCVHEebl3wFYpOuakMEVWD1jK1oa6vUJ6XDGhF7cxfN84zSO9bmNrjFE6AEOP-szEa2d2aSi-er-dALlH60Zi18Rl5B9Zz3HXRDe9W2PMEm6o",
+      name: "Muhammadjon Rasulov",
+      title: "In-House Lawyer, Litigation & Compliance Specialist",
+      image: "Rasulov_M.png",
       bio: [
-        "Elena Sidorova xalqaro soliqqa tortish, transfer narxlari va tekshiruvlarga tayyorgarlik bo'yicha yetakchi ekspert.",
-        "U ko'p millatli kompaniyalar uchun soliq riskini baholash va tuzilmani optimallashtirish bo'yicha keng tajribaga ega.",
-        "Elena IFRS va mahalliy soliq qonunchiligini uyg'unlashtirishda mijozlarga amaliy ko'rsatmalar beradi."
+        "Muhammadjon Rasulov korporativ shartnomalar, komplaens boshqaruvi va xalqaro biznesni yuridik qo'llab-quvvatlash bo'yicha tajribali in-house yurist.",
+        "Toyota Industries Corporation va Toyota Material Handling India da yirik komplaens va shartnoma loyihalarini boshqargan; hozirda Nagoya Railroad (Yaponiya)da Legal & Compliance bo'limida Assistant Manager.",
+        "M&A jarayonlari, xalqaro shartnomalar, subsidiya va filiallar uchun komplaens rejalashtirish hamda joriy etish ustida ishlagan.",
+        "Mahsulot javobgarligi bo'yicha sud ishlarini, davlat organlari bilan muloqot va da'volarni yuritish tajribasiga ega.",
+        "Nagoya Universitetida huquq fanlari doktori (PhD) darajasiga ega, ilmiy tayyorgarligini amaliy korporativ boshqaruv bilan uyg'unlashtiradi."
       ],
       details: [
-        { label: "Mutaxassislik", value: "Xalqaro soliq, transfer narxlari" },
-        { label: "Tajriba", value: "12 yil" },
-        { label: "Ta'lim", value: "ACCA, MSc Taxation" },
-        { label: "Tillar", value: "Rus, Ingliz" },
+        { label: "Mutaxassislik", value: "Korporativ shartnomalar, komplaens boshqaruvi, M&A yuridik qo'llab-quvvatlash, xalqaro biznes, litigatsiya" },
+        { label: "Tajriba", value: "Toyota Industries Corporation; Toyota Material Handling India; hozirda Nagoya Railroad (Legal & Compliance Assistant Manager)" },
+        { label: "Ta'lim", value: "Doctor of Law (PhD), Nagoya University" },
+        { label: "Tillar", value: "Ingliz, Yapon, O'zbek" },
+        { label: "Joylashuv", value: "Kariya, Aichi, Yaponiya" }
+      ],
+      socials: [
+        { label: "Telefon: +81 90 9174 7007", text: "☎", url: "tel:+819091747007" },
+        { label: "Email: muhammad.rasulov@gmail.com", text: "@", url: "mailto:muhammad.rasulov@gmail.com" },
+        { label: "LinkedIn", text: "in", url: "#" }
+      ]
+    },
+    "5": {
+      name: "Anvar Omonboyev",
+      title: "Attorney / Legal Advisor / University Lecturer",
+      image: "Omonboyev_A.png",
+      bio: [
+        "Anvar Omonboyev korporativ huquq, huquqiy siyosat va xalqaro huquqiy hamkorlik bo'yicha tajribali yuridik mutaxassis.",
+        "Hozir advokatlik qiladi va Tashkent State University of Lawda lektor sifatida faoliyat yuritadi.",
+        "Mijozlarga maslahat berish, shartnomalar tayyorlash va tashkilotlarni sud hamda ma'muriy jarayonlarda himoya qilishda katta tajribaga ega.",
+        "Faoliyati davomida davlat ilmiy-tadqiqot institutlari, xususiy yuridik firmalar va akademik muassasalarda ishlagan.",
+        "Nagoya Universitetida (Yaponiya) huquq magistri (LL.M.) darajasiga ega va xalqaro huquqiy bilimlari mustahkam.",
+        "O'zbek, ingliz va rus tillarida erkin, yapon tilida ishchi darajada so'zlashadi."
+      ],
+      details: [
+        { label: "Mutaxassislik", value: "Korporativ huquq, huquqiy siyosat, xalqaro huquqiy hamkorlik" },
+        { label: "Tajriba", value: "10+ yil advokatlik va akademik faoliyat" },
+        { label: "Ta'lim", value: "LL.M., Nagoya University (Yaponiya)" },
+        { label: "Tillar", value: "O'zbek, Ingliz, Rus; Yapon tili (ishchi daraja)" },
         { label: "Joylashuv", value: "Toshkent" }
       ],
       socials: [
-        { label: "LinkedIn", text: "in", url: "#" },
-        { label: "Twitter", text: "X", url: "#" }
+        { label: "Telefon: +998 95 187 05 11", text: "☎", url: "tel:+998951870511" },
+        { label: "Email: intlaw100@gmail.com", text: "@", url: "mailto:intlaw100@gmail.com" },
+        { label: "Telegram: @Advokat_1987", text: "tg", url: "https://t.me/Advokat_1987" },
+        { label: "LinkedIn: Anvar Omonboyev", text: "in", url: "#" }
+      ]
+    },
+    "6": {
+      name: "Adhambek Bakhodirov",
+      title: "Lawyer / Legal Consultant / Due Diligence & Corporate Law Specialist",
+      image: "Baxodirov_A.png",
+      bio: [
+        "Adhambek Bakhodirov korporativ huquq, shartnomalar va kompaniyalar uchun yuridik due diligence bo'yicha ixtisoslashgan.",
+        "Yuridik firmalar va energetika sektorida kompaniya ro'yxatga olish, shartnoma boshqaruvi va regulyativ muvofiqlikni ta'minlashda ishlagan.",
+        "Hozir xalqaro yuridik firmada yurist sifatida bir nechta kompaniyalarni doimiy yuridik xizmatlar bilan qo'llab-quvvatlaydi.",
+        "Qayta tiklanuvchi energetika loyihalarida loyiha boshqaruvi, shartnoma o'zgartirishlari va ishchi kuchini muvofiqlashtirish tajribasiga ega.",
+        "TSULda yuridik ta'limni yakunlamoqda, amaliyotini akademik tayyorgarlik bilan uyg'unlashtirmoqda.",
+        "O'zbek va rus tillarida erkin, ingliz tilini upper-intermediate darajada biladi."
+      ],
+      details: [
+        { label: "Mutaxassislik", value: "Korporativ huquq, shartnomalar, due diligence, komplaens" },
+        { label: "Tajriba", value: "Energetika va yuridik firmalar; hozir xalqaro yuridik firmada yurist" },
+        { label: "Ta'lim", value: "Tashkent State University of Law (yakunlash jarayonida)" },
+        { label: "Tillar", value: "O'zbek, Rus; Ingliz (Upper-Intermediate)" },
+        { label: "Joylashuv", value: "Toshkent" }
+      ],
+      socials: [
+        { label: "Telefon: +998 88 138 69 09", text: "☎", url: "tel:+998881386909" },
+        { label: "Email: lawyerbahodirov@gmail.com", text: "@", url: "mailto:lawyerbahodirov@gmail.com" },
+        { label: "Telegram: @adhambahodirov", text: "tg", url: "https://t.me/adhambahodirov" },
+        { label: "LinkedIn", text: "in", url: "#" }
+      ]
+    },
+    "7": {
+      name: "Malika Matnazarova",
+      title: "Lawyer / Attorney Assistant / Court Legal Specialist",
+      image: "Matnazarova.png",
+      bio: [
+        "Malika Matnazarova sudlar va huquqni himoya qilish tashkilotlarida ishlash tajribasiga ega yuridik mutaxassis.",
+        "Sudyaning yordamchisi sifatida va keyinchalik advokatlik byurosida assistent hamda stajyor yurist sifatida ishlagan.",
+        "Hozir yuridik firmada yurist bo'lib, mijozlarni vakillash va hujjatlar tayyorlashda qo'llab-quvvatlaydi.",
+        "Qoraqalpoq Davlat Universitetida huquq bo'yicha bakalavr darajasiga ega.",
+        "Sud jarayonlari, yuridik hujjatlashtirish va klientlarga yuridik ko'mak ko'rsatishda amaliy tajribaga ega.",
+        "O'zbek va rus tillarida erkin, ingliz tilini o'rta professional darajada biladi."
+      ],
+      details: [
+        { label: "Mutaxassislik", value: "Sud jarayonlari, yuridik hujjatlashtirish, advokatlik yordami, klientlarni vakillash" },
+        { label: "Tajriba", value: "Sud yordamchisi, advokatlik byurosi assistenti va stajyor yurist; hozir yuridik firmada yurist" },
+        { label: "Ta'lim", value: "LL.B., Qoraqalpoq Davlat Universiteti" },
+        { label: "Tillar", value: "O'zbek, Rus; Ingliz (o'rta professional daraja)" },
+        { label: "Joylashuv", value: "O'zbekiston" }
+      ],
+      socials: [
+        { label: "Telefon: +998 90 704 21 11", text: "☎", url: "tel:+998907042111" },
+        { label: "LinkedIn", text: "in", url: "#" }
+      ]
+    },
+    "8": {
+      name: "Umarjon Jumaniyazov",
+      title: "Attorney / Professional Mediator / Civil & Labor Law Specialist / Law Lecturer",
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuBSs48sXvRPglHu-cmtfUj71Vm8yCBzUqlvXfNfD8HMrd5ft7v1LgzpJzCDtzCnbyoakCHitZteGg3WMvAb-yD4F3JnLhXtMcACOavf-1drCajP9RPtSCkVdk3CrWE2olsvlpKjPqCAOBn_KjqsZYfYzGguOyMBzQ7at_OwGt0Nh1qsL2xwiMf8CECLegilaYH5A1QwArtA-H95Av172n5eEQIA4wp8DYWKqiV6CjPwnD3uPYGVqAiuGpFKsbr7Gs3tKy5LBvDFwl8",
+      bio: [
+        "Umarjon Jumaniyazov fuqarolik va mehnat huquqi bo'yicha ixtisoslashgan advokat va professional mediator.",
+        "TSUL va Litvadagi Mykolas Romeris Universitetida tahsil olgan, Private Law bo'yicha magistr darajasiga ega.",
+        "O'qish davomida e-commerce huquqi va xalqaro xususiy huquq bo'yicha chuqur bilim olgan.",
+        "2024 yilda Xorazm viloyati Adliya boshqarmasida yuridik maslahatchi sifatida faoliyat boshlagan.",
+        "Hozir advokat va mediator sifatida sudgacha va sud jarayonlarida nizolarni hal qilishga ko'maklashadi hamda huquq bo'yicha lektorlik qiladi.",
+        "100+ mijozning huquq va manfaatlarini himoya qilishda amaliy tajribaga ega."
+      ],
+      details: [
+        { label: "Mutaxassislik", value: "Fuqarolik huquqi, mehnat huquqi, mediatsiya, e-commerce huquqi, xalqaro xususiy huquq" },
+        { label: "Tajriba", value: "Advokat va professional mediator; Xorazm Adliya boshqarmasida yuridik maslahatchi (2024)" },
+        { label: "Ta'lim", value: "LL.B., TSUL; LL.M. Private Law, Mykolas Romeris University (Litva)" },
+        { label: "Tillar", value: "O'zbek, Ingliz; Rus (ishchi daraja)" },
+        { label: "Joylashuv", value: "O'zbekiston" }
+      ],
+      socials: [
+        { label: "LinkedIn", text: "in", url: "#" }
       ]
     }
   };
@@ -101,13 +211,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!list || !items.length || !detailImg || !detailName || !detailTitle) return;
 
-  const getExpertiseItems = (details) => {
-    const specialization = details?.find((d) =>
-      d.label.toLowerCase().includes("mutaxassislik")
-    );
-    if (!specialization) return [];
-    return specialization.value
-      .split(",")
+  const getLanguageItems = (details) => {
+    const langs = details?.find((d) => d.label.toLowerCase().includes("tillar"));
+    if (!langs) return [];
+    return langs.value
+      .split(/[;,]/)
       .map((item) => item.trim())
       .filter(Boolean);
   };
@@ -129,19 +237,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     detailExpertise.innerHTML = "";
-    getExpertiseItems(data.details).forEach((skill) => {
+    getLanguageItems(data.details).forEach((lang) => {
       const li = document.createElement("li");
-      li.textContent = skill;
+      li.textContent = lang;
       detailExpertise.appendChild(li);
     });
 
     detailSocial.innerHTML = "";
-    data.socials.forEach(({ label, url, text }) => {
+    data.socials.forEach(({ label, url, text, title }) => {
       const li = document.createElement("li");
       const a = document.createElement("a");
       a.href = url;
       a.textContent = text;
       a.setAttribute("aria-label", label);
+      a.title = title || label;
       a.target = "_blank";
       a.rel = "noreferrer";
       li.appendChild(a);
