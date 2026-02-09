@@ -822,10 +822,16 @@ body {
     background: #f9f9f9;
 }
 
+.team-page main {
+    /* reduce top whitespace below fixed nav */
+    padding: 8px 16px 28px;
+}
+
 .team-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 20px 80px;
+    /* tighter spacing on section itself */
+    padding: 12px 20px 20px;
 }
 
 .team-section h2 {
@@ -833,7 +839,7 @@ body {
     font-size: 2.5rem;
     font-weight: 800;
     text-align: center;
-    margin: 0 0 50px;
+    margin: 0 0 1px;
 }
 
 .master-detail-container {

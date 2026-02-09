@@ -419,6 +419,25 @@ const initTeamPage = () => {
 
   const getLang = () => (document.documentElement.lang || "en").toLowerCase();
 
+  const flagForLanguage = (label = "") => {
+    const lower = label.toLowerCase();
+    const has = (s) => lower.includes(s);
+    // Latin/Cyrillic checks
+    if (has("o'zbek") || has("o‘zbek") || has("uzbek") || has("узбек")) return "🇺🇿";
+    if (has("rus") || has("рус")) return "🇷🇺";
+    if (has("eng") || has("ingliz") || has("англ") || has("english")) return "🇬🇧";
+    if (has("jap") || has("yapon") || has("япон") || has("日本")) return "🇯🇵";
+    if (has("kor") || has("kore") || has("коре") || has("한국") || has("한")) return "🇰🇷";
+    // Japanese script checks
+    const jp = label;
+    if (jp.includes("ウズベク")) return "🇺🇿";
+    if (jp.includes("ロシア")) return "🇷🇺";
+    if (jp.includes("英語") || jp.includes("イングリッシュ")) return "🇬🇧";
+    if (jp.includes("日本")) return "🇯🇵";
+    if (jp.includes("韓国") || jp.includes("コリア")) return "🇰🇷";
+    return "🌐";
+  };
+
   const resolveMember = (memberId, lang) => {
     const member = teamData[memberId];
     if (!member) return null;
@@ -459,7 +478,7 @@ const initTeamPage = () => {
     detailExpertise.innerHTML = "";
     content.languages.forEach((lng) => {
       const li = document.createElement("li");
-      li.textContent = lng;
+      li.textContent = `${flagForLanguage(lng)} ${lng}`;
       detailExpertise.appendChild(li);
     });
 
