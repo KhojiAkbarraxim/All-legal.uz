@@ -788,6 +788,9 @@ const applyTranslations = (lang) => {
     if (typeof window !== "undefined" && typeof window.applySampleFilters === "function") {
         window.applySampleFilters();
     }
+    if (typeof window !== "undefined") {
+        window.dispatchEvent(new CustomEvent("allegal:langchange", { detail: { lang } }));
+    }
 };
 
 if (langToggle && langMenu) {
