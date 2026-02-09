@@ -114,7 +114,7 @@ const initTeamPage = () => {
       translations: {
         en: {
           name: "Sherzod Zakirov",
-          title: "Legal & Compliance Assistant Manager, International Business",
+          title: "Legal & Compliance Assistant Manager",
           bio: [
             "International legal and compliance specialist with manufacturing and supply-chain experience at Fast Retailing; now at Nagoya Railroad.",
             "Blends TSUL and Nagoya legal training with on-the-ground contract and compliance systems.",

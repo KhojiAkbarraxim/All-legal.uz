@@ -855,8 +855,14 @@ body {
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     padding: 12px 0;
-    max-height: none;
+    max-height: 620px; /* show ~6 cards by default */
     overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .master-column {
+        max-height: none; /* allow full list on small screens */
+    }
 }
 
 .team-list {
