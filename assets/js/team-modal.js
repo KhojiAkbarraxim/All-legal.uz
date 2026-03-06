@@ -54,7 +54,7 @@ const initTeamPage = () => {
       }
     },
     "2": {
-      image: "Tursunov_A.png",
+      image: "assets/images/team/tursunov-a.png",
       socials: [
         { label: "LinkedIn", text: "in", url: "https://www.linkedin.com" },
         { label: "Telegram", text: "tg", url: "https://t.me/Advokat_1987" },
@@ -105,7 +105,7 @@ const initTeamPage = () => {
       }
     },
     "3": {
-      image: "Zakirov_Sh.png",
+      image: "assets/images/team/zakirov-sh.png",
       socials: [
         { label: "Telefon: +81 90-3580-5391", text: "☎", url: "tel:+819035805391" },
         { label: "Email: sherzod.hikmat@gmail.com", text: "@", url: "mailto:sherzod.hikmat@gmail.com" },
@@ -155,7 +155,7 @@ const initTeamPage = () => {
       }
     },
     "4": {
-      image: "Rasulov_M.png",
+      image: "assets/images/team/rasulov-m.png",
       socials: [
         { label: "Telefon: +81 90 9174 7007", text: "☎", url: "tel:+819091747007" },
         { label: "Email: muhammad.rasulov@gmail.com", text: "@", url: "mailto:muhammad.rasulov@gmail.com" },
@@ -205,7 +205,7 @@ const initTeamPage = () => {
       }
     },
     "5": {
-      image: "Omonboyev_A.png",
+      image: "assets/images/team/omonboyev-a.png",
       socials: [
         { label: "Telefon: +998 95 187 05 11", text: "☎", url: "tel:+998951870511" },
         { label: "Email: intlaw100@gmail.com", text: "@", url: "mailto:intlaw100@gmail.com" },
@@ -256,7 +256,7 @@ const initTeamPage = () => {
       }
     },
     "6": {
-      image: "Baxodirov_A.png",
+      image: "assets/images/team/baxodirov-a.png",
       socials: [
         { label: "Telefon: +998 88 138 69 09", text: "☎", url: "tel:+998881386909" },
         { label: "Email: lawyerbahodirov@gmail.com", text: "@", url: "mailto:lawyerbahodirov@gmail.com" },
@@ -307,7 +307,7 @@ const initTeamPage = () => {
       }
     },
     "7": {
-      image: "Matnazarova.png",
+      image: "assets/images/team/matnazarova.png",
       socials: [
         { label: "Telefon: +998 90 704 21 11", text: "☎", url: "tel:+998907042111" },
         { label: "LinkedIn", text: "in", url: "#" }

@@ -10,9 +10,9 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="tailwind.config.js"></script>
+    <script src="assets/js/tailwind.config.js"></script>
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-[#111318] dark:text-white overflow-x-hidden">
@@ -21,7 +21,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20" style="height: 5.7rem;">
                 <div class="flex items-center gap-3" style="margin-top: 34px; margin-bottom: 25px;">
-                    <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="logo.new.png" />
+                    <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="assets/images/logo/logo.new.png" />
                 </div>
                 <div class="hidden md:flex items-center gap-8">
                     <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.about"
@@ -626,7 +626,7 @@
             ]).then(() => {
                 document.querySelectorAll(".legacy-header, .legacy-footer").forEach((el) => el.remove());
                 const s = document.createElement("script");
-                s.src = "script.js";
+                s.src = "assets/js/script.js";
                 document.body.appendChild(s);
             });
         })();
