@@ -3,8 +3,7 @@
 const initTeamPage = () => {
   const teamData = {
     "1": {
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBSs48sXvRPglHu-cmtfUj71Vm8yCBzUqlvXfNfD8HMrd5ft7v1LgzpJzCDtzCnbyoakCHitZteGg3WMvAb-yD4F3JnLhXtMcACOavf-1drCajP9RPtSCkVdk3CrWE2olsvlpKjPqCAOBn_KjqsZYfYzGguOyMBzQ7at_OwGt0Nh1qsL2xwiMf8CECLegilaYH5A1QwArtA-H95Av172n5eEQIA4wp8DYWKqiV6CjPwnD3uPYGVqAiuGpFKsbr7Gs3tKy5LBvDFwl8",
+      image: "assets/images/team/member-primary.png",
       socials: [
         { label: "LinkedIn", text: "in", url: "#" },
         { label: "Twitter", text: "X", url: "#" },
@@ -54,7 +53,7 @@ const initTeamPage = () => {
       }
     },
     "2": {
-      image: "assets/images/team/tursunov-a.png",
+      image: "assets/images/team/tursunov-a.webp",
       socials: [
         { label: "LinkedIn", text: "in", url: "https://www.linkedin.com" },
         { label: "Telegram", text: "tg", url: "https://t.me/Advokat_1987" },
@@ -256,7 +255,7 @@ const initTeamPage = () => {
       }
     },
     "6": {
-      image: "assets/images/team/baxodirov-a.png",
+      image: "assets/images/team/baxodirov-a.webp",
       socials: [
         { label: "Telefon: +998 88 138 69 09", text: "☎", url: "tel:+998881386909" },
         { label: "Email: lawyerbahodirov@gmail.com", text: "@", url: "mailto:lawyerbahodirov@gmail.com" },
@@ -356,8 +355,7 @@ const initTeamPage = () => {
       }
     },
     "8": {
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBSs48sXvRPglHu-cmtfUj71Vm8yCBzUqlvXfNfD8HMrd5ft7v1LgzpJzCDtzCnbyoakCHitZteGg3WMvAb-yD4F3JnLhXtMcACOavf-1drCajP9RPtSCkVdk3CrWE2olsvlpKjPqCAOBn_KjqsZYfYzGguOyMBzQ7at_OwGt0Nh1qsL2xwiMf8CECLegilaYH5A1QwArtA-H95Av172n5eEQIA4wp8DYWKqiV6CjPwnD3uPYGVqAiuGpFKsbr7Gs3tKy5LBvDFwl8",
+      image: "assets/images/team/member-primary.png",
       socials: [{ label: "LinkedIn", text: "in", url: "#" }],
       translations: {
         en: {
@@ -491,7 +489,7 @@ const initTeamPage = () => {
       a.setAttribute("aria-label", label);
       a.title = title || label;
       a.target = "_blank";
-      a.rel = "noreferrer";
+      a.rel = "noopener noreferrer";
       li.appendChild(a);
       detailSocial.appendChild(li);
     });

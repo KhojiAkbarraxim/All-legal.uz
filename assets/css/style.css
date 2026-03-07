@@ -180,13 +180,6 @@ nav [data-i18n^="nav."] {
     transform: scaleX(1);
 }
 
-.nav-hidden,
-.footer-hidden,
-.legacy-header,
-.legacy-footer {
-    display: none !important;
-}
-
 .menu-toggle {
     border-radius: 0.75rem;
     transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease,
@@ -292,12 +285,12 @@ footer a.footer-legal {
 }
 
 .hero-bg--two {
-    background-image: url("../images/hero/lawimg3.jpg");
+    background-image: url("../images/hero/lawimg3.webp");
     animation-name: heroFadeTwo;
 }
 
 .hero-bg--three {
-    background-image: url("../images/hero/lawimg4.jpg");
+    background-image: url("../images/hero/lawimg4.webp");
     animation-name: heroFadeThree;
 }
 

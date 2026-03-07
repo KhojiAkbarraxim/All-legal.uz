@@ -5,19 +5,19 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>All-Legal - Protecting Your Rights &amp; Interests in Uzbekistan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0&amp;icon_names=account_balance,arrow_forward,assignment,balance,call,close,description,domain,expand_less,expand_more,gavel,handshake,location_on,mail,menu,person_play,schedule,search,send,support_agent,travel_explore,verified&amp;display=swap"
         rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
         rel="stylesheet" />
+    <link href="assets/css/tailwind.generated.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="assets/js/tailwind.config.js"></script>
 </head>
 
-<body class="bg-background-light dark:bg-background-dark text-[#111318] dark:text-white overflow-x-hidden">
-    <div id="header-include"></div>
-    <nav class="fixed top-0 z-50 w-full bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 legacy-header nav-hidden">
+<body class="bg-background-light dark:bg-background-dark text-[#111318] dark:text-white overflow-x-hidden" data-page="home">
+    <nav class="fixed top-0 z-50 w-full bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20" style="height: 5.7rem;">
                 <div class="flex items-center gap-3" style="margin-top: 34px; margin-bottom: 25px;">
@@ -31,7 +31,7 @@
                     <a class="nav-link text-sm font-medium transition-colors" data-i18n="nav.sample"
                         href="sample.html">Sample</a>
                     <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.team"
-                        href="#team">Team</a>
+                        href="team.html">Team</a>
                     <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.contact"
                         href="#contact">Contact</a>
                 </div>
@@ -86,7 +86,7 @@
             </div>
         </div>
     </nav>
-    <div class="mobile-menu md:hidden bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 legacy-header nav-hidden"
+    <div class="mobile-menu md:hidden bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800"
         id="mobile-menu" data-menu="mobile" aria-hidden="true">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6 pt-2">
             <div class="flex flex-col gap-4">
@@ -97,7 +97,7 @@
                 <a class="nav-link text-base font-medium transition-colors" data-i18n="nav.sample"
                     href="sample.html">Sample</a>
                 <a class="nav-link text-base font-medium transition-colors" data-nav-link data-i18n="nav.team"
-                    href="#team">Team</a>
+                    href="team.html">Team</a>
                 <a class="nav-link text-base font-medium transition-colors" data-nav-link data-i18n="nav.contact"
                     href="#contact">Contact</a>
                 <button
@@ -207,7 +207,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
                         <img alt="All-Legal modern office interior"
                             class="object-cover w-full h-full transform transition-transform hover:scale-105 duration-700"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQCQaN15f16yN1aUuyotmL0bdhLis74w2-OCwWC1D694mzaVFKjPArWsIaFzS_qMm32JJTRi_O9lKsISdjG9PmPidM42_y1Ktlj_5TIKsHvLeabfBTHXAo0TXBtiv6JtVBvfE7CTzmvOT-G-P7hthXfjXO2aJsK2MbyEejFeWwnCVpSnPbl7gkYpdhcKVpPSn3KMBys7ewOQQ7nqs52oGCNRirkymGS9KX8m4WkACdFEo4D8DNW4m-_YD9FjS9kxVb5Y-pk7dEOUg" />
+                            src="assets/images/team/about-portrait.png" />
                         <div class="absolute bottom-8 left-8 z-20">
                             <div class="bg-white/95 backdrop-blur-sm px-6 py-4 rounded-lg shadow-lg max-w-xs">
                                 <p class="text-navy font-bold text-lg mb-1" data-i18n="about.established">Established
@@ -421,84 +421,6 @@
             </div>
         </div>
     </section>
-    <!-- <section class="py-20 bg-background-light dark:bg-[#0d1117]" id="team">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center mb-12">
-                <h2 class="text-3xl font-bold text-navy dark:text-white tracking-tight" data-i18n="team.title">Our Team
-                </h2>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="group">
-                    <div class="relative overflow-hidden rounded-lg mb-4 h-80 bg-gray-200">
-                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                            data-alt="Portrait of a professional man in a suit standing confidently"
-                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSs48sXvRPglHu-cmtfUj71Vm8yCBzUqlvXfNfD8HMrd5ft7v1LgzpJzCDtzCnbyoakCHitZteGg3WMvAb-yD4F3JnLhXtMcACOavf-1drCajP9RPtSCkVdk3CrWE2olsvlpKjPqCAOBn_KjqsZYfYzGguOyMBzQ7at_OwGt0Nh1qsL2xwiMf8CECLegilaYH5A1QwArtA-H95Av172n5eEQIA4wp8DYWKqiV6CjPwnD3uPYGVqAiuGpFKsbr7Gs3tKy5LBvDFwl8');">
-                        </div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                            <a class="text-white text-sm font-bold flex items-center gap-1 hover:text-accent" href="#">
-                                <span data-i18n="team.viewProfile">View Profile</span> <span
-                                    class="material-symbols-outlined text-xs">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-bold text-navy dark:text-white">Aziz Rakhimov</h3>
-                    <p class="text-primary text-sm font-medium" data-i18n="team.roles.one">Managing Partner</p>
-                </div>
-                <div class="group">
-                    <div class="relative overflow-hidden rounded-lg mb-4 h-80 bg-gray-200">
-                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                            data-alt="Portrait of a professional woman lawyer smiling in an office setting"
-                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4pBKDREF2rYDxywnnQI8Vb-scScnuJYEge-9Ohbj7ZcPyLVXrt_NdnivGcKDwp5IQo0W7t6xiAYw6L1Nx9lzKbjrrsIktu4fEhw-NRh7bK4TzkfPKg9dnbRy7_syKJdU4f83KW4hPk1dE6Nz16AgklWyti0Tve_KaZtvGSLUrqZqpBgvIm_b4dt5Tx6jApW93nrXjtGnZueo1J5glgfX7aT3vXUNqMcJLNNQcjY0AaXKZLioFXosFYBhW3w7Ec_XEL8YyrTYdm_w');">
-                        </div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                            <a class="text-white text-sm font-bold flex items-center gap-1 hover:text-accent" href="#">
-                                <span data-i18n="team.viewProfile">View Profile</span> <span
-                                    class="material-symbols-outlined text-xs">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-bold text-navy dark:text-white">Malika Karimova</h3>
-                    <p class="text-primary text-sm font-medium" data-i18n="team.roles.two">Partner, Corporate Law</p>
-                </div>
-                <div class="group">
-                    <div class="relative overflow-hidden rounded-lg mb-4 h-80 bg-gray-200">
-                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                            data-alt="Portrait of a senior male partner looking experienced and trustworthy"
-                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPQeL2kReLgpXudUGq-MGHUZeiTl3ukaj254ZcWMtjRzYKReRzUaTdBZhn8VUqmxRElZhlQDQ53fe4ezjHORrG1lG22mtXRIpQHau288_j_S6VSRZ-DLS0r1O2PSQFMv8UdrwUxwpvANNiTSpeVFaC2srA32V5zm5buDcrys2kjwnDQwz7TaQZM-i63Sc8szB_a7yPfCgEssnzR-3iwb9oK5Ylw229SobLnKYNdkDotJ_xPh1K-O1ra7i77zBy2Vogj7nA4xPUdzU');">
-                        </div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                            <a class="text-white text-sm font-bold flex items-center gap-1 hover:text-accent" href="#">
-                                <span data-i18n="team.viewProfile">View Profile</span> <span
-                                    class="material-symbols-outlined text-xs">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-bold text-navy dark:text-white">Rustam Tursunov</h3>
-                    <p class="text-primary text-sm font-medium" data-i18n="team.roles.three">Partner, Litigation</p>
-                </div>
-                <div class="group">
-                    <div class="relative overflow-hidden rounded-lg mb-4 h-80 bg-gray-200">
-                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                            data-alt="Portrait of a female legal expert in formal attire"
-                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFAvi9C2l1Z0qBpYuS7EHoH7MOxU3pqBOGPJuDBcNrSfhwl34C1owLO2PZg8ks4tie20r7dthmKA8WWzs_8AAhR6Rn9qSxctUBXvupmt44G38OR6f_8P0ohbLtZBPqZwu33VC6jg_SUXrt75v-Ewks5zpkZHibvIvCVHEebl3wFYpOuakMEVWD1jK1oa6vUJ6XDGhF7cxfN84zSO9bmNrjFE6AEOP-szEa2d2aSi-er-dALlH60Zi18Rl5B9Zz3HXRDe9W2PMEm6o');">
-                        </div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                            <a class="text-white text-sm font-bold flex items-center gap-1 hover:text-accent" href="#">
-                                <span data-i18n="team.viewProfile">View Profile</span> <span
-                                    class="material-symbols-outlined text-xs">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-bold text-navy dark:text-white">Elena Sidorova</h3>
-                    <p class="text-primary text-sm font-medium" data-i18n="team.roles.four">Head of Tax Practice</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <section class="bg-navy py-20 relative overflow-hidden" id="contact">
         <div class="absolute top-0 right-0 w-1/3 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -610,27 +532,59 @@
             </div>
         </div>
     </section>
-    <div id="footer-include"></div>
-    <script>
-        (function () {
-            const load = (id, url) =>
-                fetch(url)
-                    .then((r) => r.text())
-                    .then((html) => {
-                        const el = document.getElementById(id);
-                        if (el) el.innerHTML = html;
-                    });
-            Promise.all([
-                load("header-include", "header.html"),
-                load("footer-include", "footer.html"),
-            ]).then(() => {
-                document.querySelectorAll(".legacy-header, .legacy-footer").forEach((el) => el.remove());
-                const s = document.createElement("script");
-                s.src = "assets/js/script.js";
-                document.body.appendChild(s);
-            });
-        })();
-    </script>
+    <footer class="bg-[#262d42] border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+          <div class="flex flex-col gap-4 max-w-xs">
+            <div class="flex items-center gap-2">
+              <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="assets/images/logo/logo.new.png" />
+            </div>
+            <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed" data-i18n="footer.blurb">
+              All-Legal provides top-tier legal services tailored to the complex needs of modern businesses in
+              Uzbekistan and Central Asia.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+            <div class="flex flex-col gap-4">
+              <h4 class="font-bold text-[#fce14f]" data-i18n="footer.firm.title">Firm</h4>
+              <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.about"
+                href="index.html#about">About Us</a>
+              <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.team"
+                href="team.html">Our Team</a>
+              <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.contact"
+                href="index.html#contact">Contact</a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h4 class="font-bold text-[#fce14f]" data-i18n="footer.services.title">Services</h4>
+              <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.practice"
+                href="index.html#practice">Practice Areas</a>
+              <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.samples"
+                href="sample.html">Samples</a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h4 class="font-bold text-[#fce14f]" data-i18n="footer.connect.title">Connect</h4>
+              <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.email" href="#">Email</a>
+              <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.phone" href="tel:+998907192223">Phone</a>
+              <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.instagram"
+                href="https://www.instagram.com/all_legal.uz/" rel="noopener noreferrer" target="_blank">Instagram</a>
+              <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" data-i18n="footer.firm.telegram"
+                href="https://t.me/umarjon_jumaniyazov" rel="noopener noreferrer" target="_blank">Telegram</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-xs text-gray-400" data-i18n="footer.copyright">© 2026 All-Legal Law Firm. All rights
+            reserved.</p>
+          <div class="flex gap-6">
+            <a class="text-xs text-gray-400 hover:text-primary footer-legal" data-i18n="footer.legal.privacy" href="#">Privacy Policy</a>
+            <a class="text-xs text-gray-400 hover:text-primary footer-legal" data-i18n="footer.legal.terms" href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/core.js" defer></script>
+    <script src="assets/js/home.js" defer></script>
 </body>
 
 </html>
