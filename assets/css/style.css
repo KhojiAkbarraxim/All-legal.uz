@@ -269,29 +269,54 @@ footer a.footer-legal {
     text-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
+.hero-media,
 .hero-bg {
     position: absolute;
     inset: 0;
-    background-size: cover;
-    background-position: center;
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-.hero-bg--one {
-    background-image: url("../images/hero/lawimg2.jpg");
+.hero-media {
+    display: block;
+}
+
+.hero-media-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-media--one {
     animation-name: heroFadeOne;
 }
 
+.hero-bg {
+    background-size: cover;
+    background-position: center;
+}
+
 .hero-bg--two {
-    background-image: url("../images/hero/lawimg3.webp");
+    background-image: url("../images/hero/lawimg3-mobile.webp");
     animation-name: heroFadeTwo;
 }
 
 .hero-bg--three {
-    background-image: url("../images/hero/lawimg4.webp");
+    background-image: url("../images/hero/lawimg4-mobile.webp");
     animation-name: heroFadeThree;
+}
+
+@media (min-width: 768px) {
+    .hero-bg--two {
+        background-image: url("../images/hero/lawimg3.webp");
+    }
+
+    .hero-bg--three {
+        background-image: url("../images/hero/lawimg4.webp");
+    }
 }
 
 .tabs-container {
@@ -475,6 +500,7 @@ footer a.footer-legal {
 }
 
 @media (prefers-reduced-motion: reduce) {
+    .hero-media,
     .hero-bg {
         animation: none;
     }

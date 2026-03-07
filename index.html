@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0&amp;icon_names=account_balance,arrow_forward,assignment,balance,call,close,description,domain,expand_less,expand_more,gavel,handshake,location_on,mail,menu,person_play,schedule,search,send,support_agent,travel_explore,verified&amp;display=swap"
         rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap"
         rel="stylesheet" />
     <link href="assets/css/tailwind.generated.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -21,7 +21,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20" style="height: 5.7rem;">
                 <div class="flex items-center gap-3" style="margin-top: 34px; margin-bottom: 25px;">
-                    <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="assets/images/logo/logo.new.png" />
+                    <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="assets/images/logo/logo.new.webp"
+                        width="360" height="360" />
                 </div>
                 <div class="hidden md:flex items-center gap-8">
                     <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.about"
@@ -110,10 +111,17 @@
     </div>
     <div class="relative w-full min-h-screen flex items-center justify-center bg-navy overflow-hidden">
         <div class="absolute inset-0 z-0">
+            <picture class="hero-media hero-media--one">
+                <source media="(max-width: 767px)" srcset="assets/images/hero/lawimg2-mobile.webp" />
+                <img alt="Judge gavel on law books with blue background" class="hero-media-image"
+                    decoding="async" fetchpriority="high" height="900" sizes="100vw"
+                    src="assets/images/hero/lawimg2.webp"
+                    srcset="assets/images/hero/lawimg2-mobile.webp 960w, assets/images/hero/lawimg2.webp 1600w"
+                    width="1600" />
+            </picture>
+            <div class="hero-bg hero-bg--two" aria-hidden="true"></div>
+            <div class="hero-bg hero-bg--three" aria-hidden="true"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30 z-10"></div>
-            <div class="hero-bg hero-bg--one" data-alt="Judge gavel on law books with blue background"></div>
-            <div class="hero-bg hero-bg--two" data-alt="Legal books and gavel on desk"></div>
-            <div class="hero-bg hero-bg--three" data-alt="Courtroom gavel close-up"></div>
         </div>
         <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div class="max-w-2xl flex flex-col gap-6">
@@ -207,7 +215,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
                         <img alt="All-Legal modern office interior"
                             class="object-cover w-full h-full transform transition-transform hover:scale-105 duration-700"
-                            src="assets/images/team/about-portrait.png" />
+                            height="512" src="assets/images/team/about-portrait.webp" width="512" />
                         <div class="absolute bottom-8 left-8 z-20">
                             <div class="bg-white/95 backdrop-blur-sm px-6 py-4 rounded-lg shadow-lg max-w-xs">
                                 <p class="text-navy font-bold text-lg mb-1" data-i18n="about.established">Established
@@ -537,7 +545,8 @@
         <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
           <div class="flex flex-col gap-4 max-w-xs">
             <div class="flex items-center gap-2">
-              <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="assets/images/logo/logo.new.png" />
+              <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="assets/images/logo/logo.new.webp"
+                width="360" height="360" />
             </div>
             <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed" data-i18n="footer.blurb">
               All-Legal provides top-tier legal services tailored to the complex needs of modern businesses in
