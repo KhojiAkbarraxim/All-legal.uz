@@ -258,6 +258,60 @@
     });
   };
 
+  const initHomeLogoLink = () => {
+    document.querySelectorAll("[data-home-link]").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const href = link.getAttribute("href");
+        if (!href) {
+          return;
+        }
+
+        let targetPath = "";
+        try {
+          const url = new URL(href, window.location.href);
+          targetPath = normalizePagePath(url.pathname);
+        } catch (_err) {
+          return;
+        }
+
+        const currentPath = normalizePagePath(window.location.pathname);
+        if (targetPath !== currentPath) {
+          return;
+        }
+
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+  };
+
+  const initPageLoader = () => {
+    const loader = document.getElementById("site-loader");
+    if (!loader) {
+      return;
+    }
+
+    let isHidden = false;
+    const hideLoader = () => {
+      if (isHidden) {
+        return;
+      }
+      isHidden = true;
+      loader.classList.add("is-hiding");
+
+      const finalize = () => {
+        loader.classList.add("is-hidden");
+        loader.setAttribute("aria-hidden", "true");
+      };
+
+      loader.addEventListener("transitionend", finalize, { once: true });
+      window.setTimeout(finalize, 420);
+    };
+
+    window.addEventListener("load", hideLoader, { once: true });
+    window.setTimeout(hideLoader, 1500);
+  };
+
   const boot = async () => {
     window.allegalI18n = {
       getDict: () => getDict(normalizeLang(getCurrentLang())),
@@ -267,6 +321,7 @@
 
     initLanguageControls();
     initMobileMenu();
+    initHomeLogoLink();
 
     const savedLang = localStorage.getItem("lang");
     const documentLang = normalizeLang(getCurrentLang());
@@ -276,6 +331,8 @@
     markActiveNavLinks();
     window.addEventListener("hashchange", markActiveNavLinks);
   };
+
+  initPageLoader();
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", () => {

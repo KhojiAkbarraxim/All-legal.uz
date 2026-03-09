@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="icon" type="image/png" href="/assets/images/logo/favicon.png" sizes="64x64" />
+    <link rel="apple-touch-icon" href="/assets/images/logo/favicon.png" />
     <title>All-Legal - Bizning jamoa</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,13 +18,20 @@
 </head>
 
 <body class="team-page bg-background-light dark:bg-background-dark text-[#111318] dark:text-white overflow-x-hidden" data-page="team">
+    <div class="site-loader" id="site-loader" role="status" aria-live="polite" aria-label="Page loading">
+        <div class="site-loader__inner">
+            <img alt="All-Legal law firm logo" class="site-loader__logo" src="assets/images/logo/logo.new.webp" width="360" height="360" />
+            <span class="site-loader__spinner" aria-hidden="true"></span>
+        </div>
+    </div>
     <nav class="fixed top-0 z-50 w-full bg-navy/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20" style="height: 5.7rem;">
-          <div class="flex items-center gap-3" style="margin-top: 34px; margin-bottom: 25px;">
+          <a class="flex items-center gap-3" style="margin-top: 34px; margin-bottom: 25px;" href="index.html"
+            data-home-link aria-label="Go to homepage">
             <img alt="All-Legal law firm logo" class="h-[180px] w-auto" src="assets/images/logo/logo.new.webp"
               width="360" height="360" />
-          </div>
+          </a>
           <div class="hidden md:flex items-center gap-8">
             <a class="nav-link text-sm font-medium transition-colors" data-nav-link data-i18n="nav.about"
               href="index.html#about">About</a>

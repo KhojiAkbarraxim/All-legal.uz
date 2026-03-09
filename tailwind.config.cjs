@@ -3,8 +3,6 @@ module.exports = {
     "./index.html",
     "./sample.html",
     "./team.html",
-    "./header.html",
-    "./footer.html",
     "./assets/js/**/*.js",
   ],
   darkMode: "class",
