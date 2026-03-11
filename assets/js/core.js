@@ -15,7 +15,6 @@
   let langDropdown;
   let langToggle;
   let langMenu;
-  let langFlag;
   let langLabel;
 
   const normalizeLang = (lang) => (supportedLangs.includes(lang) ? lang : "en");
@@ -77,8 +76,7 @@
 
   const setActiveLangUI = (lang) => {
     const data = langData[lang] || langData.en;
-    if (langFlag && langLabel) {
-      langFlag.textContent = data.flag;
+    if (langLabel) {
       langLabel.textContent = data.label;
     }
 
@@ -89,6 +87,7 @@
     langMenu.querySelectorAll("[data-lang-option]").forEach((button) => {
       const active = button.dataset.lang === lang;
       button.classList.toggle("is-active", active);
+      button.hidden = active;
       button.setAttribute("aria-selected", active ? "true" : "false");
     });
   };
@@ -149,6 +148,15 @@
     return last || "index.html";
   };
 
+  const syncNavHeight = () => {
+    const siteNav = document.querySelector("body > nav");
+    if (!siteNav) {
+      return;
+    }
+
+    document.documentElement.style.setProperty("--nav-height", `${siteNav.offsetHeight}px`);
+  };
+
   const getLinkTarget = (href, currentPage) => {
     const [pathPart, hashPart] = href.split("#");
     return {
@@ -181,7 +189,6 @@
     langDropdown = document.querySelector("[data-lang-dropdown]");
     langToggle = langDropdown && langDropdown.querySelector("[data-lang-toggle]");
     langMenu = langDropdown && langDropdown.querySelector("[data-lang-menu]");
-    langFlag = langDropdown && langDropdown.querySelector("[data-lang-flag]");
     langLabel = langDropdown && langDropdown.querySelector("[data-lang-label]");
 
     if (!langDropdown || !langToggle || !langMenu) {
@@ -227,6 +234,8 @@
       mobileMenu.setAttribute("aria-hidden", open ? "false" : "true");
       menuToggle.classList.toggle("is-active", open);
       menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      document.documentElement.classList.toggle("mobile-menu-open", open);
+      document.body.classList.toggle("mobile-menu-open", open);
       const icon = menuToggle.querySelector(".material-symbols-outlined");
       if (icon) {
         icon.textContent = open ? "close" : "menu";
@@ -253,6 +262,13 @@
 
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
+        setMenuOpen(false);
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      syncNavHeight();
+      if (window.innerWidth >= 1024) {
         setMenuOpen(false);
       }
     });
@@ -319,6 +335,7 @@
       ensureLanguageLoaded,
     };
 
+    syncNavHeight();
     initLanguageControls();
     initMobileMenu();
     initHomeLogoLink();
