@@ -74,6 +74,23 @@
     }
   };
 
+  const syncLanguageOptions = () => {
+    if (!langMenu) {
+      return;
+    }
+
+    langMenu.querySelectorAll("[data-lang-option]").forEach((button) => {
+      const optionLang = normalizeLang(button.dataset.lang || "en");
+      const data = langData[optionLang] || langData.en;
+      button.dataset.label = data.label;
+
+      const label = button.querySelector(".lang-option-label");
+      if (label) {
+        label.textContent = data.label;
+      }
+    });
+  };
+
   const setActiveLangUI = (lang) => {
     const data = langData[lang] || langData.en;
     if (langLabel) {
@@ -83,6 +100,8 @@
     if (!langMenu) {
       return;
     }
+
+    syncLanguageOptions();
 
     langMenu.querySelectorAll("[data-lang-option]").forEach((button) => {
       const active = button.dataset.lang === lang;

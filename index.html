@@ -61,24 +61,24 @@
                                 <span class="lang-option-label">O'zbekcha</span>
                             </button>
                             <button class="lang-option" type="button" data-lang-option data-lang="ru"
-                                data-label="Р СѓСЃСЃРєРёР№" role="option" aria-selected="false">
-                                <span class="lang-option-label">Р СѓСЃСЃРєРёР№</span>
+                                data-label="Русский" role="option" aria-selected="false">
+                                <span class="lang-option-label">Русский</span>
                             </button>
                             <button class="lang-option" type="button" data-lang-option data-lang="en"
                                 data-label="English" role="option" aria-selected="false">
                                 <span class="lang-option-label">English</span>
                             </button>
-                            <button class="lang-option" type="button" data-lang-option data-lang="ja"
-                                data-label="ж—Ґжњ¬иЄћ" role="option" aria-selected="false">
-                                <span class="lang-option-label">ж—Ґжњ¬иЄћ</span>
+                            <button class="lang-option" type="button" data-lang-option data-lang="ja" data-label="日本語"
+                                role="option" aria-selected="false">
+                                <span class="lang-option-label">日本語</span>
                             </button>
                         </div>
                     </div>
-                    <button
+                    <a href="#contact"
                         class="site-nav-cta hidden lg:flex h-10 px-6 items-center justify-center rounded-lg bg-primary hover:bg-primary-dark transition-colors text-navy text-sm font-bold tracking-wide"
                         data-i18n="nav.consult">
                         Consultation
-                    </button>
+                    </a>
                     <button class="menu-toggle site-nav-menu md:hidden p-2 text-[#fce14f]" type="button"
                         aria-expanded="false" aria-controls="mobile-menu" data-action="menu-toggle">
                         <span class="material-symbols-outlined">menu</span>
@@ -101,11 +101,11 @@
                     href="team.html">Team</a>
                 <a class="nav-link text-base font-medium transition-colors" data-nav-link data-i18n="nav.contact"
                     href="#contact">Contact</a>
-                <button
-                    class="h-10 px-6 items-center justify-center rounded-lg bg-primary hover:bg-primary-dark transition-colors text-navy text-sm font-bold tracking-wide w-fit"
+                <a href="#contact"
+                    class="inline-flex h-10 px-6 items-center justify-center rounded-lg bg-primary hover:bg-primary-dark transition-colors text-navy text-sm font-bold tracking-wide w-fit"
                     data-i18n="nav.consult">
                     Consultation
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -140,18 +140,17 @@
                     you can focus on growth.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 mt-4">
-                    <button
-                        class="h-12 px-8 rounded-lg bg-primary hover:bg-primary-dark text-navy font-bold text-base transition-all shadow-lg shadow-primary/30 flex items-center justify-center gap-2">
+                    <a href="#contact"
+                        class="inline-flex h-12 px-8 rounded-lg bg-primary hover:bg-primary-dark text-navy font-bold text-base transition-all shadow-lg shadow-primary/30 items-center justify-center gap-2">
                         <span data-i18n="hero.cta.primary">Request Consultation</span>
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                        <button type="button"
-                            onclick="document.getElementById('practice').scrollIntoView({ behavior: 'smooth' })"
-                            class="h-12 px-8 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm text-white font-bold text-base transition-all flex items-center justify-center"
-                            data-i18n="hero.cta.secondary">
-                            Our Practice Areas
-                        </button>
-
-
+                    </a>
+                    <button type="button"
+                        onclick="document.getElementById('practice').scrollIntoView({ behavior: 'smooth' })"
+                        class="h-12 px-8 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm text-white font-bold text-base transition-all flex items-center justify-center"
+                        data-i18n="hero.cta.secondary">
+                        Our Practice Areas
+                    </button>
                 </div>
             </div>
         </div>
@@ -460,11 +459,11 @@
                             </div>
                             <div>
                                 <h4 class="text-lg font-bold" data-i18n="cta.contact.hours">Hours</h4>
-                                <p class="text-gray-400" data-i18n="cta.contact.hours.mon">Mon: 9:00вЂ“18:00</p>
-                                <p class="text-gray-400" data-i18n="cta.contact.hours.tue">Tue: 9:00вЂ“18:00</p>
-                                <p class="text-gray-400" data-i18n="cta.contact.hours.wed">Wed: 9:00вЂ“18:00</p>
-                                <p class="text-gray-400" data-i18n="cta.contact.hours.thu">Thu: 9:00вЂ“18:00</p>
-                                <p class="text-gray-400" data-i18n="cta.contact.hours.fri">Fri: 9:00вЂ“18:00</p>
+                                <p class="text-gray-400" data-i18n="cta.contact.hours.mon">Mon: 9:00-18:00</p>
+                                <p class="text-gray-400" data-i18n="cta.contact.hours.tue">Tue: 9:00-18:00</p>
+                                <p class="text-gray-400" data-i18n="cta.contact.hours.wed">Wed: 9:00-18:00</p>
+                                <p class="text-gray-400" data-i18n="cta.contact.hours.thu">Thu: 9:00-18:00</p>
+                                <p class="text-gray-400" data-i18n="cta.contact.hours.fri">Fri: 9:00-18:00</p>
                                 <p class="text-gray-400" data-i18n="cta.contact.hours.sat">Sat: Closed</p>
                                 <p class="text-gray-400" data-i18n="cta.contact.hours.sun">Sun: Closed</p>
                             </div>
@@ -586,7 +585,7 @@
             </div>
             <div
                 class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-xs text-gray-400" data-i18n="footer.copyright">В© 2026 All-Legal Law Firm. All rights
+                <p class="text-xs text-gray-400" data-i18n="footer.copyright">© 2026 All-Legal Law Firm. All rights
                     reserved.</p>
                 <div class="flex gap-6">
                     <a class="text-xs text-gray-400 hover:text-primary footer-legal" data-i18n="footer.legal.privacy"
