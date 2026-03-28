@@ -89,8 +89,8 @@ html {
 
 .sample-container {
 	max-width: 1280px;
-	margin: 32px auto 48px;
-	padding: 0 2px 0 45px;
+	margin: 33px auto 65px;
+	padding: 0 25px 0 50px;
 	background: #f6f6f8;
 }
 
@@ -233,8 +233,23 @@ nav [data-i18n^='nav.'] {
 	line-height: 1.1;
 }
 
+.site-shell,
 .site-nav-shell {
-	padding-inline: clamp(14px, 1.8vw, 24px);
+	padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+	.site-shell,
+	.site-nav-shell {
+		padding-inline: 1.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.site-shell,
+	.site-nav-shell {
+		padding-inline: 2rem;
+	}
 }
 
 .site-nav-row {
@@ -365,8 +380,9 @@ nav [data-i18n^='nav.'] {
 		--nav-height: 4.95rem;
 	}
 
+	.site-shell,
 	.site-nav-shell {
-		padding-inline: 14px;
+		padding-inline: 1.5rem;
 	}
 
 	.site-nav-row {
@@ -430,8 +446,9 @@ nav [data-i18n^='nav.'] {
 		--nav-height: 4.5rem;
 	}
 
+	.site-shell,
 	.site-nav-shell {
-		padding-inline: 12px;
+		padding-inline: 1rem;
 	}
 
 	.site-nav-row {
@@ -1097,8 +1114,16 @@ aside {
 .tabpanel[aria-hidden='false'] {
 	display: block;
 }
+@media (max-width: 1200px) {
+	.sample-container {
+		padding: 0 14px 0 50px;
+	}
+}
 
 @media (max-width: 960px) {
+	.sample-container {
+		padding: 0 10px 0 30px;
+	}
 	.layout {
 		grid-template-columns: 1fr;
 	}
@@ -1110,7 +1135,7 @@ aside {
 
 @media (max-width: 640px) {
 	.sample-container {
-		padding: 0;
+		padding: 0 7px 0 21px;
 	}
 
 	.layout {
@@ -1136,6 +1161,18 @@ aside {
 	}
 }
 
+@media (max-width: 360px) {
+	.sample-container {
+		padding: 0 7px 0 14px;
+	}
+}
+
+@media (max-width: 340px) {
+	.sample-container {
+		padding: 0;
+	}
+}
+
 /* Team page */
 .team-page {
 	background: #f9f9f9;
@@ -1143,14 +1180,14 @@ aside {
 
 .team-page main {
 	/* reduce top whitespace below fixed nav */
-	padding: 8px 16px 28px;
+	padding: 8px 0 28px;
 }
 
 .team-section {
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: 0 auto;
-	/* tighter spacing on section itself */
-	padding: 12px 20px 20px;
+	/* shared shell controls horizontal gutter */
+	/* padding: 12px 0 20px; */
 }
 
 .team-section h2 {
@@ -1163,9 +1200,9 @@ aside {
 
 .master-detail-container {
 	display: grid;
-	grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
+	grid-template-columns: minmax(280px, 400px) minmax(0, 1fr);
 	gap: 40px;
-	align-items: start;
+	align-items: center;
 }
 
 .master-column {
@@ -1232,7 +1269,7 @@ aside {
 
 .detail-column {
 	background: #ffffff;
-	width: 50.5rem;
+	width: 100%;
 	border: 1px solid #e0e0e0;
 	border-radius: 16px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -1345,12 +1382,28 @@ aside {
 	box-shadow: 0 10px 22px rgba(30, 58, 95, 0.25);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1300px) {
+	.master-detail-container {
+		grid-template-columns: minmax(280px, 350px) minmax(0, 1fr);
+		gap: 40px;
+	}
+}
+
+@media (max-width: 1250px) {
+	.master-detail-container {
+		grid-template-columns: minmax(280px, 300px) minmax(0, 1fr);
+		gap: 40px;
+	}
+}
+
+@media (max-width: 1200px) {
 	.master-detail-container {
 		grid-template-columns: 1fr;
 		gap: 24px;
 	}
+}
 
+@media (max-width: 992px) {
 	.master-column {
 		max-height: none;
 	}
@@ -1366,6 +1419,10 @@ aside {
 	.detail-meta {
 		text-align: center;
 	}
+	/* 
+	.team-section {
+		padding: 12px 0 20px;
+	} */
 
 	#detail-name {
 		font-size: 2.1rem;
